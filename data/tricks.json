@@ -5,7 +5,7 @@
     "categories": [
       "Vert Kick"
     ],
-    "difficultyRank": "1",
+    "difficultyRank": 1,
     "prereqs": [],
     "nextTricks": [
       "Pop 360 Shuriken",
@@ -21,7 +21,7 @@
     "categories": [
       "Vert Kick"
     ],
-    "difficultyRank": "2",
+    "difficultyRank": 2,
     "prereqs": [
       "Pop 360"
     ],
