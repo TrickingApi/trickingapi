@@ -34,6 +34,11 @@ Direct API access - [api.trickingapi.dev](https://api.trickingapi.dev)
   ```
   go build
   ```
+  
+- Run tests to verify all existing tests still work:
+  ```
+  go test -v ./...
+  ```
 
 - Run the server using the following command:
   ```
