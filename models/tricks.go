@@ -5,7 +5,7 @@ type Trick struct {
 	Name string `json:"name"`
 	Categories []TrickCategory `json:"categories"`
 	DifficultyRank int `json:"difficultRank"`
-	Prerequisites []string `json:"prerequisites"`
+	Prerequisites []string `json:"prereqs"`
 	NextTricks []string `json:"nextTricks"`
 	Description string `json:"description"`
 }

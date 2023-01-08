@@ -14,6 +14,17 @@ func GetAllTricksHandler(allTricks *[]models.Trick) gin.HandlerFunc {
 	return gin.HandlerFunc(fn)
 }
 
+func GetAllTrickNamesHandler(allTricks *[]models.Trick) gin.HandlerFunc {
+	fn := func(c *gin.Context) {
+		var trickNames []string
+		for _, trick := range *allTricks {
+			trickNames = append(trickNames, trick.Name)
+		}
+		c.IndentedJSON(http.StatusOK, trickNames)
+	}
+	return gin.HandlerFunc(fn)
+}
+
 func GetTrickHandler(idToTrickMap map[string]models.Trick) gin.HandlerFunc {
 	fn := func(c *gin.Context) {
 		name := c.Param("name")
