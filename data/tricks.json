@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "name": "Pop 360",
+    "categories": [
+      "Vert Kick"
+    ],
+    "difficultyRank": "1",
+    "prereqs": [],
+    "nextTricks": [
+      "Pop 360 Shuriken",
+      "Pop 720",
+      "Swing 360",
+      "Illusion Twist"
+    ],
+    "description": "The Pop 360 starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with an outside crescent kick towards the target and lands in turbo (both feet). This trick is also a hyper, because Pop 180 Hook (TKT) is not often used in tricking. This trick is vitally important for Illusion Twist and other similar tricks that end in turbo."
+  },
+  {
+    "id": "2",
+    "name": "Pop 360 Shuriken",
+    "categories": [
+      "Vert Kick"
+    ],
+    "difficultyRank": "2",
+    "prereqs": [
+      "Pop 360"
+    ],
+    "nextTricks": [
+      "Pop 720",
+      "Pop 720 Double",
+      "Swing 360 Shuriken"
+    ],
+    "description": ""
+  }
+]
