@@ -14,6 +14,8 @@ circleci badges coming soon
 
 A RESTful API for Tricking - [trickingapi.dev](https://trickingapi.dev)
 
+Direct API access - [api.trickingapi.dev](https://api.trickingapi.dev)
+
 ## Setup &nbsp; [![goVersion19](https://img.shields.io/github/go-mod/go-version/TrickingApi/trickingapi)](https://go.dev/doc/tutorial/web-service-gin)
 - Download this source code into a working directory
 
@@ -41,18 +43,18 @@ Each time you modify main.go or a local package you must run ```go build``` befo
 
 ### All Tricks
 ```http
-GET /api/tricks
+GET /tricks
 ```
 
 ### Get a Specific Trick
 ```http
-GET /api/tricks/:name
+GET /tricks/:name
 ```
 
 e.g.
 
 ```http
-GET /api/tricks/pop360
+GET /tricks/pop360
 
 {
     "id": "pop360",
@@ -70,6 +72,57 @@ GET /api/tricks/pop360
     ],
     "description": "The Pop 360 starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with an outside crescent kick towards the target and lands in turbo (both feet). This trick is also a hyper, because Pop 180 Hook (TKT) is not often used in tricking. This trick is vitally important for Illusion Twist and other similar tricks that end in turbo."
 }
+```
+
+### Get Tricks Separated by Categories
+```http
+GET /categories
+```
+
+### Get All Tricks for a Specified Category
+```http
+GET /categories/:name
+```
+
+e.g.
+```http
+GET /categories/Vert%20Kick
+
+[
+    {
+        "id": "pop360",
+        "name": "Pop 360",
+        "categories": [
+            "Vert Kick"
+        ],
+        "difficultRank": 0,
+        "prereqs": [],
+        "nextTricks": [
+            "Pop 360 Shuriken",
+            "Pop 720",
+            "Swing 360",
+            "Illusion Twist"
+        ],
+        "description": "The Pop 360 starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with an outside crescent kick towards the target and lands in turbo (both feet). This trick is also a hyper, because Pop 180 Hook (TKT) is not often used in tricking. This trick is vitally important for Illusion Twist and other similar tricks that end in turbo."
+    },
+    {
+        "id": "pop360Shuriken",
+        "name": "Pop 360 Shuriken",
+        "categories": [
+            "Vert Kick"
+        ],
+        "difficultRank": 0,
+        "prereqs": [
+            "Pop 360"
+        ],
+        "nextTricks": [
+            "Pop 720",
+            "Pop 720 Double",
+            "Swing 360 Shuriken"
+        ],
+        "description": ""
+    }
+]
 ```
 
 
