@@ -48,11 +48,11 @@ func init() {
 
 func main() {
 	router := gin.Default()
-	router.GET("/api/tricks", routes.GetAllTricksHandler(&allTricks))
-	router.GET("/api/tricks/names", routes.GetAllTrickNamesHandler(&allTricks))
-	router.GET("/api/tricks/:name", routes.GetTrickHandler(idToTrickMap))
-	router.GET("/api/categories", routes.GetTricksByCategoriesHandler(categoriesToTrickSliceMap))
-	router.GET("/api/categories/:name", routes.GetCategoryToTricksHandler(categoriesToTrickSliceMap))
+	router.GET("/tricks", routes.GetAllTricksHandler(&allTricks))
+	router.GET("/tricks/names", routes.GetAllTrickNamesHandler(&allTricks))
+	router.GET("/tricks/:name", routes.GetTrickHandler(idToTrickMap))
+	router.GET("/categories", routes.GetTricksByCategoriesHandler(categoriesToTrickSliceMap))
+	router.GET("/categories/:name", routes.GetCategoryToTricksHandler(categoriesToTrickSliceMap))
 
 	router.Run()
 }
