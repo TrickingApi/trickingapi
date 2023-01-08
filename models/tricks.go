@@ -22,3 +22,7 @@ const (
   TRIP TrickCategory = "Triple"
   QUAD TrickCategory = "Quad"
 )
+
+func (tc TrickCategory)String() string {
+	return string(tc)
+}
