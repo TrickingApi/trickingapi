@@ -1,16 +1,16 @@
 package main
 
 import (
-	"net/http"
 	"github.com/gin-gonic/gin"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"log"
-	"tricks/web-service/models"
+	"github.com/TrickingApi/trickingapi/models"
+	"github.com/TrickingApi/trickingapi/routes"
 )
 
 var allTricks []models.Trick
+var idToTrickMap map[string]models.Trick
 
 func init() {
 	content, err := ioutil.ReadFile("data/tricks.json")
@@ -22,17 +22,19 @@ func init() {
 	if err := json.Unmarshal(content, &allTricks); err != nil {
 		panic(err)
 	}
-	fmt.Println(allTricks)
+
+	idToTrickMap = make(map[string]models.Trick)
+
+	for _, trick := range allTricks {
+		idToTrickMap[trick.Id] = trick
+	}
 }
 
 func main() {
 	router := gin.Default()
-	router.GET("/tricks", getAllTricks)
+	router.GET("/api/tricks", routes.GetAllTricksHandler(&allTricks))
 
-	router.Run("localhost:8080")
+	router.GET("/api/tricks/:name", routes.GetTrickHandler(idToTrickMap))
+
+	router.Run()
 }
-
-func getAllTricks(c *gin.Context) {
-	c.IndentedJSON(http.StatusOK, allTricks)
-}
-
