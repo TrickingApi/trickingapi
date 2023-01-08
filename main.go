@@ -46,6 +46,21 @@ func init() {
 	}
 }
 
+// @title Tricking Api
+// @version 0.1
+// @description Consumption-only API for barebones Tricking Data
+// @termsOfService https://github.com/TrickingApi/trickingapi
+
+// @contact.name Mikael Mantis
+// @contact.url https://github.com/TrickingApi/trickingapi
+// @contact.email mikael.mantis7@gmail.com
+
+// @license.name MIT
+// @license.url https://github.com/TrickingApi/trickingapi/blob/main/LICENSE.md
+
+// @host api.trickingapi.dev
+// @BasePath /
+// @schemes https
 func main() {
 	router := gin.Default()
 	router.GET("/tricks", routes.GetAllTricksHandler(&allTricks))
@@ -54,5 +69,6 @@ func main() {
 	router.GET("/categories", routes.GetTricksByCategoriesHandler(categoriesToTrickSliceMap))
 	router.GET("/categories/:name", routes.GetCategoryToTricksHandler(categoriesToTrickSliceMap))
 
+	router.StaticFile("swagger", "./docs/swagger.json")
 	router.Run()
 }

@@ -1,0 +1,129 @@
+basePath: /
+definitions:
+  models.Trick:
+    properties:
+      categories:
+        items:
+          $ref: '#/definitions/models.TrickCategory'
+        type: array
+      description:
+        type: string
+      difficultyRank:
+        type: integer
+      id:
+        type: string
+      name:
+        type: string
+      nextTricks:
+        items:
+          type: string
+        type: array
+      prereqs:
+        items:
+          type: string
+        type: array
+    type: object
+  models.TrickCategory:
+    enum:
+    - Flip
+    - Vert Kick
+    - Twist
+    - Pseudo Double Flip
+    - Single
+    - Double
+    - Triple
+    - Quad
+    type: string
+    x-enum-varnames:
+    - FLIP
+    - VERT_KICK
+    - TWIST
+    - PSEUDO_DUB
+    - SING
+    - DUB
+    - TRIP
+    - QUAD
+  models.TrickError:
+    properties:
+      data:
+        type: string
+      message:
+        type: string
+      success:
+        type: boolean
+    type: object
+host: api.trickingapi.dev
+info:
+  contact:
+    email: mikael.mantis7@gmail.com
+    name: Mikael Mantis
+    url: https://github.com/TrickingApi/trickingapi
+  description: Consumption-only API for barebones Tricking Data
+  license:
+    name: MIT
+    url: https://github.com/TrickingApi/trickingapi/blob/main/LICENSE.md
+  termsOfService: https://github.com/TrickingApi/trickingapi
+  title: Tricking Api
+  version: "0.1"
+paths:
+  /:
+    get:
+      consumes:
+      - '*/*'
+      description: Reads and returns list of tricks from the static tricks.json file
+        at https://github.com/TrickingApi/trickingapi
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.Trick'
+            type: array
+      summary: Get All Tricks in TrickingApi/data/tricks
+      tags:
+      - root
+  /:name:
+    get:
+      consumes:
+      - '*/*'
+      description: reads list of known Trick objects and returns trick matching the
+        name param in the request
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Trick'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/models.TrickError'
+      summary: Get Trick by Specific Name in TrickingApi/data/tricks
+      tags:
+      - tricks
+      - name
+  /names:
+    get:
+      consumes:
+      - '*/*'
+      description: Reads and returns the names of all tricks from the static tricks.json
+        file at https://github.com/TrickingApi/trickingapi
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              type: string
+            type: array
+      summary: Get All Trick Names in TrickingApi/data/tricks
+      tags:
+      - root
+      - names
+schemes:
+- https
+swagger: "2.0"

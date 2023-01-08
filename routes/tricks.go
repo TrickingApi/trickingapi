@@ -7,6 +7,16 @@ import (
 	"net/http"
 )
 
+// @BasePath /tricks
+
+// GetAllTricks godoc
+// @Description Reads and returns list of tricks from the static tricks.json file at https://github.com/TrickingApi/trickingapi
+// @Summary Get All Tricks in TrickingApi/data/tricks
+// @Tags root
+// @Accept */*
+// @Produce json
+// @Success 200 {object} []models.Trick
+// @Router / [get]
 func GetAllTricksHandler(allTricks *[]models.Trick) gin.HandlerFunc {
 	fn := func(c *gin.Context) {
 		c.IndentedJSON(http.StatusOK, *allTricks)
@@ -14,6 +24,14 @@ func GetAllTricksHandler(allTricks *[]models.Trick) gin.HandlerFunc {
 	return gin.HandlerFunc(fn)
 }
 
+// GetAllTrickNames godoc
+// @Description Reads and returns the names of all tricks from the static tricks.json file at https://github.com/TrickingApi/trickingapi
+// @Summary Get All Trick Names in TrickingApi/data/tricks
+// @Tags root, names
+// @Accept */*
+// @Produce json
+// @Success 200 {object} []string
+// @Router /names [get]
 func GetAllTrickNamesHandler(allTricks *[]models.Trick) gin.HandlerFunc {
 	fn := func(c *gin.Context) {
 		var trickNames []string
@@ -25,6 +43,15 @@ func GetAllTrickNamesHandler(allTricks *[]models.Trick) gin.HandlerFunc {
 	return gin.HandlerFunc(fn)
 }
 
+// GetTrick godoc
+// @Description reads list of known Trick objects and returns trick matching the name param in the request
+// @Summary Get Trick by Specific Name in TrickingApi/data/tricks
+// @Tags tricks, name
+// @Accept */*
+// @Produce json
+// @Success 200 {object} models.Trick
+// @Failure 404 {object} models.TrickError
+// @Router /:name [get]
 func GetTrickHandler(idToTrickMap map[string]models.Trick) gin.HandlerFunc {
 	fn := func(c *gin.Context) {
 		name := c.Param("name")
