@@ -50,7 +50,7 @@ func main() {
 	router := gin.Default()
 	router.GET("/api/tricks", routes.GetAllTricksHandler(&allTricks))
 	router.GET("/api/tricks/:name", routes.GetTrickHandler(idToTrickMap))
-	router.GET("/api/tricks/category/:name", routes.GetCategoryHandler(categoriesToTrickSliceMap))
+	router.GET("/api/category/:name", routes.GetCategoryHandler(categoriesToTrickSliceMap))
 
 	router.Run()
 }
