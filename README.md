@@ -4,7 +4,13 @@
 
 <h1>TrickingApi Logo TBD</h1>
 
-circleci badges coming soon
+[![build status](https://img.shields.io/circleci/build/github/TrickingApi/trickingapi)](https://circleci.com/gh/TrickingApi/trickingapi)
+![issues](https://img.shields.io/github/issues/TrickingApi/trickingapi)
+![prs](https://img.shields.io/github/issues-pr/TrickingApi/trickingapi)
+![repo size](https://img.shields.io/github/repo-size/TrickingApi/trickingapi)
+![go version](https://img.shields.io/github/go-mod/go-version/TrickingApi/trickingapi)
+[![license](https://img.shields.io/github/license/TrickingApi/trickingapi)](https://github.com/TrickingApi/trickingapi/blob/main/LICENSE.md)
+[![discord](https://img.shields.io/discord/1061481749894418533)](https://discord.gg/7r99xBX6eU)
 
 <br/>
 
