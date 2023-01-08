@@ -61,7 +61,8 @@ e.g.
 
 ```http
 GET /tricks/pop360
-
+```
+```json
 {
     "id": "pop360",
     "name": "Pop 360",
@@ -93,7 +94,9 @@ GET /categories/:name
 e.g.
 ```http
 GET /categories/Vert%20Kick
+```
 
+```json
 [
     {
         "id": "pop360",
@@ -101,7 +104,7 @@ GET /categories/Vert%20Kick
         "categories": [
             "Vert Kick"
         ],
-        "difficultRank": 0,
+        "difficultyRank": 1,
         "prereqs": [],
         "nextTricks": [
             "Pop 360 Shuriken",
@@ -117,7 +120,7 @@ GET /categories/Vert%20Kick
         "categories": [
             "Vert Kick"
         ],
-        "difficultRank": 0,
+        "difficultyRank": 2,
         "prereqs": [
             "Pop 360"
         ],
