@@ -1,4 +1,4 @@
-module tricks/web-service
+module github.com/TrickingApi/trickingapi
 
 go 1.19
 
