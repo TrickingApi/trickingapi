@@ -37,12 +37,43 @@ Visit localhost:8080/api/tricks to see the running API!
 Each time you modify main.go or a local package you must run ```go build``` before running again. 
 - tbd if hot reloading is necessary/will be added, potentially with [hotswap](https://github.com/edwingeng/hotswap)
 
-## Endpoints
+## API Routes
 
 ### All Tricks
 ```http
 GET /api/tricks
 ```
+
+### Get a Specific Trick
+```http
+GET /api/tricks/:name
+```
+
+e.g.
+
+```http
+GET /api/tricks/pop360
+
+{
+    "id": "pop360",
+    "name": "Pop 360",
+    "categories": [
+        "Vert Kick"
+    ],
+    "difficultRank": 0,
+    "prerequisites": null,
+    "nextTricks": [
+        "Pop 360 Shuriken",
+        "Pop 720",
+        "Swing 360",
+        "Illusion Twist"
+    ],
+    "description": "The Pop 360 starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with an outside crescent kick towards the target and lands in turbo (both feet). This trick is also a hyper, because Pop 180 Hook (TKT) is not often used in tricking. This trick is vitally important for Illusion Twist and other similar tricks that end in turbo."
+}
+```
+
+
+
 The API endpoints return the JSON representation of the resources requested. However, if an invalid request is submitted, or some other error occurs,
 the trickingapi server returns a JSON response in the following format:
 
@@ -100,3 +131,7 @@ Data Update?
 - We'll accept your changes after review.
 
 Simple!
+
+## Questions
+If you have any questions, create an [issue](issue) (protip: do a quick search first to see if someone else didn't ask the same question before!).
+You can also reach the owner/developers at our [discord](https://discord.gg/T588bdSVKU)

@@ -18,7 +18,6 @@ func init() {
 			log.Fatal("Error when opening file: ", err)
 	}
 
-
 	if err := json.Unmarshal(content, &allTricks); err != nil {
 		panic(err)
 	}
