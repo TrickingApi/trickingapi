@@ -4,7 +4,7 @@ type Trick struct {
 	Id	string `json:"id"`
 	Name string `json:"name"`
 	Categories []TrickCategory `json:"categories"`
-	DifficultyRank int `json:"difficultRank"`
+	DifficultyRank int `json:"difficultyRank"`
 	Prerequisites []string `json:"prereqs"`
 	NextTricks []string `json:"nextTricks"`
 	Description string `json:"description"`

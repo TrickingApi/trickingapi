@@ -1,0 +1,35 @@
+[
+  {
+    "id": "pop360",
+    "name": "Pop 360",
+    "categories": [
+      "Vert Kick"
+    ],
+    "difficultyRank": 1,
+    "prereqs": [],
+    "nextTricks": [
+      "Pop 360 Shuriken",
+      "Pop 720",
+      "Swing 360",
+      "Illusion Twist"
+    ],
+    "description": "Test description"
+  },
+  {
+    "id": "pop360Shuriken",
+    "name": "Pop 360 Shuriken",
+    "categories": [
+      "Vert Kick"
+    ],
+    "difficultyRank": 2,
+    "prereqs": [
+      "Pop 360"
+    ],
+    "nextTricks": [
+      "Pop 720",
+      "Pop 720 Double",
+      "Swing 360 Shuriken"
+    ],
+    "description": "Test description 2"
+  }
+]

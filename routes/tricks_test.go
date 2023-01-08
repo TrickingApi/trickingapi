@@ -1,9 +1,9 @@
 package routes
 
 import (
+	"encoding/json"
 	"github.com/TrickingApi/trickingapi/models"
 	"github.com/gin-gonic/gin"
-	"encoding/json"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
