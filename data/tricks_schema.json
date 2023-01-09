@@ -1,0 +1,102 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "TricksSchema", 
+	"title": "Root", 
+	"type": "array",
+	"default": [],
+	"items":{
+		"$id": "#root/items", 
+		"title": "Items", 
+		"type": "object",
+		"required": [
+			"id",
+			"name",
+			"categories",
+			"difficultyRank",
+			"prereqs",
+			"nextTricks",
+			"description"
+		],
+		"properties": {
+			"id": {
+				"$id": "#root/items/id", 
+				"title": "Id", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"pop360"
+				],
+				"pattern": "^([a-z0-9])+([A-Z0-9][a-z0-9]+)+"
+			},
+			"name": {
+				"$id": "#root/items/name", 
+				"title": "Name", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"Pop 360"
+				],
+				"pattern": "^.*$"
+			},
+			"categories": {
+				"$id": "#root/items/categories", 
+				"title": "Categories", 
+				"type": "array",
+				"default": [],
+				"items":{
+					"$id": "#root/items/categories/items", 
+					"title": "Items", 
+					"type": "string",
+					"default": "Unknown",
+					"examples": [
+						"Vert Kick"
+					],
+					"pattern": "^.*$"
+				}
+			},
+			"difficultyRank": {
+				"$id": "#root/items/difficultyRank", 
+				"title": "Difficultyrank", 
+				"type": "integer",
+				"examples": [
+					1
+				],
+				"default": 0
+			},
+			"prereqs": {
+				"$id": "#root/items/prereqs", 
+				"title": "Prereqs", 
+				"type": "array",
+				"default": []
+			},
+			"nextTricks": {
+				"$id": "#root/items/nextTricks", 
+				"title": "Nexttricks", 
+				"type": "array",
+				"default": [],
+				"items":{
+					"$id": "#root/items/nextTricks/items", 
+					"title": "Items", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"Pop 360 Shuriken"
+					],
+					"pattern": "^.*$"
+				}
+			},
+			"description": {
+				"$id": "#root/items/description", 
+				"title": "Description", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"The Pop 360 starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with an outside crescent kick towards the target and lands in turbo (both feet). This trick is also a hyper, because Pop 180 Hook (TKT) is not often used in tricking. This trick is vitally important for Illusion Twist and other similar tricks that end in turbo."
+				],
+				"pattern": "^.*$"
+			}
+		}
+	}
+
+}
