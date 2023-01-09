@@ -30,6 +30,15 @@
       "Pop 720 Double",
       "Swing 360 Shuriken"
     ],
-    "description": ""
+    "description": "The Pop 360 Hyper starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with an outside cresecent kick towards the target and lands in complete stance. This move is often the first Shuriken that trickers learn, and is vitally important for future shuriken variations."
+  },
+  {
+    "id": "badTrickAttempt",
+    "name": "Bad Trick",
+    "categories": [
+      "Quad"
+    ],
+    "difficultyRank": 9999,
+    "description": "Missing prereqs and nextTricks, should throw error on pull request"
   }
 ]
