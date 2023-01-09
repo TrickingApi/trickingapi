@@ -48,18 +48,18 @@ func init() {
 
 // @title Tricking Api
 // @version 0.1
-// @description Consumption-only API for barebones Tricking Data
+// @description Consumption-only API for barebones Tricking Terminology Data
 // @termsOfService https://github.com/TrickingApi/trickingapi
 
 // @contact.name Mikael Mantis
 // @contact.url https://github.com/TrickingApi/trickingapi
-// @contact.email mikael.mantis7@gmail.com
+// @contact.email mikael@trickingapi.dev
 
 // @license.name MIT
 // @license.url https://github.com/TrickingApi/trickingapi/blob/main/LICENSE.md
 
-// @host api.trickingapi.dev
-// @BasePath /
+// @host trickingapi.dev
+// @BasePath /api
 // @schemes https
 func main() {
 	router := gin.Default()

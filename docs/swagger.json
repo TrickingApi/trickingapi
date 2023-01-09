@@ -4,13 +4,13 @@
     ],
     "swagger": "2.0",
     "info": {
-        "description": "Consumption-only API for barebones Tricking Data",
+        "description": "Consumption-only API for barebones Tricking Terminology Data",
         "title": "Tricking Api",
         "termsOfService": "https://github.com/TrickingApi/trickingapi",
         "contact": {
             "name": "Mikael Mantis",
             "url": "https://github.com/TrickingApi/trickingapi",
-            "email": "mikael.mantis7@gmail.com"
+            "email": "mikael@trickingapi.dev"
         },
         "license": {
             "name": "MIT",
@@ -18,8 +18,8 @@
         },
         "version": "0.1"
     },
-    "host": "api.trickingapi.dev",
-    "basePath": "/",
+    "host": "trickingapi.dev",
+    "basePath": "/api",
     "paths": {
         "/categories": {
             "get": {

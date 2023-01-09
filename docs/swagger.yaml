@@ -1,4 +1,4 @@
-basePath: /
+basePath: /api
 definitions:
   models.Trick:
     properties:
@@ -52,13 +52,13 @@ definitions:
       success:
         type: boolean
     type: object
-host: api.trickingapi.dev
+host: trickingapi.dev
 info:
   contact:
-    email: mikael.mantis7@gmail.com
+    email: mikael@trickingapi.dev
     name: Mikael Mantis
     url: https://github.com/TrickingApi/trickingapi
-  description: Consumption-only API for barebones Tricking Data
+  description: Consumption-only API for barebones Tricking Terminology Data
   license:
     name: MIT
     url: https://github.com/TrickingApi/trickingapi/blob/main/LICENSE.md

@@ -14,7 +14,7 @@ const docTemplate = `{
         "contact": {
             "name": "Mikael Mantis",
             "url": "https://github.com/TrickingApi/trickingapi",
-            "email": "mikael.mantis7@gmail.com"
+            "email": "mikael@trickingapi.dev"
         },
         "license": {
             "name": "MIT",
@@ -268,11 +268,11 @@ const docTemplate = `{
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
 	Version:          "0.1",
-	Host:             "api.trickingapi.dev",
-	BasePath:         "/",
+	Host:             "trickingapi.dev",
+	BasePath:         "/api",
 	Schemes:          []string{"https"},
 	Title:            "Tricking Api",
-	Description:      "Consumption-only API for barebones Tricking Data",
+	Description:      "Consumption-only API for barebones Tricking Terminology Data",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 }
