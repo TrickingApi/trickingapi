@@ -9,11 +9,11 @@ import (
 )
 
 
-func TestGetTricksByCategoryHandler(t *testing.T) {
+func TestGetAllTricksByCategoriesHandler(t *testing.T) {
 	c, w, dummyTrick := SetUpTests()
 	categoriesToTrickSliceMap := createMockCategoriesMap(dummyTrick)
 
-	var handler = GetTricksByCategoriesHandler(categoriesToTrickSliceMap)
+	var handler = GetAllTricksByCategoriesHandler(categoriesToTrickSliceMap)
 	handler(c)
 
 	assert.Equal(t, 200, w.Code)
@@ -26,7 +26,7 @@ func TestGetTricksByCategoryHandler(t *testing.T) {
 	assert.Equal(t, got, categoriesToTrickSliceMap)
 }
 
-func TestGetCategoryToTricksHandlerQuad(t *testing.T) {
+func TestGetTricksForCategoryHandlerQuad(t *testing.T) {
 	c, w, dummyTrick := SetUpTests()
 	c.Params = []gin.Param{
 		{
@@ -36,7 +36,7 @@ func TestGetCategoryToTricksHandlerQuad(t *testing.T) {
 	}
 
 	categoriesToTrickSliceMap := createMockCategoriesMap(dummyTrick)
-	var handler = GetCategoryToTricksHandler(categoriesToTrickSliceMap)
+	var handler = GetTricksForCategoryHandler(categoriesToTrickSliceMap)
 	handler(c)
 
 	assert.Equal(t, 200, w.Code)
@@ -50,7 +50,7 @@ func TestGetCategoryToTricksHandlerQuad(t *testing.T) {
 	assert.Equal(t, got, expectedSlice)
 }
 
-func TestGetCategoryToTricksHandlerPsuedoDub(t *testing.T) {
+func TestGetTricksForCategoryHandlerPsuedoDub(t *testing.T) {
 	c, w, dummyTrick := SetUpTests()
 	c.Params = []gin.Param{
 		{
@@ -60,7 +60,7 @@ func TestGetCategoryToTricksHandlerPsuedoDub(t *testing.T) {
 	}
 
 	categoriesToTrickSliceMap := createMockCategoriesMap(dummyTrick)
-	var handler = GetCategoryToTricksHandler(categoriesToTrickSliceMap)
+	var handler = GetTricksForCategoryHandler(categoriesToTrickSliceMap)
 	handler(c)
 
 	assert.Equal(t, 200, w.Code)
@@ -74,7 +74,7 @@ func TestGetCategoryToTricksHandlerPsuedoDub(t *testing.T) {
 	assert.Equal(t, got, expectedSlice)
 }
 
-func TestGetCategoryToTricksHandlerUnknown(t *testing.T) {
+func TestGetTricksForCategoryHandlerUnknown(t *testing.T) {
 	c, w, dummyTrick := SetUpTests()
 	c.Params = []gin.Param{
 		{
@@ -84,7 +84,7 @@ func TestGetCategoryToTricksHandlerUnknown(t *testing.T) {
 	}
 
 	categoriesToTrickSliceMap := createMockCategoriesMap(dummyTrick)
-	var handler = GetCategoryToTricksHandler(categoriesToTrickSliceMap)
+	var handler = GetTricksForCategoryHandler(categoriesToTrickSliceMap)
 	handler(c)
 
 	assert.Equal(t, 404, w.Code)
@@ -102,6 +102,25 @@ func TestGetCategoryToTricksHandlerUnknown(t *testing.T) {
 	}
 
 	assert.Equal(t, got, expectedErrorObj)
+}
+
+func TestGetAllCategoriesHandler(t *testing.T) {
+	c, w, dummyTrick := SetUpTests()
+	categoriesToTrickSliceMap := createMockCategoriesMap(dummyTrick)
+	var handler = GetAllCategoriesHandler(categoriesToTrickSliceMap)
+	handler(c)
+
+	assert.Equal(t, 200, w.Code)
+
+	expectedResult := []string{"Quad", "Pseudo Double Flip", "Flip", "Twist"}
+
+	var got []string
+	err := json.Unmarshal(w.Body.Bytes(), &got)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	assert.ElementsMatch(t, got, expectedResult)
 }
 
 func createMockCategoriesMap(dummyTrick models.Trick) (map[models.TrickCategory][]models.Trick) {

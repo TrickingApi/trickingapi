@@ -66,8 +66,9 @@ func main() {
 	router.GET("/tricks", routes.GetAllTricksHandler(&allTricks))
 	router.GET("/tricks/names", routes.GetAllTrickNamesHandler(&allTricks))
 	router.GET("/tricks/:name", routes.GetTrickHandler(idToTrickMap))
-	router.GET("/categories", routes.GetTricksByCategoriesHandler(categoriesToTrickSliceMap))
-	router.GET("/categories/:name", routes.GetCategoryToTricksHandler(categoriesToTrickSliceMap))
+	router.GET("/categories", routes.GetAllCategoriesHandler(categoriesToTrickSliceMap))
+	router.GET("/categories/tricks", routes.GetAllTricksByCategoriesHandler(categoriesToTrickSliceMap))
+	router.GET("/categories/:name", routes.GetTricksForCategoryHandler(categoriesToTrickSliceMap))
 
 	router.StaticFile("swagger", "./docs/swagger.json")
 	router.Run()

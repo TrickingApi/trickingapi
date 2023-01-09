@@ -66,7 +66,67 @@ info:
   title: Tricking Api
   version: "0.1"
 paths:
-  /:
+  /categories:
+    get:
+      consumes:
+      - '*/*'
+      description: Reads and returns all existing categories of tricks from the tricks.json
+        file at https://github.com/TrickingApi/trickingapi
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              type: string
+            type: array
+      tags:
+      - root
+      - categories
+  /categories/:name:
+    get:
+      consumes:
+      - '*/*'
+      description: Reads and returns a list of tricks for a specific category from
+        the tricks.json file at https://github.com/TrickingApi/trickingapi
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.Trick'
+            type: array
+      summary: Get All Tricks Grouped Under A Category from TrickingApi/data/tricks
+      tags:
+      - root
+      - categories
+      - tricks
+  /categories/tricks:
+    get:
+      consumes:
+      - '*/*'
+      description: Reads and returns a mapping of categories to list of tricks from
+        the tricks.json file at https://github.com/TrickingApi/trickingapi
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              items:
+                $ref: '#/definitions/models.Trick'
+              type: array
+            type: object
+      summary: Get All Tricks Grouped by Categories from TrickingApi/data/tricks
+      tags:
+      - root
+      - categories
+      - tricks
+  /tricks:
     get:
       consumes:
       - '*/*'
@@ -81,10 +141,29 @@ paths:
             items:
               $ref: '#/definitions/models.Trick'
             type: array
-      summary: Get All Tricks in TrickingApi/data/tricks
+      summary: Get All Tricks from TrickingApi/data/tricks
       tags:
       - root
-  /:name:
+  /tricks/names:
+    get:
+      consumes:
+      - '*/*'
+      description: Reads and returns the names of all tricks from the static tricks.json
+        file at https://github.com/TrickingApi/trickingapi
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              type: string
+            type: array
+      summary: Get All Trick Names from TrickingApi/data/tricks
+      tags:
+      - root
+      - names
+  /tricks:name:
     get:
       consumes:
       - '*/*'
@@ -101,29 +180,10 @@ paths:
           description: Not Found
           schema:
             $ref: '#/definitions/models.TrickError'
-      summary: Get Trick by Specific Name in TrickingApi/data/tricks
+      summary: Get Trick by Specific Name from TrickingApi/data/tricks
       tags:
       - tricks
       - name
-  /names:
-    get:
-      consumes:
-      - '*/*'
-      description: Reads and returns the names of all tricks from the static tricks.json
-        file at https://github.com/TrickingApi/trickingapi
-      produces:
-      - application/json
-      responses:
-        "200":
-          description: OK
-          schema:
-            items:
-              type: string
-            type: array
-      summary: Get All Trick Names in TrickingApi/data/tricks
-      tags:
-      - root
-      - names
 schemes:
 - https
 swagger: "2.0"

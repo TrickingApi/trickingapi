@@ -21,9 +21,9 @@
     "host": "api.trickingapi.dev",
     "basePath": "/",
     "paths": {
-        "/": {
+        "/categories": {
             "get": {
-                "description": "Reads and returns list of tricks from the static tricks.json file at https://github.com/TrickingApi/trickingapi",
+                "description": "Reads and returns all existing categories of tricks from the tricks.json file at https://github.com/TrickingApi/trickingapi",
                 "consumes": [
                     "*/*"
                 ],
@@ -31,9 +31,37 @@
                     "application/json"
                 ],
                 "tags": [
-                    "root"
+                    "root",
+                    "categories"
                 ],
-                "summary": "Get All Tricks in TrickingApi/data/tricks",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/categories/:name": {
+            "get": {
+                "description": "Reads and returns a list of tricks for a specific category from the tricks.json file at https://github.com/TrickingApi/trickingapi",
+                "consumes": [
+                    "*/*"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "root",
+                    "categories",
+                    "tricks"
+                ],
+                "summary": "Get All Tricks Grouped Under A Category from TrickingApi/data/tricks",
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -47,9 +75,9 @@
                 }
             }
         },
-        "/:name": {
+        "/categories/tricks": {
             "get": {
-                "description": "reads list of known Trick objects and returns trick matching the name param in the request",
+                "description": "Reads and returns a mapping of categories to list of tricks from the tricks.json file at https://github.com/TrickingApi/trickingapi",
                 "consumes": [
                     "*/*"
                 ],
@@ -57,27 +85,54 @@
                     "application/json"
                 ],
                 "tags": [
-                    "tricks",
-                    "name"
+                    "root",
+                    "categories",
+                    "tricks"
                 ],
-                "summary": "Get Trick by Specific Name in TrickingApi/data/tricks",
+                "summary": "Get All Tricks Grouped by Categories from TrickingApi/data/tricks",
                 "responses": {
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/models.Trick"
-                        }
-                    },
-                    "404": {
-                        "description": "Not Found",
-                        "schema": {
-                            "$ref": "#/definitions/models.TrickError"
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/models.Trick"
+                                }
+                            }
                         }
                     }
                 }
             }
         },
-        "/names": {
+        "/tricks": {
+            "get": {
+                "description": "Reads and returns list of tricks from the static tricks.json file at https://github.com/TrickingApi/trickingapi",
+                "consumes": [
+                    "*/*"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "root"
+                ],
+                "summary": "Get All Tricks from TrickingApi/data/tricks",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.Trick"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/tricks/names": {
             "get": {
                 "description": "Reads and returns the names of all tricks from the static tricks.json file at https://github.com/TrickingApi/trickingapi",
                 "consumes": [
@@ -90,7 +145,7 @@
                     "root",
                     "names"
                 ],
-                "summary": "Get All Trick Names in TrickingApi/data/tricks",
+                "summary": "Get All Trick Names from TrickingApi/data/tricks",
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -99,6 +154,36 @@
                             "items": {
                                 "type": "string"
                             }
+                        }
+                    }
+                }
+            }
+        },
+        "/tricks:name": {
+            "get": {
+                "description": "reads list of known Trick objects and returns trick matching the name param in the request",
+                "consumes": [
+                    "*/*"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "tricks",
+                    "name"
+                ],
+                "summary": "Get Trick by Specific Name from TrickingApi/data/tricks",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.Trick"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/models.TrickError"
                         }
                     }
                 }

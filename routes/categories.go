@@ -7,7 +7,15 @@ import (
 	"net/http"
 )
 
-func GetCategoryToTricksHandler(categoriesToTrickSliceMap map[models.TrickCategory][]models.Trick) gin.HandlerFunc {
+// GetTricksForCategory godoc
+// @Description Reads and returns a list of tricks for a specific category from the tricks.json file at https://github.com/TrickingApi/trickingapi
+// @Summary Get All Tricks Grouped Under A Category from TrickingApi/data/tricks
+// @Tags root, categories, tricks
+// @Accept */*
+// @Produce json
+// @Success 200 {object} []models.Trick
+// @Router /categories/:name [get]
+func GetTricksForCategoryHandler(categoriesToTrickSliceMap map[models.TrickCategory][]models.Trick) gin.HandlerFunc {
 	fn := func(c *gin.Context) {
 		category := models.TrickCategory(c.Param("name"))
 
@@ -27,9 +35,39 @@ func GetCategoryToTricksHandler(categoriesToTrickSliceMap map[models.TrickCatego
 	return gin.HandlerFunc(fn)
 }
 
-func GetTricksByCategoriesHandler(categoriesToTrickSliceMap map[models.TrickCategory][]models.Trick) gin.HandlerFunc {
+// GetAllTricksByCategories godoc
+// @Description Reads and returns a mapping of categories to list of tricks from the tricks.json file at https://github.com/TrickingApi/trickingapi
+// @Summary Get All Tricks Grouped by Categories from TrickingApi/data/tricks
+// @Tags root, categories, tricks
+// @Accept */*
+// @Produce json
+// @Success 200 {object} map[models.TrickCategory][]models.Trick
+// @Router /categories/tricks [get]
+func GetAllTricksByCategoriesHandler(categoriesToTrickSliceMap map[models.TrickCategory][]models.Trick) gin.HandlerFunc {
 	fn := func(c *gin.Context) {
 		c.IndentedJSON(http.StatusOK, categoriesToTrickSliceMap)
+	}
+	return gin.HandlerFunc(fn)
+}
+
+// GetAllCategories godoc
+// @Description Reads and returns all existing categories of tricks from the tricks.json file at https://github.com/TrickingApi/trickingapi
+// @Sumary Get All Category Names from TrickingApi/data/tricks
+// @Tags root, categories
+// @Accept */*
+// @Produce json
+// @Success 200 {object} []string
+// @Router /categories [get]
+func GetAllCategoriesHandler(categoriesToTrickSliceMap map[models.TrickCategory][]models.Trick) gin.HandlerFunc {
+	fn := func(c *gin.Context) {
+		// Tbh, would be a lot more efficient if there was a categories.json
+		keys := make([]models.TrickCategory, len(categoriesToTrickSliceMap))
+		i := 0
+		for k := range categoriesToTrickSliceMap {
+				keys[i] = k
+				i++
+		}
+		c.IndentedJSON(http.StatusOK, keys)
 	}
 	return gin.HandlerFunc(fn)
 }
