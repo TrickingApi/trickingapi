@@ -35,7 +35,6 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "root",
                     "categories"
                 ],
                 "responses": {
@@ -61,7 +60,6 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "root",
                     "categories",
                     "tricks"
                 ],
@@ -89,7 +87,6 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "root",
                     "categories",
                     "tricks"
                 ],
@@ -120,7 +117,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "root"
+                    "tricks"
                 ],
                 "summary": "Get All Tricks from TrickingApi/data/tricks",
                 "responses": {
@@ -146,8 +143,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "root",
-                    "names"
+                    "tricks"
                 ],
                 "summary": "Get All Trick Names from TrickingApi/data/tricks",
                 "responses": {
@@ -173,8 +169,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "tricks",
-                    "name"
+                    "tricks"
                 ],
                 "summary": "Get Trick by Specific Name from TrickingApi/data/tricks",
                 "responses": {

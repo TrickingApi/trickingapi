@@ -10,7 +10,7 @@ import (
 // GetTricksForCategory godoc
 // @Description Reads and returns a list of tricks for a specific category from the tricks.json file at https://github.com/TrickingApi/trickingapi
 // @Summary Get All Tricks Grouped Under A Category from TrickingApi/data/tricks
-// @Tags root, categories, tricks
+// @Tags categories, tricks
 // @Accept */*
 // @Produce json
 // @Success 200 {object} []models.Trick
@@ -38,7 +38,7 @@ func GetTricksForCategoryHandler(categoriesToTrickSliceMap map[models.TrickCateg
 // GetAllTricksByCategories godoc
 // @Description Reads and returns a mapping of categories to list of tricks from the tricks.json file at https://github.com/TrickingApi/trickingapi
 // @Summary Get All Tricks Grouped by Categories from TrickingApi/data/tricks
-// @Tags root, categories, tricks
+// @Tags categories, tricks
 // @Accept */*
 // @Produce json
 // @Success 200 {object} map[models.TrickCategory][]models.Trick
@@ -53,7 +53,7 @@ func GetAllTricksByCategoriesHandler(categoriesToTrickSliceMap map[models.TrickC
 // GetAllCategories godoc
 // @Description Reads and returns all existing categories of tricks from the tricks.json file at https://github.com/TrickingApi/trickingapi
 // @Sumary Get All Category Names from TrickingApi/data/tricks
-// @Tags root, categories
+// @Tags categories
 // @Accept */*
 // @Produce json
 // @Success 200 {object} []string

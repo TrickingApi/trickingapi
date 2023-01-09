@@ -10,7 +10,7 @@ import (
 // GetAllTricks godoc
 // @Description Reads and returns list of tricks from the static tricks.json file at https://github.com/TrickingApi/trickingapi
 // @Summary Get All Tricks from TrickingApi/data/tricks
-// @Tags root
+// @Tags tricks
 // @Accept */*
 // @Produce json
 // @Success 200 {object} []models.Trick
@@ -25,7 +25,7 @@ func GetAllTricksHandler(allTricks *[]models.Trick) gin.HandlerFunc {
 // GetAllTrickNames godoc
 // @Description Reads and returns the names of all tricks from the static tricks.json file at https://github.com/TrickingApi/trickingapi
 // @Summary Get All Trick Names from TrickingApi/data/tricks
-// @Tags root, names
+// @Tags tricks
 // @Accept */*
 // @Produce json
 // @Success 200 {object} []string
@@ -44,7 +44,7 @@ func GetAllTrickNamesHandler(allTricks *[]models.Trick) gin.HandlerFunc {
 // GetTrick godoc
 // @Description reads list of known Trick objects and returns trick matching the name param in the request
 // @Summary Get Trick by Specific Name from TrickingApi/data/tricks
-// @Tags tricks, name
+// @Tags tricks
 // @Accept */*
 // @Produce json
 // @Success 200 {object} models.Trick
