@@ -45,7 +45,12 @@ Direct API access - [api.trickingapi.dev](https://api.trickingapi.dev)
   go run main.go
   ```
   
-Visit localhost:8080/api/tricks to see the running API! 
+- Update API Documentation
+  ```
+  swag init
+  ```
+  
+Visit localhost:8080/tricks to see the running API! 
 
 Each time you modify main.go or a local package you must run ```go build``` before running again. 
 - tbd if hot reloading is necessary/will be added, potentially with [hotswap](https://github.com/edwingeng/hotswap)
@@ -86,9 +91,14 @@ GET /tricks/pop360
 }
 ```
 
-### Get Tricks Separated by Categories
+### Get All Category Names
 ```http
 GET /categories
+```
+
+### Get Tricks Separated by Categories
+```http
+GET /categories/tricks
 ```
 
 ### Get All Tricks for a Specified Category
@@ -140,7 +150,6 @@ GET /categories/Vert%20Kick
 ```
 
 
-
 The API endpoints return the JSON representation of the resources requested. However, if an invalid request is submitted, or some other error occurs,
 the trickingapi server returns a JSON response in the following format:
 
@@ -185,11 +194,17 @@ To contribute to this repository:
 
 - New Feature/Bugfix?
   - Write some code, fix something, and add a test to prove that it works. *No pull request will be accepted without tests passing, or without new tests if new features are added.*
+  - For new API endpoints make sure to do the following
+    - [ ] Add declarative comments above request handlers following https://swaggo.github.io/swaggo.io/declarative_comments_format/api_operation.html
+    - [ ] Add unit tests for the respective route
+    - [ ] Run swag init for updating documentation
+    - PRs will not be approved for new endpoints without completing the three tasks above ^^^
+
 
 Data Update?
 - Update the raw json-files in ```/data```
   - Tricks.json
-    - Do not update an existing trick AND add a new trick in the same commit. These should be separate commits to keep things clean :)
+     - Do not update an existing trick AND add a new trick in the same commit. These should be separate commits to keep things clean :)
 
 - Commit your code and push it to GitHub
 
