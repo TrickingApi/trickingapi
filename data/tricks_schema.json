@@ -26,7 +26,7 @@
 				"examples": [
 					"pop360"
 				],
-				"pattern": "^([a-z0-9])+([A-Z0-9][a-z0-9]+)+"
+				"pattern": "^([a-z0-9])+([A-Z0-9][a-z0-9]+)*"
 			},
 			"name": {
 				"$id": "#root/items/name", 
