@@ -13,7 +13,6 @@
 			"id",
 			"name",
 			"categories",
-			"difficultyRank",
 			"prereqs",
 			"nextTricks",
 			"description"
@@ -54,15 +53,6 @@
 					],
 					"pattern": "^.*$"
 				}
-			},
-			"difficultyRank": {
-				"$id": "#root/items/difficultyRank", 
-				"title": "Difficultyrank", 
-				"type": "integer",
-				"examples": [
-					1
-				],
-				"default": 0
 			},
 			"prereqs": {
 				"$id": "#root/items/prereqs", 

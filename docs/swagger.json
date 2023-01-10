@@ -198,9 +198,6 @@
                 "description": {
                     "type": "string"
                 },
-                "difficultyRank": {
-                    "type": "integer"
-                },
                 "id": {
                     "type": "string"
                 },

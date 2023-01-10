@@ -119,7 +119,6 @@ GET /categories/Vert%20Kick
         "categories": [
             "Vert Kick"
         ],
-        "difficultyRank": 1,
         "prereqs": [],
         "nextTricks": [
             "Pop 360 Shuriken",
@@ -135,7 +134,6 @@ GET /categories/Vert%20Kick
         "categories": [
             "Vert Kick"
         ],
-        "difficultyRank": 2,
         "prereqs": [
             "Pop 360"
         ],

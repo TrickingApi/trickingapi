@@ -5,7 +5,6 @@
     "categories": [
       "Vert Kick"
     ],
-    "difficultyRank": 1,
     "prereqs": [],
     "nextTricks": [
       "Pop 360 Shuriken",
@@ -21,7 +20,6 @@
     "categories": [
       "Vert Kick"
     ],
-    "difficultyRank": 2,
     "prereqs": [
       "Pop 360"
     ],
@@ -31,5 +29,42 @@
       "Swing 360 Shuriken"
     ],
     "description": "The Pop 360 Hyper starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with an outside cresecent kick towards the target and lands in complete stance. This move is often the first Shuriken that trickers learn, and is vitally important for future shuriken variations."
+  },
+  {
+    "id": "backHandSpring",
+    "name": "Back Hand Spring",
+    "categories": [
+      "Flip"
+    ],
+    "prereqs": [
+      "Backwards Roll"
+    ],
+    "nextTricks": [
+      "Back Flip",
+      "Valdez"
+    ],
+    "description": "The Back Handspring is a gymnastics, tumbling move that takes off of two feet, jumps backward onto the hands and lands on both feet. Used to gain and build momentum for bigger tricks."
+  },
+  {
+    "id": "btwist",
+    "name": "Butterfly Twist",
+    "categories": [
+      "Twist",
+      "Single"
+    ],
+    "prereqs": [
+      "Butterfly"
+    ],
+    "nextTricks": [
+      "Butterfly Twist Shuriken",
+      "Butterfly Twist Round",
+      "Butterfly Twist Hawkeye",
+      "Butterfly Twist Doubleleg",
+      "Butterfly Twist Hyper",
+      "Butterfly Twist Hyperhook",
+      "Butterfly Twist Wackknife",
+      "Butterfly Twist Swipe",
+      "Dragonfly Twist"
+    ]
   }
 ]

@@ -202,9 +202,6 @@ const docTemplate = `{
                 "description": {
                     "type": "string"
                 },
-                "difficultyRank": {
-                    "type": "integer"
-                },
                 "id": {
                     "type": "string"
                 },
