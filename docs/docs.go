@@ -193,6 +193,12 @@ const docTemplate = `{
         "models.Trick": {
             "type": "object",
             "properties": {
+                "aliases": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
                 "categories": {
                     "type": "array",
                     "items": {
@@ -225,14 +231,14 @@ const docTemplate = `{
         "models.TrickCategory": {
             "type": "string",
             "enum": [
-                "Flip",
-                "Vert Kick",
-                "Twist",
-                "Pseudo Double Flip",
-                "Single",
-                "Double",
-                "Triple",
-                "Quad"
+                "FLIP",
+                "VERT_KICK",
+                "TWIST",
+                "PSEUDO_DOUBLE_FLIP",
+                "SINGLE",
+                "DOUBLE",
+                "TRIPLE",
+                "QUAD"
             ],
             "x-enum-varnames": [
                 "FLIP",

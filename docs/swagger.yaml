@@ -2,6 +2,10 @@ basePath: /api
 definitions:
   models.Trick:
     properties:
+      aliases:
+        items:
+          type: string
+        type: array
       categories:
         items:
           $ref: '#/definitions/models.TrickCategory'
@@ -23,14 +27,14 @@ definitions:
     type: object
   models.TrickCategory:
     enum:
-    - Flip
-    - Vert Kick
-    - Twist
-    - Pseudo Double Flip
-    - Single
-    - Double
-    - Triple
-    - Quad
+    - FLIP
+    - VERT_KICK
+    - TWIST
+    - PSEUDO_DOUBLE_FLIP
+    - SINGLE
+    - DOUBLE
+    - TRIPLE
+    - QUAD
     type: string
     x-enum-varnames:
     - FLIP
