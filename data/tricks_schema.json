@@ -38,6 +38,22 @@
 				],
 				"pattern": "^.*$"
 			},
+			"aliases": {
+				"$id": "#root/items/aliases",
+				"title": "Aliases",
+				"type": "array",
+				"default": [],
+				"items": {
+					"$id": "#root/items/aliases/items",
+					"title": "Items",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"Cheat 540 Hook"
+					],
+					"pattern": "^.*$"
+				}
+			},
 			"categories": {
 				"$id": "#root/items/categories", 
 				"title": "Categories", 

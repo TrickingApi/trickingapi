@@ -16,13 +16,15 @@ func SetUpTests() (*gin.Context, *httptest.ResponseRecorder, models.Trick) {
 }
 
 func createMockData() models.Trick {
-	categories := []models.TrickCategory{"Quad", "Pseudo Double Flip", "Flip", "Twist"}
+	categories := []models.TrickCategory{"QUAD", "PSEUDO_DOUBLE_FLIP", "FLIP", "TWIST"}
 	prereqs := []string{"Quad Full", "Frappe", "Triple Full In Frappe"}
 	nextTricks := []string{"Quad Full In Frappe Kyro"}
+	aliases := []string{}
 
 	dummyTrick := models.Trick{
 		Id:            "quadFullInFrappeOut",
 		Name:          "Quad Full In Frappe",
+		Aliases:       aliases,
 		Categories:    categories,
 		Prerequisites: prereqs,
 		NextTricks:    nextTricks,

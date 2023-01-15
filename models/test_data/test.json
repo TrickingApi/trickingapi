@@ -2,8 +2,9 @@
   {
     "id": "pop360",
     "name": "Pop 360",
+    "aliases": [],
     "categories": [
-      "Vert Kick"
+      "VERT_KICK"
     ],
     "prereqs": [],
     "nextTricks": [
@@ -17,8 +18,9 @@
   {
     "id": "pop360Shuriken",
     "name": "Pop 360 Shuriken",
+    "aliases": [],
     "categories": [
-      "Vert Kick"
+      "VERT_KICK"
     ],
     "prereqs": [
       "Pop 360"

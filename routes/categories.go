@@ -2,9 +2,11 @@ package routes
 
 import (
 	"fmt"
+	"net/http"
+	"strings"
+
 	"github.com/TrickingApi/trickingapi/models"
 	"github.com/gin-gonic/gin"
-	"net/http"
 )
 
 // GetTricksForCategory godoc
@@ -17,18 +19,20 @@ import (
 // @Router /categories/:name [get]
 func GetTricksForCategoryHandler(categoriesToTrickSliceMap map[models.TrickCategory][]models.Trick) gin.HandlerFunc {
 	fn := func(c *gin.Context) {
-		category := models.TrickCategory(c.Param("name"))
+		name := strings.ToUpper(c.Param("name"))
+		category := models.TrickCategory(strings.ReplaceAll(name, "-", "_"))
+		category = models.TrickCategory(strings.ReplaceAll(category.String(), " ", "_"))
 
 		if slice, ok := categoriesToTrickSliceMap[category]; ok {
 			c.IndentedJSON(http.StatusOK, slice)
 		} else {
 			errorString := fmt.Sprintf("Unknown category: %s", category)
-			error := models.TrickError {
+			error := models.TrickError{
 				Message: "Oops, looks like you've requested an unknown category of tricks! Do you think this is a mistake? Consider contributing at https://github.com/TrickingApi/trickingapi",
 				Success: false,
-				Data: errorString,
+				Data:    errorString,
 			}
-			c.IndentedJSON(http.StatusNotFound, error)			
+			c.IndentedJSON(http.StatusNotFound, error)
 		}
 	}
 
@@ -60,14 +64,7 @@ func GetAllTricksByCategoriesHandler(categoriesToTrickSliceMap map[models.TrickC
 // @Router /categories [get]
 func GetAllCategoriesHandler(categoriesToTrickSliceMap map[models.TrickCategory][]models.Trick) gin.HandlerFunc {
 	fn := func(c *gin.Context) {
-		// Tbh, would be a lot more efficient if there was a categories.json
-		keys := make([]models.TrickCategory, len(categoriesToTrickSliceMap))
-		i := 0
-		for k := range categoriesToTrickSliceMap {
-				keys[i] = k
-				i++
-		}
-		c.IndentedJSON(http.StatusOK, keys)
+		c.IndentedJSON(http.StatusOK, models.Categories)
 	}
 	return gin.HandlerFunc(fn)
 }

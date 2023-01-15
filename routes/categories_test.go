@@ -2,12 +2,12 @@ package routes
 
 import (
 	"encoding/json"
+	"testing"
+
 	"github.com/TrickingApi/trickingapi/models"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
-	"testing"
 )
-
 
 func TestGetAllTricksByCategoriesHandler(t *testing.T) {
 	c, w, dummyTrick := SetUpTests()
@@ -30,7 +30,7 @@ func TestGetTricksForCategoryHandlerQuad(t *testing.T) {
 	c, w, dummyTrick := SetUpTests()
 	c.Params = []gin.Param{
 		{
-			Key: "name",
+			Key:   "name",
 			Value: "Quad",
 		},
 	}
@@ -54,7 +54,7 @@ func TestGetTricksForCategoryHandlerPsuedoDub(t *testing.T) {
 	c, w, dummyTrick := SetUpTests()
 	c.Params = []gin.Param{
 		{
-			Key: "name",
+			Key:   "name",
 			Value: "Pseudo Double Flip",
 		},
 	}
@@ -78,7 +78,7 @@ func TestGetTricksForCategoryHandlerUnknown(t *testing.T) {
 	c, w, dummyTrick := SetUpTests()
 	c.Params = []gin.Param{
 		{
-			Key: "name",
+			Key:   "name",
 			Value: "Multi-Level Movement",
 		},
 	}
@@ -92,7 +92,7 @@ func TestGetTricksForCategoryHandlerUnknown(t *testing.T) {
 	expectedErrorObj := models.TrickError{
 		Message: "Oops, looks like you've requested an unknown category of tricks! Do you think this is a mistake? Consider contributing at https://github.com/TrickingApi/trickingapi",
 		Success: false,
-		Data: "Unknown category: Multi-Level Movement",
+		Data:    "Unknown category: MULTI_LEVEL_MOVEMENT",
 	}
 
 	var got models.TrickError
@@ -112,9 +112,9 @@ func TestGetAllCategoriesHandler(t *testing.T) {
 
 	assert.Equal(t, 200, w.Code)
 
-	expectedResult := []string{"Quad", "Pseudo Double Flip", "Flip", "Twist"}
+	expectedResult := models.Categories
 
-	var got []string
+	var got []models.TrickCategory
 	err := json.Unmarshal(w.Body.Bytes(), &got)
 	if err != nil {
 		t.Fatal(err)
@@ -123,13 +123,13 @@ func TestGetAllCategoriesHandler(t *testing.T) {
 	assert.ElementsMatch(t, got, expectedResult)
 }
 
-func createMockCategoriesMap(dummyTrick models.Trick) (map[models.TrickCategory][]models.Trick) {
+func createMockCategoriesMap(dummyTrick models.Trick) map[models.TrickCategory][]models.Trick {
 	trickSlice := []models.Trick{dummyTrick}
 	categoriesToTrickSliceMap := map[models.TrickCategory][]models.Trick{
-		"Quad": trickSlice,
-		"Pseudo Double Flip": trickSlice,
-		"Flip": trickSlice,
-		"Twist": trickSlice,
+		models.QUAD:       trickSlice,
+		models.PSEUDO_DUB: trickSlice,
+		models.FLIP:       trickSlice,
+		models.TWIST:      trickSlice,
 	}
 	return categoriesToTrickSliceMap
 }
