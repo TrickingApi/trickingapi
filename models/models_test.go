@@ -2,7 +2,7 @@ package models
 
 import (
 	"encoding/json"
-	"io/ioutil"
+	"os"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -10,7 +10,7 @@ import (
 
 func TestTricksModelFromJson(t *testing.T) {
 	var allTricks []Trick
-	content, err := ioutil.ReadFile("test_data/test.json")
+	content, err := os.ReadFile("test_data/test.json")
 	if err != nil {
 		t.Fatal("Error when opening file: ", err)
 	}

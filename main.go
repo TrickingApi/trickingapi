@@ -2,8 +2,8 @@ package main
 
 import (
 	"encoding/json"
-	"io/ioutil"
 	"log"
+	"os"
 
 	"github.com/TrickingApi/trickingapi/models"
 	"github.com/TrickingApi/trickingapi/routes"
@@ -15,7 +15,7 @@ var idToTrickMap map[string]models.Trick
 var categoriesToTrickSliceMap map[models.TrickCategory][]models.Trick
 
 func init() {
-	content, err := ioutil.ReadFile("data/tricks.json")
+	content, err := os.ReadFile("data/tricks.json")
 	if err != nil {
 		log.Fatal("Error when opening file: ", err)
 	}
