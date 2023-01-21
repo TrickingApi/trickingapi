@@ -124,8 +124,8 @@ const docTemplate = `{
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "type": "array",
-                            "items": {
+                            "type": "object",
+                            "additionalProperties": {
                                 "$ref": "#/definitions/models.Trick"
                             }
                         }
@@ -135,7 +135,7 @@ const docTemplate = `{
         },
         "/tricks/names": {
             "get": {
-                "description": "Reads and returns the names of all tricks from the static tricks.json file at https://github.com/TrickingApi/trickingapi",
+                "description": "Returns the names of all tricks from the static trickNames.json file at https://github.com/TrickingApi/trickingapi",
                 "consumes": [
                     "*/*"
                 ],
@@ -145,13 +145,13 @@ const docTemplate = `{
                 "tags": [
                     "tricks"
                 ],
-                "summary": "Get All Trick Names from TrickingApi/data/tricks",
+                "summary": "Get All Trick Names and their ids from TrickingApi/data/tricks",
                 "responses": {
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "type": "array",
-                            "items": {
+                            "type": "object",
+                            "additionalProperties": {
                                 "type": "string"
                             }
                         }

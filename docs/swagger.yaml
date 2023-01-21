@@ -137,9 +137,9 @@ paths:
         "200":
           description: OK
           schema:
-            items:
+            additionalProperties:
               $ref: '#/definitions/models.Trick'
-            type: array
+            type: object
       summary: Get All Tricks from TrickingApi/data/tricks
       tags:
       - tricks
@@ -147,7 +147,7 @@ paths:
     get:
       consumes:
       - '*/*'
-      description: Reads and returns the names of all tricks from the static tricks.json
+      description: Returns the names of all tricks from the static trickNames.json
         file at https://github.com/TrickingApi/trickingapi
       produces:
       - application/json
@@ -155,10 +155,10 @@ paths:
         "200":
           description: OK
           schema:
-            items:
+            additionalProperties:
               type: string
-            type: array
-      summary: Get All Trick Names from TrickingApi/data/tricks
+            type: object
+      summary: Get All Trick Names and their ids from TrickingApi/data/tricks
       tags:
       - tricks
   /tricks:name:
