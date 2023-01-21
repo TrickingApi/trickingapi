@@ -10,19 +10,22 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+var allTricks []models.Trick
 var idToTrickMap map[string]models.Trick
 var categoriesToTrickSliceMap map[models.TrickCategory][]models.Trick
 
-// organizes tricks by category upon server init
+// organizes tricks by id and category upon server init
 func init() {
 	content, err := os.ReadFile("data/tricks.json")
 	if err != nil {
 		log.Fatal("Error when opening file: ", err)
 	}
 
-	if err := json.Unmarshal(content, &idToTrickMap); err != nil {
+	if err := json.Unmarshal(content, &allTricks); err != nil {
 		panic(err)
 	}
+
+	idToTrickMap = make(map[string]models.Trick)
 
 	categoriesToTrickSliceMap = make(map[models.TrickCategory][]models.Trick)
 
@@ -31,7 +34,8 @@ func init() {
 		categoriesToTrickSliceMap[category] = emptySlice
 	}
 
-	for _, trick := range idToTrickMap {
+	for _, trick := range allTricks {
+		idToTrickMap[trick.Id] = trick
 
 		var categories = trick.Categories
 

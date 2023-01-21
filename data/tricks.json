@@ -1,5 +1,5 @@
-{
-  "pop360": {
+[
+  {
     "id": "pop360",
     "name": "Pop 360",
     "aliases": [],
@@ -15,7 +15,7 @@
     ],
     "description": "The Pop 360 starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with an outside crescent kick towards the target and lands in turbo (both feet). This trick is also a hyper, because Pop 180 Hook (TKT) is not often used in tricking. This trick is vitally important for Illusion Twist and other similar tricks that end in turbo."
   },
-  "pop360Shuriken": {
+  {
     "id": "pop360Shuriken",
     "name": "Pop 360 Shuriken",
     "aliases": [],
@@ -32,7 +32,7 @@
     ],
     "description": "The Pop 360 Hyper starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with an outside cresecent kick towards the target and lands in complete stance. This move is often the first Shuriken that trickers learn, and is vitally important for future shuriken variations."
   },
-  "backHandSpring": {
+  {
     "id": "backHandSpring",
     "name": "Back Hand Spring",
     "aliases": [],
@@ -48,7 +48,7 @@
     ],
     "description": "The Back Handspring is a gymnastics, tumbling move that takes off of two feet, jumps backward onto the hands and lands on both feet. Used to gain and build momentum for bigger tricks."
   },
-  "btwist": {
+  {
     "id": "btwist",
     "name": "Butterfly Twist",
     "aliases": [],
@@ -72,4 +72,4 @@
     ],
     "description": "A Butterfly Kick with an extra 360° rotation done in the air before landing on the horizontal axis."
   }
-}
+]
