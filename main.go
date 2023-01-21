@@ -10,21 +10,20 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-var allTricks []models.Trick
 var idToTrickMap map[string]models.Trick
 var categoriesToTrickSliceMap map[models.TrickCategory][]models.Trick
 
+// organizes tricks by category upon server init
 func init() {
 	content, err := os.ReadFile("data/tricks.json")
 	if err != nil {
 		log.Fatal("Error when opening file: ", err)
 	}
 
-	if err := json.Unmarshal(content, &allTricks); err != nil {
+	if err := json.Unmarshal(content, &idToTrickMap); err != nil {
 		panic(err)
 	}
 
-	idToTrickMap = make(map[string]models.Trick)
 	categoriesToTrickSliceMap = make(map[models.TrickCategory][]models.Trick)
 
 	for _, category := range models.Categories {
@@ -32,8 +31,7 @@ func init() {
 		categoriesToTrickSliceMap[category] = emptySlice
 	}
 
-	for _, trick := range allTricks {
-		idToTrickMap[trick.Id] = trick
+	for _, trick := range idToTrickMap {
 
 		var categories = trick.Categories
 
@@ -65,8 +63,8 @@ func init() {
 // @schemes https
 func main() {
 	router := gin.Default()
-	router.GET("/tricks", routes.GetAllTricksHandler(&allTricks))
-	router.GET("/tricks/names", routes.GetAllTrickNamesHandler(&allTricks))
+	router.GET("/tricks", routes.GetAllTricksHandler(idToTrickMap))
+	router.GET("/tricks/names", routes.GetAllTrickNamesHandler(idToTrickMap))
 	router.GET("/tricks/:name", routes.GetTrickHandler(idToTrickMap))
 	router.GET("/categories", routes.GetAllCategoriesHandler(categoriesToTrickSliceMap))
 	router.GET("/categories/tricks", routes.GetAllTricksByCategoriesHandler(categoriesToTrickSliceMap))

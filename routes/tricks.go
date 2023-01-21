@@ -2,9 +2,10 @@ package routes
 
 import (
 	"fmt"
+	"net/http"
+
 	"github.com/TrickingApi/trickingapi/models"
 	"github.com/gin-gonic/gin"
-	"net/http"
 )
 
 // GetAllTricks godoc
@@ -13,30 +14,30 @@ import (
 // @Tags tricks
 // @Accept */*
 // @Produce json
-// @Success 200 {object} []models.Trick
+// @Success 200 {object} map[string]models.Trick
 // @Router /tricks [get]
-func GetAllTricksHandler(allTricks *[]models.Trick) gin.HandlerFunc {
+func GetAllTricksHandler(idToTrickMap map[string]models.Trick) gin.HandlerFunc {
 	fn := func(c *gin.Context) {
-		c.IndentedJSON(http.StatusOK, *allTricks)
+		c.IndentedJSON(http.StatusOK, &idToTrickMap)
 	}
 	return gin.HandlerFunc(fn)
 }
 
 // GetAllTrickNames godoc
-// @Description Reads and returns the names of all tricks from the static tricks.json file at https://github.com/TrickingApi/trickingapi
-// @Summary Get All Trick Names from TrickingApi/data/tricks
+// @Description Returns the names of all tricks from the static trickNames.json file at https://github.com/TrickingApi/trickingapi
+// @Summary Get All Trick Names and their ids from TrickingApi/data/tricks
 // @Tags tricks
 // @Accept */*
 // @Produce json
-// @Success 200 {object} []string
+// @Success 200 {object} map[string]string
 // @Router /tricks/names [get]
-func GetAllTrickNamesHandler(allTricks *[]models.Trick) gin.HandlerFunc {
+func GetAllTrickNamesHandler(idToTrickMap map[string]models.Trick) gin.HandlerFunc {
 	fn := func(c *gin.Context) {
-		var trickNames []string
-		for _, trick := range *allTricks {
-			trickNames = append(trickNames, trick.Name)
+		var idToTrickNames = make(map[string]string)
+		for id, trick := range idToTrickMap {
+			idToTrickNames[id] = trick.Name
 		}
-		c.IndentedJSON(http.StatusOK, trickNames)
+		c.IndentedJSON(http.StatusOK, idToTrickNames)
 	}
 	return gin.HandlerFunc(fn)
 }
@@ -58,10 +59,10 @@ func GetTrickHandler(idToTrickMap map[string]models.Trick) gin.HandlerFunc {
 			c.IndentedJSON(http.StatusOK, trick)
 		} else {
 			errorString := fmt.Sprintf("Unknown trick: %s", name)
-			error := models.TrickError {
+			error := models.TrickError{
 				Message: "Oops, looks like you've requested an unknown trick! Do you think this is a mistake? Consider contributing at https://github.com/TrickingApi/trickingapi",
 				Success: false,
-				Data: errorString,
+				Data:    errorString,
 			}
 			c.IndentedJSON(http.StatusNotFound, error)
 		}

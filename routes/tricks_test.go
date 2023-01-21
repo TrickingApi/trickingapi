@@ -2,45 +2,48 @@ package routes
 
 import (
 	"encoding/json"
+	"testing"
+
 	"github.com/TrickingApi/trickingapi/models"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
-	"testing"
 )
 
 func TestGetAllTricksHandler(t *testing.T) {
 	c, w, dummyTrick := SetUpTests()
 
-	allTricks := []models.Trick{dummyTrick}
-	
-	var handler = GetAllTricksHandler(&allTricks)
+	var idToTrickMap = make(map[string]models.Trick)
+	idToTrickMap[dummyTrick.Id] = dummyTrick
+
+	var handler = GetAllTricksHandler(idToTrickMap)
 	handler(c)
 
 	assert.Equal(t, 200, w.Code)
 
-	var got []models.Trick
+	var got map[string]models.Trick
 	err := json.Unmarshal(w.Body.Bytes(), &got)
 	if err != nil {
-			t.Fatal(err)
+		t.Fatal(err)
 	}
-	assert.Equal(t, got, allTricks)
+	assert.Equal(t, got, idToTrickMap)
 }
 
 func TestGetAllTrickNamesHandler(t *testing.T) {
 	c, w, dummyTrick := SetUpTests()
 
-	allTricks := []models.Trick{dummyTrick}
+	var idToTrickMap = make(map[string]models.Trick)
+	idToTrickMap[dummyTrick.Id] = dummyTrick
 
-	var handler = GetAllTrickNamesHandler(&allTricks)
+	var handler = GetAllTrickNamesHandler(idToTrickMap)
 	handler(c)
 
-	trickNames := []string{"Quad Full In Frappe"}
+	trickNames := map[string]string{"quadFullInFrappeOut": "Quad Full In Frappe"}
 	assert.Equal(t, 200, w.Code)
 
-	var got []string
+	var got map[string]string
 	err := json.Unmarshal(w.Body.Bytes(), &got)
 	if err != nil {
-			t.Fatal(err)
+		t.Fatal(err)
 	}
 	assert.Equal(t, got, trickNames)
 }
@@ -48,10 +51,10 @@ func TestGetAllTrickNamesHandler(t *testing.T) {
 func TestGetTrickHandlerValid(t *testing.T) {
 	c, w, dummyTrick := SetUpTests()
 	c.Params = []gin.Param{
-    {
-        Key: "name",
-        Value: "quadFullInFrappeOut",
-    },
+		{
+			Key:   "name",
+			Value: "quadFullInFrappeOut",
+		},
 	}
 
 	idToTrickMap := map[string]models.Trick{"quadFullInFrappeOut": dummyTrick}
@@ -71,10 +74,10 @@ func TestGetTrickHandlerValid(t *testing.T) {
 func TestGetTrickHandlerUnknown(t *testing.T) {
 	c, w, dummyTrick := SetUpTests()
 	c.Params = []gin.Param{
-    {
-        Key: "name",
-        Value: "quadBtwist",
-    },
+		{
+			Key:   "name",
+			Value: "quadBtwist",
+		},
 	}
 
 	idToTrickMap := map[string]models.Trick{"quadFullInFrappeOut": dummyTrick}
@@ -86,7 +89,7 @@ func TestGetTrickHandlerUnknown(t *testing.T) {
 	expectedErrorObj := models.TrickError{
 		Message: "Oops, looks like you've requested an unknown trick! Do you think this is a mistake? Consider contributing at https://github.com/TrickingApi/trickingapi",
 		Success: false,
-		Data: "Unknown trick: quadBtwist",
+		Data:    "Unknown trick: quadBtwist",
 	}
 
 	var got models.TrickError
