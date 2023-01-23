@@ -10,7 +10,9 @@ info:
   license:
     name: MIT
     url: https://github.com/TrickingApi/trickingapi/blob/main/LICENSE.md
-
+servers:
+  - url: https://trickingapi.dev/api
+    description: Public API endpoint
 paths:
   /tricks/{TrickId}:
     parameters:
