@@ -9,6 +9,11 @@ assignees: ''
 
 # Fill out the following format with your suggested trick's Info
 
+This template uses markdown styling; please adhere to the [style guidelines](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+## Trick Data
+For examples, please see [tricks.json](https://github.com/TrickingApi/trickingapi/blob/main/data/tricks.json)
+
 ```
 {
     "id": "someId", // must be camelcase
@@ -22,15 +27,12 @@ assignees: ''
     "description": "" // description of the trick
   }
 ```
-For examples, please see [tricks.json](https://github.com/TrickingApi/trickingapi/blob/main/data/tricks.json)
 
 ### Has this trick been landed?
 - [ ] yes
-- [ ] no
 
 ### Can you provide a video example of this trick?
 - [ ] yes
-- [ ] no
 
 ### If yes, please provide a link in this request:
 ** insert link here **

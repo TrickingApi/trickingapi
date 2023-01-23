@@ -200,7 +200,7 @@ To contribute to this repository:
 
 
 Data Update?
-- Create an issue under the "new trick" label and fill out the template and assign it to yourself (if you intend to make the change yourself)
+- Create an issue under the "new trick" label, fill out the template, and assign it to yourself (if you intend to make the change yourself). Please use the [Corkscrew Request Issue](https://github.com/TrickingApi/trickingapi/issues/5 as an example! 
 
 - Update the raw json-files in ```/data``` with your desired change
   - Tricks.json
