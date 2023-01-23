@@ -35,6 +35,8 @@ definitions:
     - DOUBLE
     - TRIPLE
     - QUAD
+    - GROUNDWORK
+    - UNKNOWN
     type: string
     x-enum-varnames:
     - FLIP
@@ -45,6 +47,8 @@ definitions:
     - DUB
     - TRIP
     - QUAD
+    - GROUNDWORK
+    - UNKNOWN
   models.TrickError:
     properties:
       data:
@@ -143,25 +147,7 @@ paths:
       summary: Get All Tricks from TrickingApi/data/tricks
       tags:
       - tricks
-  /tricks/names:
-    get:
-      consumes:
-      - '*/*'
-      description: Returns the names of all tricks from the static trickNames.json
-        file at https://github.com/TrickingApi/trickingapi
-      produces:
-      - application/json
-      responses:
-        "200":
-          description: OK
-          schema:
-            additionalProperties:
-              type: string
-            type: object
-      summary: Get All Trick Names and their ids from TrickingApi/data/tricks
-      tags:
-      - tricks
-  /tricks:name:
+  /tricks/:name:
     get:
       consumes:
       - '*/*'
@@ -179,6 +165,24 @@ paths:
           schema:
             $ref: '#/definitions/models.TrickError'
       summary: Get Trick by Specific Name from TrickingApi/data/tricks
+      tags:
+      - tricks
+  /tricks/names:
+    get:
+      consumes:
+      - '*/*'
+      description: Returns the names of all tricks from the static trickNames.json
+        file at https://github.com/TrickingApi/trickingapi
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Get All Trick Names and their ids from TrickingApi/data/tricks
       tags:
       - tricks
 schemes:

@@ -133,33 +133,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/tricks/names": {
-            "get": {
-                "description": "Returns the names of all tricks from the static trickNames.json file at https://github.com/TrickingApi/trickingapi",
-                "consumes": [
-                    "*/*"
-                ],
-                "produces": [
-                    "application/json"
-                ],
-                "tags": [
-                    "tricks"
-                ],
-                "summary": "Get All Trick Names and their ids from TrickingApi/data/tricks",
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "schema": {
-                            "type": "object",
-                            "additionalProperties": {
-                                "type": "string"
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/tricks:name": {
+        "/tricks/:name": {
             "get": {
                 "description": "reads list of known Trick objects and returns trick matching the name param in the request",
                 "consumes": [
@@ -183,6 +157,32 @@ const docTemplate = `{
                         "description": "Not Found",
                         "schema": {
                             "$ref": "#/definitions/models.TrickError"
+                        }
+                    }
+                }
+            }
+        },
+        "/tricks/names": {
+            "get": {
+                "description": "Returns the names of all tricks from the static trickNames.json file at https://github.com/TrickingApi/trickingapi",
+                "consumes": [
+                    "*/*"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "tricks"
+                ],
+                "summary": "Get All Trick Names and their ids from TrickingApi/data/tricks",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
                         }
                     }
                 }
@@ -238,7 +238,9 @@ const docTemplate = `{
                 "SINGLE",
                 "DOUBLE",
                 "TRIPLE",
-                "QUAD"
+                "QUAD",
+                "GROUNDWORK",
+                "UNKNOWN"
             ],
             "x-enum-varnames": [
                 "FLIP",
@@ -248,7 +250,9 @@ const docTemplate = `{
                 "SING",
                 "DUB",
                 "TRIP",
-                "QUAD"
+                "QUAD",
+                "GROUNDWORK",
+                "UNKNOWN"
             ]
         },
         "models.TrickError": {

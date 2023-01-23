@@ -50,7 +50,7 @@ func GetAllTrickNamesHandler(idToTrickMap map[string]models.Trick) gin.HandlerFu
 // @Produce json
 // @Success 200 {object} models.Trick
 // @Failure 404 {object} models.TrickError
-// @Router /tricks:name [get]
+// @Router /tricks/:name [get]
 func GetTrickHandler(idToTrickMap map[string]models.Trick) gin.HandlerFunc {
 	fn := func(c *gin.Context) {
 		name := c.Param("name")
