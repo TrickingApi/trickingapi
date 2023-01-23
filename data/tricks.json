@@ -34,7 +34,7 @@
   },
   {
     "id": "backHandSpring",
-    "name": "Back Hand Spring",
+    "name": "Back Handspring",
     "aliases": [],
     "categories": [
       "FLIP"
@@ -43,7 +43,7 @@
       "Backwards Roll"
     ],
     "nextTricks": [
-      "Back Flip",
+      "Back Tuck",
       "Valdez"
     ],
     "description": "The Back Handspring is a gymnastics, tumbling move that takes off of two feet, jumps backward onto the hands and lands on both feet. Used to gain and build momentum for bigger tricks."
@@ -97,5 +97,48 @@
       "Double Corkscrew"
     ],
     "description": "A Gainer Flash with an extra rotation before landing - or a Back Full off of one leg."
+  },
+  {
+    "id": "backtuck",
+    "name": "Back Tuck",
+    "aliases": ["Back Flip"],
+    "categories": [
+      "FLIP"
+    ],
+    "prereqs": [
+      "Backwards Roll"
+    ],
+    "nextTricks": [
+      "Arabian",
+      "Back Pike",
+      "Double Back Tuck",
+      "Flash Kick",
+      "Gainer Tuck",
+      "Gainer Flash",
+      "X Out",
+      "Rodeo Backflip"
+    ],
+    "description": "The Back Tuck (dubbed “back flip” by most) is the most fundamental and crucial move that a tricker can learn. Mastery of the backflip is an important fundamental building block – it teach air awareness and builds comfort-ability with flipping upside down."
+  },
+  {
+    "id": "cartwheel",
+    "name": "Cartwheel",
+    "aliases": [],
+    "categories": [
+      "GROUNDWORK"
+    ],
+    "prereqs": [],
+    "nextTricks": [
+      "Aerial",
+      "Butterfly Kick",
+      "Cartwheel Twist",
+      "Cartwheel Late Swipe",
+      "Helicoptero",
+      "Masterswipe",
+      "One-Handed Cartwheel",
+      "Palmkick",
+      "Roundoff"
+    ],
+    "description": "While the “gymnastics cartwheel” has a 180° stance change from start to finish, the “tricker cartwheel” goes completely side-to-side. Trickers tend to use the side-to-side cartwheel because of how the cartwheel sets for side-fulls, wraps, and masterswings."
   }
 ]
