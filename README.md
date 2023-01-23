@@ -200,7 +200,9 @@ To contribute to this repository:
 
 
 Data Update?
-- Update the raw json-files in ```/data```
+- Create an issue under the "new trick" label and fill out the template and assign it to yourself (if you intend to make the change yourself)
+
+- Update the raw json-files in ```/data``` with your desired change
   - Tricks.json
      - Do not update an existing trick AND add a new trick in the same commit. These should be separate commits to keep things clean :)
 
