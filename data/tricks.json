@@ -71,5 +71,31 @@
       "Dragonfly Twist"
     ],
     "description": "A Butterfly Kick with an extra 360° rotation done in the air before landing on the horizontal axis."
+  },
+  {
+    "id": "cork",
+    "name": "Corkscrew",
+    "aliases": ["Cork"],
+    "categories": [
+      "TWIST",
+      "SINGLE"
+    ],
+    "prereqs": [
+      "Gainer flash"
+    ],
+    "nextTricks": [
+      "Corkscrew Doubleleg",
+      "Corkscrew Feilong",
+      "Corkscrew Hawkeye",
+      "Corkscrew Hyper",
+      "Corkscrew Hyperhook",
+      "Corkscrew Round",
+      "Corkscrew Shuriken",
+      "Corkscrew Swipe",
+      "Corkscrew Wackknife",
+      "Dragonfly Cork",
+      "Double Corkscrew"
+    ],
+    "description": "A Gainer Flash with an extra rotation before landing - or a Back Full off of one leg."
   }
 ]
