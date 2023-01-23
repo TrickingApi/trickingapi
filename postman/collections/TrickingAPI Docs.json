@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "ce046c4a-19c9-4ff9-8bae-c784ee44f809",
-		"name": "TrickingAPI",
+		"_postman_id": "6f0ca46b-9b6a-49b5-9da6-787bd827e2d5",
+		"name": "TrickingAPI Docs",
 		"description": "Consumption-only API for barebones Tricking Terminology Data\n\nContact Support:\n Email: admin@trickingapi.dev",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "25462308-ce046c4a-19c9-4ff9-8bae-c784ee44f809"
+		"_uid": "25462308-6f0ca46b-9b6a-49b5-9da6-787bd827e2d5"
 	},
 	"item": [
 		{
@@ -12,7 +12,7 @@
 			"item": [
 				{
 					"name": "Get All Tricks from TrickingApi/data/tricks",
-					"id": "1ee0f5c6-7823-4412-8847-fa4a2e862862",
+					"id": "368ad6da-1f7b-48b4-bb71-f6fac33c1117",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -36,7 +36,7 @@
 					},
 					"response": [
 						{
-							"id": "391c523d-3bff-421a-a002-1c1330add2ff",
+							"id": "3a95bc99-ccce-4f09-a8db-060785c31a86",
 							"name": "OK",
 							"originalRequest": {
 								"method": "GET",
@@ -64,7 +64,7 @@
 							"body": "{\n  \"value\": \"reference #components/schemas/Trick not found in the OpenAPI spec\"\n}"
 						},
 						{
-							"id": "c2288457-0164-49d8-a3ce-cb6513231b09",
+							"id": "2c9f1085-8072-4851-97b7-ba0ce2ba4681",
 							"name": "Unexpected error",
 							"originalRequest": {
 								"method": "GET",
@@ -89,13 +89,13 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"message\": \"adipisicing Ut nisi ullamco\",\n  \"data\": \"ut nulla dolore in\",\n  \"success\": true\n}"
+							"body": "{\n  \"message\": \"<string>\",\n  \"data\": \"<string>\",\n  \"success\": \"<boolean>\"\n}"
 						}
 					]
 				},
 				{
 					"name": "Get Trick by TrickId",
-					"id": "82c58b7b-6a61-4e61-a805-556a0ad9bc1e",
+					"id": "d7f9e7d3-57ac-41ad-9dbe-7e54593b0e16",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -119,7 +119,7 @@
 							"variable": [
 								{
 									"key": "TrickId",
-									"value": "consequat in",
+									"value": "<string>",
 									"description": "(Required) The unique identifier of the trick"
 								}
 							]
@@ -127,7 +127,7 @@
 					},
 					"response": [
 						{
-							"id": "fe6509b2-313f-4e0d-b6bf-878db4c99be0",
+							"id": "68617ab9-b82f-4dcf-9cde-0f158529105a",
 							"name": "The trick corresponding to the provided `TrickId`",
 							"originalRequest": {
 								"method": "GET",
@@ -144,7 +144,7 @@
 									"variable": [
 										{
 											"key": "TrickId",
-											"value": "consequat in",
+											"value": "<string>",
 											"description": "(Required) The unique identifier of the trick"
 										}
 									]
@@ -160,10 +160,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"id\": \"<string>\",\n  \"name\": \"Lorem Excepteur ex\",\n  \"aliases\": [\n    \"Lorem sint deserunt consequat\",\n    \"non sed\"\n  ],\n  \"categories\": [\n    {\n      \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n    },\n    {\n      \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n    }\n  ],\n  \"prerequisites\": [\n    \"in id irure\",\n    \"cup\"\n  ],\n  \"nextTricks\": [\n    \"enim ea id \",\n    \"mollit sint\"\n  ],\n  \"description\": \"fugiat mi\"\n}"
+							"body": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"aliases\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"categories\": [\n    {\n      \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n    },\n    {\n      \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n    }\n  ],\n  \"prerequisites\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"nextTricks\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"description\": \"<string>\"\n}"
 						},
 						{
-							"id": "add4e144-5724-4733-a4b1-c86585c6ada8",
+							"id": "9c2ca0c6-189a-41d9-aa33-65784af1b7af",
 							"name": "No Trick found for the provided `TrickId`",
 							"originalRequest": {
 								"method": "GET",
@@ -180,7 +180,7 @@
 									"variable": [
 										{
 											"key": "TrickId",
-											"value": "consequat in",
+											"value": "<string>",
 											"description": "(Required) The unique identifier of the trick"
 										}
 									]
@@ -196,10 +196,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"message\": \"adipisicing Ut nisi ullamco\",\n  \"data\": \"ut nulla dolore in\",\n  \"success\": true\n}"
+							"body": "{\n  \"message\": \"<string>\",\n  \"data\": \"<string>\",\n  \"success\": \"<boolean>\"\n}"
 						},
 						{
-							"id": "cfa0a94a-bfbb-491b-b2b5-63272b28ed8a",
+							"id": "f828d92c-b819-4a54-bf43-2281995c4971",
 							"name": "Unexpected error",
 							"originalRequest": {
 								"method": "GET",
@@ -216,7 +216,7 @@
 									"variable": [
 										{
 											"key": "TrickId",
-											"value": "consequat in",
+											"value": "<string>",
 											"description": "(Required) The unique identifier of the trick"
 										}
 									]
@@ -232,13 +232,13 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"message\": \"adipisicing Ut nisi ullamco\",\n  \"data\": \"ut nulla dolore in\",\n  \"success\": true\n}"
+							"body": "{\n  \"message\": \"<string>\",\n  \"data\": \"<string>\",\n  \"success\": \"<boolean>\"\n}"
 						}
 					]
 				},
 				{
 					"name": "Get All Trick Names and their ids from TrickingApi/data/tricks",
-					"id": "ee53078c-06c1-4146-bbe8-2459c4519afd",
+					"id": "c1fe91cc-c34e-4392-9a0c-a8fc9c740133",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -263,7 +263,7 @@
 					},
 					"response": [
 						{
-							"id": "2a8fe861-0cc3-470e-8af4-bc7aca347276",
+							"id": "09b56115-7e4d-4326-8b61-2554343fdea1",
 							"name": "OK",
 							"originalRequest": {
 								"method": "GET",
@@ -289,10 +289,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"reprehenderit_7a_\": \"do amet id\",\n  \"nostrud_d1\": \"id\"\n}"
+							"body": "{\n  \"sit37\": \"<string>\"\n}"
 						},
 						{
-							"id": "7be75149-882c-422a-b8be-ff604b8552d5",
+							"id": "ba0de9e7-2993-42c8-a2a2-c0b771917e34",
 							"name": "Unexpected error",
 							"originalRequest": {
 								"method": "GET",
@@ -318,19 +318,19 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"message\": \"adipisicing Ut nisi ullamco\",\n  \"data\": \"ut nulla dolore in\",\n  \"success\": true\n}"
+							"body": "{\n  \"message\": \"<string>\",\n  \"data\": \"<string>\",\n  \"success\": \"<boolean>\"\n}"
 						}
 					]
 				}
 			],
-			"id": "b8fb3f60-565f-4d9c-a1f4-8f4863c9c67b"
+			"id": "497551e0-f841-4e0c-ab37-8e736a7ca3df"
 		},
 		{
 			"name": "categories",
 			"item": [
 				{
 					"name": "Get All Existing Trick Category Names from TrickingAPI/data/tricks",
-					"id": "a7ef0fd9-af19-403e-a724-2b19dea59539",
+					"id": "7e68303b-01b0-442f-94db-95238848271a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -355,7 +355,7 @@
 					},
 					"response": [
 						{
-							"id": "f2cd9f3c-ccd3-43d2-b782-3a41836e9102",
+							"id": "c7342eb0-5166-4149-a239-5640f67d5fde",
 							"name": "OK",
 							"originalRequest": {
 								"method": "GET",
@@ -380,10 +380,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n  \"anim sunt\",\n  \"esse eiusmod culpa\"\n]"
+							"body": "[\n  \"<string>\",\n  \"<string>\"\n]"
 						},
 						{
-							"id": "396a14c1-57a8-48a3-8f34-1c0b3d389c43",
+							"id": "3941b95d-2601-4dfe-b4e4-5832178233fc",
 							"name": "Unexpected error",
 							"originalRequest": {
 								"method": "GET",
@@ -408,13 +408,13 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"message\": \"adipisicing Ut nisi ullamco\",\n  \"data\": \"ut nulla dolore in\",\n  \"success\": true\n}"
+							"body": "{\n  \"message\": \"<string>\",\n  \"data\": \"<string>\",\n  \"success\": \"<boolean>\"\n}"
 						}
 					]
 				},
 				{
 					"name": "Get All Tricks Grouped by Categories from TrickingApi/data/tricks",
-					"id": "822871d4-1dcc-4043-b610-31592ee74e89",
+					"id": "c2f7da22-489a-4629-a917-a0d256b02b38",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -440,7 +440,7 @@
 					},
 					"response": [
 						{
-							"id": "175e1f08-9b88-4268-9621-2df619099edc",
+							"id": "32e09992-e7ce-4105-bebb-d9defab907e0",
 							"name": "OK",
 							"originalRequest": {
 								"method": "GET",
@@ -466,10 +466,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"culpa_fc\": [\n    {\n      \"id\": \"<string>\",\n      \"name\": \"in eu incididunt Lorem\",\n      \"aliases\": [\n        \"nostrud laborum laboris consectetur ut\",\n        \"eu exercitation irure anim\"\n      ],\n      \"categories\": [\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        },\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        }\n      ],\n      \"prerequisites\": [\n        \"magna labore proident do\",\n        \"in\"\n      ],\n      \"nextTricks\": [\n        \"consectetur qui Lorem ad velit\",\n        \"ut reprehenderit in nisi\"\n      ],\n      \"description\": \"aute proident sit cupidatat adipisicing\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"name\": \"enim exercitation\",\n      \"aliases\": [\n        \"cillum in\",\n        \"non\"\n      ],\n      \"categories\": [\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        },\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        }\n      ],\n      \"prerequisites\": [\n        \"ad anim tempor\",\n        \"velit incididunt\"\n      ],\n      \"nextTricks\": [\n        \"ipsum quis ullamco\",\n        \"nostr\"\n      ],\n      \"description\": \"esse fugiat id et\"\n    }\n  ],\n  \"officiaf\": [\n    {\n      \"id\": \"<string>\",\n      \"name\": \"consequat do magna dolor\",\n      \"aliases\": [\n        \"cupidatat proident magna \",\n        \"ut eiusmod occaecat\"\n      ],\n      \"categories\": [\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        },\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        }\n      ],\n      \"prerequisites\": [\n        \"veniam pariatu\",\n        \"dolor mollit pariatur sed ex\"\n      ],\n      \"nextTricks\": [\n        \"do dolore\",\n        \"aliquip do sunt\"\n      ],\n      \"description\": \"pariatur laborum est Excep\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"name\": \"minim exercitation\",\n      \"aliases\": [\n        \"ea nulla \",\n        \"tempor qui minim\"\n      ],\n      \"categories\": [\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        },\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        }\n      ],\n      \"prerequisites\": [\n        \"non voluptate eiusmod\",\n        \"mollit nisi\"\n      ],\n      \"nextTricks\": [\n        \"dolor est voluptate\",\n        \"amet Duis tempor consequat sed\"\n      ],\n      \"description\": \"dolore ad\"\n    }\n  ],\n  \"quis_b59\": [\n    {\n      \"id\": \"<string>\",\n      \"name\": \"ex in velit do\",\n      \"aliases\": [\n        \"cupidatat dolore\",\n        \"aliquip proident Lorem\"\n      ],\n      \"categories\": [\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        },\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        }\n      ],\n      \"prerequisites\": [\n        \"consequat ullamco aute voluptate qui\",\n        \"anim deserunt in\"\n      ],\n      \"nextTricks\": [\n        \"est sed\",\n        \"nostrud\"\n      ],\n      \"description\": \"sint ut reprehenderit dolore\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"name\": \"Excepteur in cillum laborum\",\n      \"aliases\": [\n        \"dolore in ipsum\",\n        \"incididunt labore fugiat cillum\"\n      ],\n      \"categories\": [\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        },\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        }\n      ],\n      \"prerequisites\": [\n        \"irure ut\",\n        \"in do labore\"\n      ],\n      \"nextTricks\": [\n        \"in p\",\n        \"ea\"\n      ],\n      \"description\": \"do voluptate id\"\n    }\n  ]\n}"
+							"body": "{\n  \"ex_c\": [\n    {\n      \"id\": \"<string>\",\n      \"name\": \"<string>\",\n      \"aliases\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"categories\": [\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        },\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        }\n      ],\n      \"prerequisites\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"nextTricks\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"description\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"name\": \"<string>\",\n      \"aliases\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"categories\": [\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        },\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        }\n      ],\n      \"prerequisites\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"nextTricks\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"description\": \"<string>\"\n    }\n  ]\n}"
 						},
 						{
-							"id": "bf8562e4-f98a-4b77-acb5-17e354c799a2",
+							"id": "71cbc74a-a594-423c-b181-8aa12dd95c9c",
 							"name": "Unexpected error",
 							"originalRequest": {
 								"method": "GET",
@@ -495,13 +495,13 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"message\": \"adipisicing Ut nisi ullamco\",\n  \"data\": \"ut nulla dolore in\",\n  \"success\": true\n}"
+							"body": "{\n  \"message\": \"<string>\",\n  \"data\": \"<string>\",\n  \"success\": \"<boolean>\"\n}"
 						}
 					]
 				},
 				{
 					"name": "Get All Tricks Grouped Under A Category from TrickingApi/data/tricks",
-					"id": "1217f4bf-8572-4695-97a4-194daa0bf25a",
+					"id": "b77d6ba7-d829-466a-bd46-93d2fa93d98c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -525,7 +525,7 @@
 							"variable": [
 								{
 									"key": "CategoryName",
-									"value": "in elit ullamco",
+									"value": "<string>",
 									"description": "(Required) The unique identifier of the TrickCategory"
 								}
 							]
@@ -534,7 +534,7 @@
 					},
 					"response": [
 						{
-							"id": "2f28698f-419c-44d2-9037-8d62af6551cf",
+							"id": "2adc191c-68f2-4487-8199-568bf91b2f10",
 							"name": "OK",
 							"originalRequest": {
 								"method": "GET",
@@ -551,7 +551,7 @@
 									"variable": [
 										{
 											"key": "CategoryName",
-											"value": "in elit ullamco",
+											"value": "<string>",
 											"description": "(Required) The unique identifier of the TrickCategory"
 										}
 									]
@@ -567,17 +567,17 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n  {\n    \"id\": \"<string>\",\n    \"name\": \"irure deserunt ipsum\",\n    \"aliases\": [\n      \"esse minim\",\n      \"tempor dolor\"\n    ],\n    \"categories\": [\n      {\n        \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n      },\n      {\n        \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n      }\n    ],\n    \"prerequisites\": [\n      \"enim nisi\",\n      \"id sunt\"\n    ],\n    \"nextTricks\": [\n      \"enim\",\n      \"quis labore\"\n    ],\n    \"description\": \"voluptate ut quis Lorem amet\"\n  },\n  {\n    \"id\": \"<string>\",\n    \"name\": \"reprehenderit Ut\",\n    \"aliases\": [\n      \"aliquip commodo eiusmod ut\",\n      \"ex fugiat nostrud labore\"\n    ],\n    \"categories\": [\n      {\n        \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n      },\n      {\n        \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n      }\n    ],\n    \"prerequisites\": [\n      \"veniam sed\",\n      \"veniam proident labore in\"\n    ],\n    \"nextTricks\": [\n      \"occaecat ex cupidatat\",\n      \"do deserunt ad\"\n    ],\n    \"description\": \"aliqua dolor Duis\"\n  }\n]"
+							"body": "[\n  {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"aliases\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"categories\": [\n      {\n        \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n      },\n      {\n        \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n      }\n    ],\n    \"prerequisites\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"nextTricks\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"description\": \"<string>\"\n  },\n  {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"aliases\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"categories\": [\n      {\n        \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n      },\n      {\n        \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n      }\n    ],\n    \"prerequisites\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"nextTricks\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"description\": \"<string>\"\n  }\n]"
 						}
 					]
 				}
 			],
-			"id": "46489cb0-4ed2-47b1-8c90-50def38a2785"
+			"id": "383c0e42-b83e-4601-9332-86e3e8649ed7"
 		}
 	],
 	"variable": [
 		{
-			"id": "59022af8-b145-4e8b-acb9-1fd4e76351b6",
+			"id": "00a17ad7-29e5-4010-aac4-658e47fadfdf",
 			"key": "baseUrl",
 			"value": "https://trickingapi.dev/api",
 			"type": "string"

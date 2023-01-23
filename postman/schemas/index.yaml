@@ -26,7 +26,7 @@ paths:
       summary: Get Trick by TrickId
       responses:
         200:
-          description: The trick corresponding to the provided `TrickId`
+          description: OK
           content:
             application/json:
               schema:
@@ -52,7 +52,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#components/schemas/Trick'
+                $ref: '#/components/schemas/Trick'
         500:
           description: Unexpected error
           content:
@@ -169,7 +169,7 @@ components:
         categories:
           type: array
           items:
-            $ref: '#components/schemas/TrickCategory'
+            $ref: '#/components/schemas/TrickCategory'
         prerequisites:
           type: array
           items:

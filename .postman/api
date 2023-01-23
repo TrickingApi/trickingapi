@@ -5,7 +5,7 @@ id = acf41c97-e330-42ba-9e03-29b57792dbe4
 
 [relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"25462308-ce046c4a-19c9-4ff9-8bae-c784ee44f809","path":"TrickingAPI.json","metaData":{}}
+files[] = {"id":"25462308-6f0ca46b-9b6a-49b5-9da6-787bd827e2d5","path":"TrickingAPI Docs.json","metaData":{}}
 
 [relations.collections.metaData]
 
