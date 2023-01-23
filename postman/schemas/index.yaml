@@ -1,0 +1,216 @@
+openapi: '3.0.0'
+info:
+  version: '0.1.0'
+  title: 'TrickingAPI'
+  description: Consumption-only API for barebones Tricking Terminology Data
+  termsOfService: https://github.com/TrickingApi/trickingapi
+  contact:
+    url: https://github.com/TrickingApi/trickingapi
+    email: admin@trickingapi.dev
+  license:
+    name: MIT
+    url: https://github.com/TrickingApi/trickingapi/blob/main/LICENSE.md
+
+paths:
+  /tricks/{TrickId}:
+    parameters:
+      - name: TrickId
+        description: The unique identifier of the trick
+        in: path
+        required: true
+        schema:
+          $ref: '#/components/schemas/TrickId'
+    get:
+      summary: Read a trick
+      responses:
+        200:
+          description: The trick corresponding to the provided `TrickId`
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Trick'
+        404:
+          description: No Trick found for the provided `TrickId`
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TrickError'
+        500:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TrickError'
+  /tricks:
+    get:
+      summary: Get All Tricks from TrickingApi/data/tricks
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#components/schemas/Trick'
+        500:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TrickError'
+  /tricks/names:
+    get:
+      summary: Get All Trick Names and their ids from TrickingApi/data/tricks
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                additionalProperties:
+                  type: string
+                type: object
+        500:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TrickError'
+  /categories:
+    get:
+      summary: Get All Existing Trick Category Names from TrickingAPI/data/tricks
+      description: Reads and returns all existing categories of tricks from the tricks.json
+        file at https://github.com/TrickingApi/trickingapi
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+        500:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TrickError'
+  /categories/tricks:
+    get:
+      summary: Get All Tricks Grouped by Categories from TrickingApi/data/tricks
+      description: Reads and returns a mapping of categories to list of tricks from
+        the tricks.json file at https://github.com/TrickingApi/trickingapi
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/Trick'
+        500:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TrickError'
+  /categories/{CategoryName}:
+    parameters:
+      - name: CategoryName
+        description: The unique identifier of the TrickCategory
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      summary: Get All Tricks Grouped Under A Category from TrickingApi/data/tricks
+      description: Reads and returns a list of tricks for a specific category from
+          the tricks.json file at https://github.com/TrickingApi/trickingapi
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Trick'
+
+
+components:
+  schemas:
+    TrickId:
+      description: The unique identifier of a Trick
+      type: string
+    Trick:
+      type: object
+      required:
+        - id
+        - name
+        - aliases
+        - categories
+        - prerequisites
+        - nextTricks
+        - description
+      properties:
+        id:
+          $ref: '#/components/schemas/TrickId'
+        name:
+          type: string
+        aliases:
+          type: array
+          items:
+            type: string
+        categories:
+          type: array
+          items:
+            $ref: '#components/schemas/TrickCategory'
+        prerequisites:
+          type: array
+          items:
+            type: string
+        nextTricks:
+          type: array
+          items:
+            type: string
+        description:
+          type: string
+    TrickCategory:
+      enum:
+      - FLIP
+      - VERT_KICK
+      - TWIST
+      - PSEUDO_DOUBLE_FLIP
+      - SINGLE
+      - DOUBLE
+      - TRIPLE
+      - QUAD
+      - GROUNDWORK
+      - UNKNOWN
+      type: string
+      x-enum-varnames:
+      - FLIP
+      - VERT_KICK
+      - TWIST
+      - PSEUDO_DUB
+      - SING
+      - DUB
+      - TRIP
+      - QUAD
+      - GROUNDWORK
+      - UNKNOWN
+    TrickError:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          description: A human readable error message
+          type: string
+        data:
+          type: string
+        success:
+          type: boolean
