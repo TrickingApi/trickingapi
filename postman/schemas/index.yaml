@@ -23,7 +23,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrickId'
     get:
-      summary: Read a trick
+      summary: Get Trick by TrickId
       responses:
         200:
           description: The trick corresponding to the provided `TrickId`
