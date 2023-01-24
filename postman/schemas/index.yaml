@@ -2,7 +2,7 @@ openapi: '3.0.0'
 info:
   version: '0.1.0'
   title: 'TrickingAPI'
-  description: Consumption-only API for barebones Tricking Terminology Data
+  description: A consumption-only API for barebones Tricking Terminology Data
   termsOfService: https://github.com/TrickingApi/trickingapi
   contact:
     url: https://github.com/TrickingApi/trickingapi

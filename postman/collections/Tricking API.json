@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "69121f17-82c8-44a5-af1e-e4dc3f0f7932",
-		"name": "TrickingAPI Docs",
-		"description": "Consumption-only API for barebones Tricking Terminology Data\n\nContact Support:\n Email: admin@trickingapi.dev",
+		"_postman_id": "e9f5aff5-a99b-486f-9378-f52047cc40e8",
+		"name": "Tricking API",
+		"description": "Consumption-only API for barebones Tricking Terminology Data\n\nHome Page: [trickingapi.dev](https://trickingapi.dev)\n\nContact Support:  \nEmail: [admin@trickingapi.dev](mailto:admin@trickingapi.dev)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "25462308-69121f17-82c8-44a5-af1e-e4dc3f0f7932"
+		"_uid": "25462308-e9f5aff5-a99b-486f-9378-f52047cc40e8"
 	},
 	"item": [
 		{
@@ -12,7 +12,7 @@
 			"item": [
 				{
 					"name": "Get All Tricks from TrickingApi/data/tricks",
-					"id": "4b9306d5-11d0-4536-ba77-25e37fa1e5a0",
+					"id": "97239c2f-1805-47b5-98b6-7e81abff4807",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -36,17 +36,20 @@
 					},
 					"response": [
 						{
-							"id": "dc89b835-54d5-4fe1-8a56-eefaad5fd375",
+							"id": "a4a76f36-9b4a-46cb-b202-4cb46b917ec0",
 							"name": "OK",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/tricks",
+									"raw": "https://trickingapi.dev/api/tricks",
+									"protocol": "https",
 									"host": [
-										"{{baseUrl}}"
+										"trickingapi",
+										"dev"
 									],
 									"path": [
+										"api",
 										"tricks"
 									]
 								}
@@ -54,7 +57,6 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -62,10 +64,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"value\": \"reference #components/schemas/Trick not found in the OpenAPI spec\"\n}"
+							"body": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"aliases\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"categories\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"prerequisites\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"nextTricks\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"description\": \"<string>\"\n}"
 						},
 						{
-							"id": "7960e61b-5332-4abd-b4cc-2163a1dec4e7",
+							"id": "1526dfd2-2999-49e8-9fd9-a7e53f1737b4",
 							"name": "Unexpected error",
 							"originalRequest": {
 								"method": "GET",
@@ -83,7 +85,6 @@
 							"status": "Internal Server Error",
 							"code": 500,
 							"_postman_previewlanguage": "json",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -97,7 +98,7 @@
 				},
 				{
 					"name": "Get Trick by TrickId",
-					"id": "65fe66e0-0b0c-427f-868a-ac0cf751392d",
+					"id": "e017dde9-62fb-41f5-bc97-af16c3833d93",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -129,17 +130,20 @@
 					},
 					"response": [
 						{
-							"id": "3ff2da07-25f3-45d3-bbfd-32b0dc62fa80",
-							"name": "The trick corresponding to the provided `TrickId`",
+							"id": "15e1ac18-6c3a-4ad9-8087-ad8213b5984f",
+							"name": "OK",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/tricks/:TrickId",
+									"raw": "https://trickingapi.dev/api/tricks/:TrickId",
+									"protocol": "https",
 									"host": [
-										"{{baseUrl}}"
+										"trickingapi",
+										"dev"
 									],
 									"path": [
+										"api",
 										"tricks",
 										":TrickId"
 									],
@@ -155,7 +159,6 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -163,10 +166,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"aliases\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"categories\": [\n    {\n      \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n    },\n    {\n      \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n    }\n  ],\n  \"prerequisites\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"nextTricks\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"description\": \"<string>\"\n}"
+							"body": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"aliases\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"categories\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"prerequisites\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"nextTricks\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"description\": \"<string>\"\n}"
 						},
 						{
-							"id": "87354fc8-9cf7-4d47-937c-efe348a1b978",
+							"id": "051764ea-58b9-4e3c-97c5-8dfc63221ece",
 							"name": "No Trick found for the provided `TrickId`",
 							"originalRequest": {
 								"method": "GET",
@@ -192,7 +195,6 @@
 							"status": "Not Found",
 							"code": 404,
 							"_postman_previewlanguage": "json",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -203,7 +205,7 @@
 							"body": "{\n  \"message\": \"<string>\",\n  \"data\": \"<string>\",\n  \"success\": \"<boolean>\"\n}"
 						},
 						{
-							"id": "67721a43-b470-4fa0-98a5-e4b4d7c36f66",
+							"id": "cdd6de1f-4828-49e1-9af1-f4c72e54d8f1",
 							"name": "Unexpected error",
 							"originalRequest": {
 								"method": "GET",
@@ -229,7 +231,6 @@
 							"status": "Internal Server Error",
 							"code": 500,
 							"_postman_previewlanguage": "json",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -243,7 +244,7 @@
 				},
 				{
 					"name": "Get All Trick Names and their ids from TrickingApi/data/tricks",
-					"id": "e1878d36-962b-487e-8237-53f6e9735e85",
+					"id": "61a594d8-710f-4991-8430-7d126156ef39",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -268,7 +269,7 @@
 					},
 					"response": [
 						{
-							"id": "11efdde4-b846-4806-bb06-1563d2ba3a06",
+							"id": "4a869493-c590-4a28-87dc-7bdd839b62cc",
 							"name": "OK",
 							"originalRequest": {
 								"method": "GET",
@@ -287,7 +288,6 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -295,10 +295,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"sit37\": \"<string>\"\n}"
+							"body": "{\n  \"sit_b_0\": \"<string>\",\n  \"cillumc7a\": \"<string>\",\n  \"magna49e\": \"<string>\"\n}"
 						},
 						{
-							"id": "a58fb7c5-69a0-4b5c-a8f6-d847122aa8a7",
+							"id": "dcb2929a-1a08-47ec-8e7a-e1dc5389f6bb",
 							"name": "Unexpected error",
 							"originalRequest": {
 								"method": "GET",
@@ -317,7 +317,6 @@
 							"status": "Internal Server Error",
 							"code": 500,
 							"_postman_previewlanguage": "json",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -330,14 +329,14 @@
 					]
 				}
 			],
-			"id": "7f2899bc-d509-4e2d-a7f0-134cdd2cf7df"
+			"id": "f9d25b11-b097-4d6b-97f3-5e2a03c312bb"
 		},
 		{
 			"name": "categories",
 			"item": [
 				{
 					"name": "Get All Existing Trick Category Names from TrickingAPI/data/tricks",
-					"id": "3785fa44-357b-48d4-bf38-b43436cd203d",
+					"id": "c2145d7a-c3d7-462d-a756-894206efd839",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -362,7 +361,7 @@
 					},
 					"response": [
 						{
-							"id": "df716c0e-3850-42a2-a08c-adda726a7e02",
+							"id": "63b0bfdf-ae17-4a00-a6fc-2af3731cfdbc",
 							"name": "OK",
 							"originalRequest": {
 								"method": "GET",
@@ -380,7 +379,6 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -391,7 +389,7 @@
 							"body": "[\n  \"<string>\",\n  \"<string>\"\n]"
 						},
 						{
-							"id": "87eb3258-f570-4da7-9086-2a14efde1394",
+							"id": "882784bb-970d-4638-ba64-cf26a13c8c6c",
 							"name": "Unexpected error",
 							"originalRequest": {
 								"method": "GET",
@@ -409,7 +407,6 @@
 							"status": "Internal Server Error",
 							"code": 500,
 							"_postman_previewlanguage": "json",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -423,7 +420,7 @@
 				},
 				{
 					"name": "Get All Tricks Grouped by Categories from TrickingApi/data/tricks",
-					"id": "fad213b7-d4c4-492b-9a0c-e3f12d1efa8b",
+					"id": "8eda02c3-d8a0-42ab-bde6-e29ca8c99255",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -449,7 +446,7 @@
 					},
 					"response": [
 						{
-							"id": "e4200db7-7e85-4c20-bbf4-85951fb0fae6",
+							"id": "5dde1541-2bd1-4640-8f4e-a262f31d48ba",
 							"name": "OK",
 							"originalRequest": {
 								"method": "GET",
@@ -468,7 +465,6 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -476,10 +472,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"ex_c\": [\n    {\n      \"id\": \"<string>\",\n      \"name\": \"<string>\",\n      \"aliases\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"categories\": [\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        },\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        }\n      ],\n      \"prerequisites\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"nextTricks\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"description\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"name\": \"<string>\",\n      \"aliases\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"categories\": [\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        },\n        {\n          \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n        }\n      ],\n      \"prerequisites\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"nextTricks\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"description\": \"<string>\"\n    }\n  ]\n}"
+							"body": "{\n  \"ut00\": [\n    {\n      \"id\": \"<string>\",\n      \"name\": \"<string>\",\n      \"aliases\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"categories\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"prerequisites\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"nextTricks\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"description\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"name\": \"<string>\",\n      \"aliases\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"categories\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"prerequisites\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"nextTricks\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"description\": \"<string>\"\n    }\n  ]\n}"
 						},
 						{
-							"id": "779a21bf-cd68-48a1-80fc-c919dbaeed24",
+							"id": "9dc7a0d0-43b6-4991-8b1c-c0c4559e6c79",
 							"name": "Unexpected error",
 							"originalRequest": {
 								"method": "GET",
@@ -498,7 +494,6 @@
 							"status": "Internal Server Error",
 							"code": 500,
 							"_postman_previewlanguage": "json",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -512,7 +507,7 @@
 				},
 				{
 					"name": "Get All Tricks Grouped Under A Category from TrickingApi/data/tricks",
-					"id": "b5c47984-0522-447a-bfda-09cb631fd79e",
+					"id": "357c6b22-dabb-4eeb-b3b8-cf9ee7516009",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -545,7 +540,7 @@
 					},
 					"response": [
 						{
-							"id": "06262293-579e-45aa-907e-723fa210baff",
+							"id": "0bcedf15-0119-4454-acb8-6d22725f7792",
 							"name": "OK",
 							"originalRequest": {
 								"method": "GET",
@@ -571,7 +566,6 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -579,17 +573,17 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n  {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"aliases\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"categories\": [\n      {\n        \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n      },\n      {\n        \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n      }\n    ],\n    \"prerequisites\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"nextTricks\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"description\": \"<string>\"\n  },\n  {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"aliases\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"categories\": [\n      {\n        \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n      },\n      {\n        \"value\": \"reference #components/schemas/TrickCategory not found in the OpenAPI spec\"\n      }\n    ],\n    \"prerequisites\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"nextTricks\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"description\": \"<string>\"\n  }\n]"
+							"body": "[\n  {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"aliases\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"categories\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"prerequisites\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"nextTricks\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"description\": \"<string>\"\n  },\n  {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"aliases\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"categories\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"prerequisites\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"nextTricks\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"description\": \"<string>\"\n  }\n]"
 						}
 					]
 				}
 			],
-			"id": "a559bcf9-0d25-4179-bafd-11997d16c78b"
+			"id": "3eebb5f2-7403-49ed-92a5-cba7f0fbf129"
 		}
 	],
 	"variable": [
 		{
-			"id": "00a17ad7-29e5-4010-aac4-658e47fadfdf",
+			"id": "ed01e570-4da8-4e3e-b9df-4a0e96d6331c",
 			"key": "baseUrl",
 			"value": "https://trickingapi.dev/api",
 			"type": "string"
