@@ -2,7 +2,8 @@
 
 <div align="center">
 
-<h1>TrickingApi Logo TBD</h1>
+![logo](./trickingAPILogo.png)
+<code>The Tricking API</code>
 
 [![build status](https://img.shields.io/circleci/build/github/TrickingApi/trickingapi)](https://circleci.com/gh/TrickingApi/trickingapi)
 ![issues](https://img.shields.io/github/issues/TrickingApi/trickingapi)
