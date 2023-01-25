@@ -2,8 +2,11 @@
 
 <div align="center">
 
-![logo](./trickingAPILogo.png)
+<img src='./trickingAPILogo.png' width='128' height='128'>
+<br/>
 <code>The Tricking API</code>
+<br/>
+<br/>
 
 [![build status](https://img.shields.io/circleci/build/github/TrickingApi/trickingapi)](https://circleci.com/gh/TrickingApi/trickingapi)
 ![issues](https://img.shields.io/github/issues/TrickingApi/trickingapi)
