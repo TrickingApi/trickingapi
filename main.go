@@ -2,11 +2,13 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"os"
 
 	"github.com/TrickingApi/trickingapi/models"
 	"github.com/TrickingApi/trickingapi/routes"
+	"github.com/TrickingApi/trickingapi/utils"
 	"github.com/gin-gonic/gin"
 )
 
@@ -66,6 +68,12 @@ func init() {
 // @BasePath /api
 // @schemes https
 func main() {
+	fmt.Print(os.Args)
+	if os.Args[1] == "-scrape" {
+		utils.Scrape(idToTrickMap)
+		return
+	}
+
 	router := gin.Default()
 	router.GET("/tricks", routes.GetAllTricksHandler(idToTrickMap))
 	router.GET("/tricks/names", routes.GetAllTrickNamesHandler(idToTrickMap))
