@@ -81,11 +81,13 @@ func Scrape(idToTrickMap map[string]models.Trick) {
 		}
 
 		// Extract the trick information
-		name := doc.Find(".heading-8").Text()
+		name := strings.ReplaceAll(doc.Find(".heading-8").Text(), "\u00a0", " ")
 		otherNamesText := strings.ReplaceAll(doc.Find(".nickname-wrapper > .nickname").Text(), OTHER_NAMES, "")
+		otherNamesText = strings.ReplaceAll(otherNamesText, "\u00a0", "")
 		aliases := strings.Split(strings.Trim(otherNamesText, " "), ",")
-		description := doc.Find(".paragraph-5").Text()
+		description := strings.ReplaceAll(doc.Find(".paragraph-5").Text(), "\u00a0", " ")
 		prereqsText := doc.Find(".prereq-wrapper > .nickname.prereq + .nickname").Text()
+		prereqsText = strings.ReplaceAll(prereqsText, "\u00a0", " ")
 		prereqs := strings.Split(strings.ReplaceAll(prereqsText, PRE_REQS, ""), ", ")
 
 		var categories []models.TrickCategory
@@ -101,20 +103,23 @@ func Scrape(idToTrickMap map[string]models.Trick) {
 		}
 		fmt.Println("Created Trick: ", currentTrick.Name)
 
-		_, ok := idToTrickMap[currentTrick.Id]
-		if !ok {
+		if _, ok := idToTrickMap[currentTrick.Id]; !ok {
 			idToTrickMap[currentTrick.Id] = *currentTrick
 		}
+	}
 
+	fmt.Println("Filling Prereq Connections: ")
+	for _, currentTrick := range idToTrickMap {
 		// searches for all prereqs and adds current trick to their nextTricks links
-		fmt.Println("Filling Prereq Connections: ")
 		for _, prereq := range currentTrick.Prerequisites {
+			fmt.Println("Checking if prereq exists: ", prereq)
 			prereqId := generateIdFromName(prereq)
-			prereqTrick, ok := idToTrickMap[prereqId]
-
-			if ok {
-				fmt.Println("Prereq connection created between {} - {}", prereqTrick.Name, currentTrick.Name)
-				prereqTrick.NextTricks = append(prereqTrick.NextTricks, currentTrick.Name)
+			if prereqTrick, ok := idToTrickMap[prereqId]; ok {
+				if len(prereqTrick.Name) != 0 && !contains(prereqTrick.NextTricks, currentTrick.Name) {
+					fmt.Println("Prereq connection created between: " + prereqTrick.Name + " - " + currentTrick.Name)
+					prereqTrick.NextTricks = append(prereqTrick.NextTricks, currentTrick.Name)
+					idToTrickMap[prereqId] = prereqTrick
+				}
 			}
 		}
 	}
@@ -147,4 +152,13 @@ func Scrape(idToTrickMap map[string]models.Trick) {
 
 func generateIdFromName(trickName string) string {
 	return strcase.ToLowerCamel(trickName)
+}
+
+func contains(slice []string, element string) bool {
+	for _, elem := range slice {
+		if elem == element {
+			return true
+		}
+	}
+	return false
 }
