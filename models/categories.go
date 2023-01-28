@@ -24,7 +24,7 @@ func (tc TrickCategory) String() string {
 	return string(tc)
 }
 
-var Categories = []TrickCategory{FLIP, VERT_KICK, TWIST, PSEUDO_DUB, SING, DUB, TRIP, QUAD, GROUNDWORK, UNKNOWN}
+var Categories = []TrickCategory{FLIP, VERT_KICK, TWIST, PSEUDO_DUB, SING, DUB, TRIP, QUAD, GROUNDWORK, UNKNOWN, VARIATION, INSIDE, OUTSIDE, FORWARD, BACKWARD}
 
 func IsCategory(str string) bool {
 	return GetCategoryFromString(str) != ""

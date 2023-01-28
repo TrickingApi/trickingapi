@@ -22,6 +22,7 @@ var DEFAULT_START_PATH string = "tricktionary/explore"
 // List of Production Scrapes (1/28/23):
 // https://www.loopkickstricking.com/tricktionary/explore
 // https://www.loopkickstricking.com/tricktionary/vertical-kicks
+// https://www.loopkickstricking.com/tricktionary/outside-tricks
 
 func Scrape(idToTrickMap map[string]models.Trick, startPath string, category string) {
 	trickURLs := extractTrickURLs(startPath)

@@ -1,2375 +1,3472 @@
 [
- {
-  "id": "corkscrewSnapu",
-  "name": "Corkscrew Snapu",
-  "aliases": [],
-  "categories": [
-   "DOUBLE",
-   "TWIST",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Double Corkscrew",
-   "Corkscrew Swipe"
-  ],
-  "nextTricks": [],
-  "description": "A Corkscrew that finishes with a snapu. Making this a double corkscrew variation."
- },
- {
-  "id": "lonestarHyperhook",
-  "name": "Lonestar Hyperhook",
-  "aliases": [],
-  "categories": [
-   "FLIP",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Lonestar"
-  ],
-  "nextTricks": [],
-  "description": "A Lonestar that finishes with a hyperhook."
- },
- {
-  "id": "cheat900DoubleKnife",
-  "name": "Cheat 900 Double Knife",
-  "aliases": [
-   "Cheat 720 Typhoon Knife (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Cheat 900 Knife",
-   "Cheat 900 Double"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 900 Double that finishes with a hyperhook."
- },
- {
-  "id": "pop540",
-  "name": "Pop 540",
-  "aliases": [
-   "Pop 180 Katana (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop Tornado"
-  ],
-  "nextTricks": [
-   "Pop 720"
-  ],
-  "description": "A Pop Tornado that lands in hyper stance and on the kicking leg."
- },
- {
-  "id": "cheat720Double",
-  "name": "Cheat 720 Double",
-  "aliases": [
-   "Cheat 540 Cyclone (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 720"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 720 with two “kicks”, where the first kick is just a straightened chamber."
- },
- {
-  "id": "backside1260",
-  "name": "Backside 1260",
-  "aliases": [
-   "Pop 900 Round (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 1080"
-  ],
-  "nextTricks": [
-   "Backside 1440",
-   "Backside 1260 Knife",
-   "Backside 1260 Wackknife",
-   "Backside 1260 Feilong",
-   "Cheat 1260"
-  ],
-  "description": "The Backside 1260 starts in Backside stance, leaves the ground off of both feet, rotates 900° in the air, then lands and finishes with a round kick towards the target."
- },
- {
-  "id": "butterflyTwistAxe",
-  "name": "Butterfly Twist Axe",
-  "aliases": [],
-  "categories": [
-   "SINGLE",
-   "TWIST",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Butterfly Twist"
-  ],
-  "nextTricks": [],
-  "description": "A Butterfly Twist with an axe kick executed before landing."
- },
- {
-  "id": "tornado",
-  "name": "Tornado",
-  "aliases": [
-   "Cheat 360 Round (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   ""
-  ],
-  "nextTricks": [
-   "Pop Tornado",
-   "Tornado Double",
-   "Tornado Sidekick",
-   "Cheat Feilong",
-   "Crowd Awakener",
-   "540",
-   "Wackknife",
-   "Parafuso",
-   "Tornado Hawkeye"
-  ],
-  "description": "The Tornado is the most basic cheat kick and one of the first moves a tricker will learn. It forms the basis of all cheat kicks after."
- },
- {
-  "id": "swing900",
-  "name": "Swing 900",
-  "aliases": [
-   "Swing 720 Round (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 900"
-  ],
-  "nextTricks": [
-   "Swing 900 Knife",
-   "Swing 1080"
-  ],
-  "description": "A vert kick that swings and leaves the ground in (roughly) backside, spins (roughly) 540° and executes an inside kick. Could be thought of as a vertical Corkscrew Round."
- },
- {
-  "id": "backside1260Feilong",
-  "name": "Backside 1260 Feilong",
-  "aliases": [
-   "Pop 900 Feilong"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 1260",
-   "Backside 900 Feilong"
-  ],
-  "nextTricks": [
-   "Backside 1260 Feilong Knife"
-  ],
-  "description": "The Backside 1260 starts in Backside stance, leaves the ground off of both feet, rotates 900° in the air, then lands and finishes with an outside kick and an inside kick at its target."
- },
- {
-  "id": "backside1260FeilongKnife",
-  "name": "Backside 1260 Feilong Knife",
-  "aliases": [
-   "Pop 900 Feilong Knife"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 1260 Feilong",
-   "Backside 1440"
-  ],
-  "nextTricks": [],
-  "description": "A Backside 1260 Feilong that finishes with a hyperhook."
- },
- {
-  "id": "cheat1260Hyper",
-  "name": "Cheat 1260 Hyper",
-  "aliases": [
-   "Cheat 1080 Katana (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 1260"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 1260 that lands on the kicking leg (inside leg) in Hyper."
- },
- {
-  "id": "dragonflyShurikenCutter",
-  "name": "Dragonfly Shuriken Cutter",
-  "aliases": [
-   "Dragonfly Corkscrew Shuriken Hyperhook"
-  ],
-  "categories": [
-   "TWIST",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Dragonfly Corkscrew",
-   "Shuriken Cutter"
-  ],
-  "nextTricks": [],
-  "description": "A Dragonfly Corkscrew that finishes with a Shuriken Hyperhook."
- },
- {
-  "id": "swing1080",
-  "name": "Swing 1080",
-  "aliases": [
-   "Swing 900 Hook"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Swing 900"
-  ],
-  "nextTricks": [
-   "Swing 1260"
-  ],
-  "description": "A vert kick that swings and leaves the ground in (roughly) backside, spins (roughly) 720° and executes an outside kick. Could be thought of as a vertical Boxcutter."
- },
- {
-  "id": "parafusoGyro",
-  "name": "Parafuso Gyro",
-  "aliases": [
-   "Para Gyro"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Parafuso"
-  ],
-  "nextTricks": [],
-  "description": "A Parafuso with an extra twist, landing back in Complete. Could be thought of as a vertical Envergado Twist."
- },
- {
-  "id": "flashKick",
-  "name": "Flash Kick",
-  "aliases": [],
-  "categories": [
-   "FLIP"
-  ],
-  "prereqs": [
-   "Back Tuck"
-  ],
-  "nextTricks": [
-   "Terada Grab"
-  ],
-  "description": "The Flashkick is a backflip executed with a kick at the peak of the flip."
- },
- {
-  "id": "takTripleFull",
-  "name": "Tak Triple Full",
-  "aliases": [],
-  "categories": [
-   "TWIST",
-   "TRIPLE"
-  ],
-  "prereqs": [
-   "Tak Double Full",
-   "Triple Full"
-  ],
-  "nextTricks": [],
-  "description": "A Tak Full with an extra two rotations."
- },
- {
-  "id": "backPike",
-  "name": "Back Pike",
-  "aliases": [],
-  "categories": [
-   "FLIP"
-  ],
-  "prereqs": [
-   "Back Tuck"
-  ],
-  "nextTricks": [],
-  "description": "A Backflip with the “pike” position."
- },
- {
-  "id": "swing360",
-  "name": "Swing 360",
-  "aliases": [
-   "Tsunami Hyper (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop 360"
-  ],
-  "nextTricks": [
-   "Cheat 720 Turbo"
-  ],
-  "description": "A turbo’d skip hook basically, or a Pop 360 from a swing."
- },
- {
-  "id": "cheat900CrowdAwakener",
-  "name": "Cheat 900 Crowd Awakener",
-  "aliases": [
-   "Cheat 720 Crowd Awakener (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 900",
-   "Crowd Awakener"
-  ],
-  "nextTricks": [
-   "Cheat 900 Crowd Awakener Knife"
-  ],
-  "description": "A Cheat 900 with a Crowd Awakener / straddle / split kick executed before landing."
- },
- {
-  "id": "backside900Gyro",
-  "name": "Backside 900 Gyro",
-  "aliases": [
-   "Pop 540 Round Gyro (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backisde 900 Hyper",
-   "540 Gyro"
-  ],
-  "nextTricks": [],
-  "description": "A Backside 900 Gyro is a Backside 900 with a an extra 360° executed before landing. Can be thought of as a vertical Full Snapu."
- },
- {
-  "id": "jackknife1080",
-  "name": "Jackknife 1080",
-  "aliases": [
-   "Jack10",
-   " Cheat 1080 Triple"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Jackknife",
-   "Cheat 1080"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 1080 that starts with a Jackknife."
- },
- {
-  "id": "rodeoFull",
-  "name": "Rodeo Full",
-  "aliases": [
-   "Squirrel Full"
-  ],
-  "categories": [
-   "TWIST",
-   "SINGLE",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Full Twist"
-  ],
-  "nextTricks": [],
-  "description": "A Full Twist with a leg grab"
- },
- {
-  "id": "crowdAwakener",
-  "name": "Crowd Awakener",
-  "aliases": [
-   "Cheat 360 Crowd Awakener (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Tornado"
-  ],
-  "nextTricks": [
-   "Crowd Awakener Knife",
-   "Cheat 900 Crowd Awakener"
-  ],
-  "description": "A Tornado with a split kick / straddle."
- },
- {
-  "id": "gainerFigure4",
-  "name": "Gainer Figure 4",
-  "aliases": [],
-  "categories": [
-   "FLIP",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Gainer Flash",
-   "Arabian"
-  ],
-  "nextTricks": [
-   "Gainer Figure 4 Sidekick"
-  ],
-  "description": "A Gainer with a “figure-4” position."
- },
- {
-  "id": "backside720",
-  "name": "Backside 720",
-  "aliases": [
-   "Pop 360 Hook (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Skip Hook"
-  ],
-  "nextTricks": [],
-  "description": "The Backside 720 starts in Backside stance, rotates 180° in the air, then finishes with a hook kick. Could be thought of as a Skip Hook off of two feet."
- },
- {
-  "id": "backside900Knife",
-  "name": "Backside 900 Knife",
-  "aliases": [
-   "Pop 540 Round Knife (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 1080",
-   "Jackknife"
-  ],
-  "nextTricks": [],
-  "description": "A Backside 900 Knife is a Backside 900 with a Jackknife executed, making it a Backside 1080 variation. Can be thought of as a vertical, non-flipped Full Swipeknife."
- },
- {
-  "id": "gainerArabian",
-  "name": "Gainer Arabian",
-  "aliases": [],
-  "categories": [
-   "FLIP"
-  ],
-  "prereqs": [
-   "Gainer Flash",
-   "Arabian"
-  ],
-  "nextTricks": [],
-  "description": "An Arabian from a swing/gainer takeoff."
- },
- {
-  "id": "backtuck",
-  "name": "Back Tuck",
-  "aliases": [
-   "Back Flip"
-  ],
-  "categories": [
-   "FLIP"
-  ],
-  "prereqs": [
-   "Backwards Roll"
-  ],
-  "nextTricks": [
-   "Arabian",
-   "Back Pike",
-   "Double Back Tuck",
-   "Flash Kick",
-   "Gainer Tuck",
-   "Gainer Flash",
-   "X Out",
-   "Rodeo Backflip"
-  ],
-  "description": "The Back Tuck (DOUBLEbed “back flip” by most) is the most fundamental and crucial move that a tricker can learn. Mastery of the backflip is an important fundamental building block – it teach air awareness and builds comfort-ability with flipping upside down."
- },
- {
-  "id": "teradaGrab",
-  "name": "Terada Grab",
-  "aliases": [],
-  "categories": [
-   "FLIP",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Flash Kick",
-   "Arabian"
-  ],
-  "nextTricks": [],
-  "description": "The Terada Grab can be done either as an Arabian variation or as a Sideflip variation. At the peak of the flip, the hook kick leg is grabbed with both hands and an axe/hook kick is executed from the peak of the flip to the landing. Created by Steve Terada"
- },
- {
-  "id": "backside1080",
-  "name": "Backside 1080",
-  "aliases": [
-   "Pop 720 Hook (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 900"
-  ],
-  "nextTricks": [
-   "Backside 1080 Shuriken",
-   "Cheat 1080",
-   "Backside 1260",
-   "Backside 900 Knife"
-  ],
-  "description": "The Backside 1080 starts in Backside stance, leaves the ground off of both feet, rotates 720° in the air, then lands and finishes with a hook kick towards the target."
- },
- {
-  "id": "cheat1080Shuriken",
-  "name": "Cheat 1080 Shuriken",
-  "aliases": [
-   "Cheat 900 Shuriken (TKT)",
-   " Cheat 1080 \"Hyper\""
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 1260",
-   "Cheat 720 Shuriken"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 1080 that finishes with a shuriken instead of a hook. This has the same rotational value as a Cheat 1260."
- },
- {
-  "id": "540",
-  "name": "540",
-  "aliases": [
-   "Cheat 360 Katana (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Tornado"
-  ],
-  "nextTricks": [
-   "Jackknife",
-   "Backside 900 Hyper",
-   "540 Gyro"
-  ],
-  "description": "A Tornado that lands in hyper (extra 180°) on the inside kicking leg."
- },
- {
-  "id": "cheat900Rodeo",
-  "name": "Cheat 900 Rodeo",
-  "aliases": [
-   "Cheat 720 Rodeo (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 900"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 900 with a leg grab."
- },
- {
-  "id": "540Gyro",
-  "name": "540 Gyro",
-  "aliases": [
-   "Cheat 360 Katana Gyro (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "540"
-  ],
-  "nextTricks": [
-   "Backside 900 Gyro",
-   "540 Gyroknife",
-   "Cheat 900 Gyro"
-  ],
-  "description": "A 540 with an extra twist, landing back in Complete stance."
- },
- {
-  "id": "doubleFull",
-  "name": "Double Full",
-  "aliases": [],
-  "categories": [
-   "DOUBLE",
-   "TWIST"
-  ],
-  "prereqs": [
-   "Full Hyper"
-  ],
-  "nextTricks": [
-   "Triple Full",
-   "Full Snapu"
-  ],
-  "description": "A Full Twist with an extra rotation before landing."
- },
- {
-  "id": "twistKnife",
-  "name": "Twist Knife",
-  "aliases": [
-   "Tornado Twist Kick Knife"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Jackknife"
-  ],
-  "nextTricks": [],
-  "description": "A Jackknife with a Twist-Kick (round kicking going against DOM) instead of a round kick."
- },
- {
-  "id": "wackknife",
-  "name": "Wackknife",
-  "aliases": [],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Tornado"
-  ],
-  "nextTricks": [
-   "Wackknife Round",
-   "Wackknife Turbo",
-   "Wackknife Doubleleg",
-   "Backside 1260 Wackknife",
-   "Wackest Knife",
-   "Butterfly Twist Wackknife"
-  ],
-  "description": "The Wackknife a cheat kick that has roughly 180° of in-air rotation, with 2-3 kicks (depending on how you count it). Basically a jackknife with no rotation."
- },
- {
-  "id": "cheat1260",
-  "name": "Cheat 1260",
-  "aliases": [
-   "Cheat 1080 Round"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 1080",
-   "Backside 1260"
-  ],
-  "nextTricks": [
-   "Cheat 1260 Doubleleg",
-   "Cheat 1260 Double",
-   "Cheat 1260 Hyper",
-   "Cheat 1080 Shuriken",
-   "Cheat 1440"
-  ],
-  "description": "The Cheat 1260 is a Cheat vert kick that leaves the ground in (approximately) Backside stance, completes (roughly) 1080° in-air rotation, finishing with a round kick towards the target."
- },
- {
-  "id": "fullSnapu",
-  "name": "Full Snapu",
-  "aliases": [],
-  "categories": [
-   "DOUBLE",
-   "TWIST",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Full Swipe",
-   "Double Full"
-  ],
-  "nextTricks": [
-   "Full Snapu Hyper",
-   "Rocketboi Scissor Snapu"
-  ],
-  "description": "A Full with a snapu executed before landing – making this a double full variation."
- },
- {
-  "id": "butterflyTwistWackknife",
-  "name": "Butterfly Twist Wackknife",
-  "aliases": [],
-  "categories": [
-   "SINGLE",
-   "TWIST",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Butterfly Twist Doubleleg",
-   "Wackknife"
-  ],
-  "nextTricks": [],
-  "description": "A Butterfly Twist with a Wackknife executed before landing."
- },
- {
-  "id": "backside900Sidekick",
-  "name": "Backside 900 Sidekick",
-  "aliases": [
-   "Pop 540 Sidekick (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 900"
-  ],
-  "nextTricks": [],
-  "description": "A Backside 900 that finishes with a sidekick instead of a round kick."
- },
- {
-  "id": "hurricaneKick",
-  "name": "Hurricane Kick",
-  "aliases": [
-   "Cheat 1080 Triple"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 1080"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 1080 with 3 outside kicks."
- },
- {
-  "id": "pop1080",
-  "name": "Pop 1080",
-  "aliases": [
-   "Pop 900 Hook (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop 900"
-  ],
-  "nextTricks": [
-   "Pop 1260"
-  ],
-  "description": "The Pop 1080 starts in Frontside stance, leaves the ground off of both feet, rotates 900° in the air, then lands and finishes with a hook towards the target."
- },
- {
-  "id": "pop1440",
-  "name": "Pop 1440",
-  "aliases": [
-   "Pop 1260 Hook (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 1440",
-   "Pop 1260"
-  ],
-  "nextTricks": [],
-  "description": "The Pop 1440 starts in Frontside stance, leaves the ground off of both feet, rotates 1080° in the air, then lands and finishes with a round kick towards the target."
- },
- {
-  "id": "540Gyroknife",
-  "name": "540 Gyroknife",
-  "aliases": [
-   "Cheat 360 Katana Gyroknife (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "540 Gyro"
-  ],
-  "nextTricks": [],
-  "description": "A 540 Gyro that finishes with a hyperhook. Could be thought of as a vertical Snapu Hyperhook."
- },
- {
-  "id": "btwist",
-  "name": "Butterfly Twist",
-  "aliases": [],
-  "categories": [
-   "TWIST",
-   "SINGLE"
-  ],
-  "prereqs": [
-   "Butterfly"
-  ],
-  "nextTricks": [
-   "Butterfly Twist Shuriken",
-   "Butterfly Twist Round",
-   "Butterfly Twist Hawkeye",
-   "Butterfly Twist Doubleleg",
-   "Butterfly Twist Hyper",
-   "Butterfly Twist Hyperhook",
-   "Butterfly Twist Wackknife",
-   "Butterfly Twist Swipe",
-   "Dragonfly Twist"
-  ],
-  "description": "A Butterfly Kick with an extra 360° rotation done in the air before landing on the horizontal axis."
- },
- {
-  "id": "corkscrewSwipeLateSwipe",
-  "name": "Corkscrew Swipe Late Swipe",
-  "aliases": [
-   "Corkscrew Frappe"
-  ],
-  "categories": [
-   "TWIST",
-   "VARIATION",
-   "PSEUDO_DOUBLE_FLIP"
-  ],
-  "prereqs": [
-   "Corkscrew Late Round"
-  ],
-  "nextTricks": [],
-  "description": "A Corkscrew Swipe that finishes with a late swipe on the pseudo-flip axis."
- },
- {
-  "id": "doubleCorkscrewShuriken",
-  "name": "Double Corkscrew Shuriken",
-  "aliases": [],
-  "categories": [
-   "DOUBLE",
-   "TWIST",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Double Corkscrew",
-   "Corkscrew Shuriken"
-  ],
-  "nextTricks": [],
-  "description": "A Double Corkscrew that finishes with a shuriken (outside crescent) in complete stance."
- },
- {
-  "id": "cheat900Hyper",
-  "name": "Cheat 900 Hyper",
-  "aliases": [
-   "Cheat 720 Katana (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 900"
-  ],
-  "nextTricks": [
-   "Cheat 900 Knife",
-   "Cheat 900 Gyro"
-  ],
-  "description": "A Cheat 900 that lands on the kicking (inside) leg in hyper."
- },
- {
-  "id": "fullSnapuHyper",
-  "name": "Full Snapu Hyper",
-  "aliases": [],
-  "categories": [
-   "DOUBLE",
-   "TWIST",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Full Snapu"
-  ],
-  "nextTricks": [],
-  "description": "A Full Snapu that lands in hyper."
- },
- {
-  "id": "cheatDoubleHook",
-  "name": "Cheat Double Hook",
-  "aliases": [
-   "Spyder Hook"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Skip Hook"
-  ],
-  "nextTricks": [],
-  "description": "An upright Spyder with an extra hook. Could be thought of as a precursor to the Wackknife."
- },
- {
-  "id": "cheat1620",
-  "name": "Cheat 1620",
-  "aliases": [
-   "Cheat 1440 Round (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 1440"
-  ],
-  "nextTricks": [],
-  "description": "The Cheat 1620 is a Cheat vert kick that leaves the ground in (approximately) Backside stance, completes (roughly) 1260° in-air rotation, finishing with an inside kick towards the target."
- },
- {
-  "id": "cheat1440",
-  "name": "Cheat 1440",
-  "aliases": [
-   "Cheat 1260 Hook (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 1260"
-  ],
-  "nextTricks": [
-   "Cheat 1620"
-  ],
-  "description": "The Cheat 1440 is a Cheat vert kick that leaves the ground in (approximately) Backside stance, completes (roughly) 1080° in-air rotation, finishing with an outside kick towards the target."
- },
- {
-  "id": "masterswipe",
-  "name": "Masterswipe",
-  "aliases": [],
-  "categories": [
-   "GROUNDWORK"
-  ],
-  "prereqs": [
-   "Masterscoot",
-   "Cartwheel"
-  ],
-  "nextTricks": [],
-  "description": "A Masterscoot that swipes over and lands in hyper, almost like a Cartwheel that takes off of the other foot."
- },
- {
-  "id": "pop720Double",
-  "name": "Pop 720 Double",
-  "aliases": [
-   "Pop 540 Cyclone (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop 720"
-  ],
-  "nextTricks": [],
-  "description": "A Pop 720 with two outside kicks. Can be thought of as a Pop 360 that rotates extra and finishes in a hyperhook."
- },
- {
-  "id": "pop360",
-  "name": "Pop 360",
-  "aliases": [],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [],
-  "nextTricks": [
-   "Pop 360 Shuriken",
-   "Pop 720",
-   "Swing 360",
-   "Illusion Twist",
-   "Backside 1080 Shuriken",
-   "Pop 360 Gyro"
-  ],
-  "description": "The Pop 360 starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with an outside crescent kick towards the target and lands in turbo (both feet). This trick is also a hyper, because Pop 180 Hook (TKT) is not often used in tricking. This trick is vitally important for Illusion Twist and other similar tricks that end in turbo."
- },
- {
-  "id": "cheat720",
-  "name": "Cheat 720",
-  "aliases": [
-   "Cheat 540 Hook (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Skip Hook"
-  ],
-  "nextTricks": [
-   "Cheat 720 Turbo",
-   "Cheat 900",
-   "Jackknife",
-   "Cheat 720 Double"
-  ],
-  "description": "A cheat vert kick that takes off in (roughly) backside stance, spins 360° and finishes with an outside (hook or crescent) at the target."
- },
- {
-  "id": "parafuso",
-  "name": "Parafuso",
-  "aliases": [],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Tornado"
-  ],
-  "nextTricks": [
-   "Parafuso Twist-Kick",
-   "Parafuso Hawkeye",
-   "Cheat 900 Doubleleg",
-   "Paraknife",
-   "Parafuso Gyro"
-  ],
-  "description": "A cheat set-up into a vertical Doubleleg. The earlier the legs get together for the doubleleg, the better the aesthetic."
- },
- {
-  "id": "tornadoHawkeye",
-  "name": "Tornado Hawkeye",
-  "aliases": [
-   "Cheat 360 Hawkeye (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Tornado"
-  ],
-  "nextTricks": [],
-  "description": "A Tornado with a hawkeye (inside leg executing a hook kick against the DOM)"
- },
- {
-  "id": "pop360GyroRound",
-  "name": "Pop 360 Gyro Round",
-  "aliases": [
-   "Pop 180 Whirlwind (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop 360 Gyro"
-  ],
-  "nextTricks": [],
-  "description": "A Pop 360 Gyro where a round kick is executed before landing, thus adding an extra 180° to the original move. The Pop 360 Gyro Round has the same amount of rotation as a Pop 900."
- },
- {
-  "id": "cheat900Gyro",
-  "name": "Cheat 900 Gyro",
-  "aliases": [
-   "Cheat 720 Katana Gyro(TKT)",
-   " Cheat 900 Snapu"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 900 Hyper",
-   "540 Gyro"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 900 with an extra rotation, landing back in complete stance."
- },
- {
-  "id": "backHandSpring",
-  "name": "Back Handspring",
-  "aliases": [],
-  "categories": [
-   "FLIP"
-  ],
-  "prereqs": [
-   "Backwards Roll"
-  ],
-  "nextTricks": [
-   "Back Tuck",
-   "Valdez"
-  ],
-  "description": "The Back Handspring is a gymnastics, tumbling move that takes off of two feet, jumps backward onto the hands and lands on both feet. Used to gain and build momentum for bigger tricks."
- },
- {
-  "id": "supermanFront",
-  "name": "Superman Front",
-  "aliases": [],
-  "categories": [
-   "FLIP",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Front Tuck"
-  ],
-  "nextTricks": [],
-  "description": "A Frontflip that hits a “Superman” pose at the peak of the flip."
- },
- {
-  "id": "pop720",
-  "name": "Pop 720",
-  "aliases": [
-   "Pop 540 Hook (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop 540"
-  ],
-  "nextTricks": [
-   "Pop 900",
-   "Pop 720 Double"
-  ],
-  "description": "The Pop 720 starts in Frontside stance, leaves the ground off of both feet, rotates 540° in the air, then lands and finishes with a hook kick towards the target."
- },
- {
-  "id": "cheat900Paraknife",
-  "name": "Cheat 900 Paraknife",
-  "aliases": [
-   "Cheat 720 Paraknife (TKT)",
-   " Cheat 900 Switchblade"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 900 Doubleleg"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 900 Parafuso that finishes with a knife."
- },
- {
-  "id": "popTaiFighter",
-  "name": "Pop Tai Fighter",
-  "aliases": [],
-  "categories": [
-   "VERT_KICK",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Pop Tornado"
-  ],
-  "nextTricks": [],
-  "description": "A Tai-Fighter is a Feilong with the round foot grabbed before the kick is released and is executed on the Doubleleg axis."
- },
- {
-  "id": "cheat720Turbo",
-  "name": "Cheat 720 Turbo",
-  "aliases": [
-   "Cheat 540 Hook True-Hyper (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 720",
-   "Swing 360"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 720 that lands on both legs (turbo) with an outside crescent kick."
- },
- {
-  "id": "cheat1260Doubleleg",
-  "name": "Cheat 1260 Doubleleg",
-  "aliases": [
-   "Cheat 1080 Parafuso (TKT)",
-   " Cheat 1260 Parafuso"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 1260",
-   "Cheat 900 Doubleleg"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 1260 that finishes with a parafuso/doubleleg."
- },
- {
-  "id": "popTornado",
-  "name": "Pop Tornado",
-  "aliases": [
-   "Pop 180 Round (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Tornado"
-  ],
-  "nextTricks": [
-   "Pop Tai Fighter",
-   "Pop Feilong",
-   "Backside 900",
-   "Pop 540"
-  ],
-  "description": "The most basic of pop kicks. The Pop Tornado starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with a round kick towards the target."
- },
- {
-  "id": "cheat900DoubleTaiFighter",
-  "name": "Cheat 900 Double Tai Fighter",
-  "aliases": [
-   "Cheat 720 Tai-Fighter (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Cheat 900"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 900 with a leg grab in between both kicks."
- },
- {
-  "id": "backside1620",
-  "name": "Backside 1620",
-  "aliases": [
-   "Pop 1260 Round (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 1440"
-  ],
-  "nextTricks": [],
-  "description": "A vertical kick which initiates from backside stance, pops up, spins 3.5 times in the air, and round kicks at the end. Jordan Okubo first landed this trick on May 11, 2015."
- },
- {
-  "id": "cheat1260Double",
-  "name": "Cheat 1260 Double",
-  "aliases": [
-   "Cheat 1080 Typhoon (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 1260"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 1260 with 2 inside kicks."
- },
- {
-  "id": "fullLateRound",
-  "name": "Full Late Round",
-  "aliases": [
-   "Full Late9",
-   "Full Mega Round"
-  ],
-  "categories": [
-   "FLIP",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Full Round"
-  ],
-  "nextTricks": [],
-  "description": "A Full that finishes with a mega round / late round."
- },
- {
-  "id": "corkscrewFeilong",
-  "name": "Corkscrew Feilong",
-  "aliases": [],
-  "categories": [
-   "TWIST",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Corkscrew Shuriken",
-   "Corkscrew Round",
-   "Pop Feilong"
-  ],
-  "nextTricks": [],
-  "description": "A Corkscrew that finishes with a Feilong (outside kick followed by an inside kick)."
- },
- {
-  "id": "rocketboiScissorSnapu",
-  "name": "Rocketboi Scissor Snapu",
-  "aliases": [],
-  "categories": [
-   "FLIP",
-   "TWIST",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Rocketboi",
-   "Full Snapu"
-  ],
-  "nextTricks": [],
-  "description": "A rocketboi scissor with a snapu executed before landing, making this a double full variation."
- },
- {
-  "id": "skipHook",
-  "name": "Skip Hook",
-  "aliases": [
-   "Tsunami (TKT)",
-   " Stepover Hook"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Spin Hook"
-  ],
-  "nextTricks": [
-   "Backside 720",
-   "Cheat Double Hook",
-   "Cheat 720"
-  ],
-  "description": "The skip hook is an important, fundamental move to master. All vert kicks of higher rotation that end in hook or any hyperhook variations all have the same muscle-memory as a skip hook. How your skip hook looks will determine how all your other hook kicks will look like, so master it until it looks exactly how you want it to look."
- },
- {
-  "id": "parafusoTwistKick",
-  "name": "Parafuso Twist-Kick",
-  "aliases": [],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Parafuso"
-  ],
-  "nextTricks": [],
-  "description": "A Parafuso with a Twist-Kick (round kicking going against DOM)."
- },
- {
-  "id": "swing900Knife",
-  "name": "Swing 900 Knife",
-  "aliases": [
-   "Swing 720 Knife (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Swing 900",
-   "Jackknife"
-  ],
-  "nextTricks": [],
-  "description": "A vert kick that swings and leaves the ground in (roughly) backside, spins (roughly) 540° and executes a knife."
- },
- {
-  "id": "backInXOut",
-  "name": "Back-In X-Out",
-  "aliases": [],
-  "categories": [
-   "FLIP",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Double Back Tuck"
-  ],
-  "nextTricks": [],
-  "description": "A Back Tuck followed by a Rocketboi (two flips)."
- },
- {
-  "id": "fullDoublelegDoubleTwist",
-  "name": "Full Doubleleg Double Twist",
-  "aliases": [],
-  "categories": [
-   "TRIPLE",
-   "TWIST",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Full Doubleleg Twist",
-   "Triple Full"
-  ],
-  "nextTricks": [],
-  "description": "A Double Full Doubleleg with an extra rotation."
- },
- {
-  "id": "popFeilongKnife",
-  "name": "Pop Feilong Knife",
-  "aliases": [],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop Feilong"
-  ],
-  "nextTricks": [],
-  "description": "A Pop Feilong that finishes with a knife."
- },
- {
-  "id": "cheat720Shuriken",
-  "name": "Cheat 720 Shuriken",
-  "aliases": [
-   "Cheat 540 Shuriken (TKT)",
-   " Cheat 720 \"Hyper\""
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop 360 Shuriken"
-  ],
-  "nextTricks": [
-   "Cheat 1080 Shuriken"
-  ],
-  "description": "A Cheat 720 that lands on the kicking leg in true hyper (TKT) / mega stance."
- },
- {
-  "id": "jackknifeTurbo",
-  "name": "Jackknife Turbo",
-  "aliases": [],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Jackknife",
-   "Tsunami"
-  ],
-  "nextTricks": [],
-  "description": "A Jackknife that lands back in frontside on both feet like an Illusion Twist. This landing is known as “hyper” in TKT and “turbo” in mainstream."
- },
- {
-  "id": "cheat900",
-  "name": "Cheat 900",
-  "aliases": [
-   "Cheat 720 Round (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 720",
-   "Backside 900"
-  ],
-  "nextTricks": [
-   "Cheat 900 Double Tai Fighter",
-   "Cheat 900 Sidekick",
-   "Cheat 900 Feilong",
-   "Cheat 900 Doubleleg",
-   "Cheat 900 Double",
-   "Cheat 1080",
-   "Cheat 900 Crowd Awakener",
-   "Cheat 900 Rodeo",
-   "Cheat 900 Hyper"
-  ],
-  "description": "The Cheat 900 is a Cheat vert kick that leaves the ground in Backside stance, completes (approximately) 540° in-air rotation, finishing with a round kick towards the target."
- },
- {
-  "id": "cheat900DoubleHyper",
-  "name": "Cheat 900 Double Hyper",
-  "aliases": [
-   "H-Bomb",
-   " Cheat 720 Typhoon Katana (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 900 Double"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 900 Double that lands on the inside leg in hyper."
- },
- {
-  "id": "pop360Shuriken",
-  "name": "Pop 360 Shuriken",
-  "aliases": [],
-  "categories": [
-   "VERT_KICK",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Pop 360"
-  ],
-  "nextTricks": [
-   "Pop 720",
-   "Pop 720 Double",
-   "Swing 360 Shuriken",
-   "Cheat 720 Shuriken",
-   "Pop Feilong"
-  ],
-  "description": "The Pop 360 Hyper starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with an outside cresecent kick towards the target and lands in complete stance. This move is often the first Shuriken that trickers learn, and is vitally important for future shuriken variations."
- },
- {
-  "id": "tornadoDouble",
-  "name": "Tornado Double",
-  "aliases": [
-   "Cheat 360 Double Round (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Tornado"
-  ],
-  "nextTricks": [],
-  "description": "A Tornado with two round kicks executed before landing."
- },
- {
-  "id": "cheat900Sidekick",
-  "name": "Cheat 900 Sidekick",
-  "aliases": [
-   "Cheat 720 Sidekick (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 900"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 900 with a sidekick rather than a round kick."
- },
- {
-  "id": "wackknifeRound",
-  "name": "Wackknife Round",
-  "aliases": [],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Wackknife"
-  ],
-  "nextTricks": [],
-  "description": "A Wackknife with a round kick executed before landing."
- },
- {
-  "id": "backInRocketboiOut",
-  "name": "Back-In Rocketboi-Out",
-  "aliases": [],
-  "categories": [
-   "FLIP",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Double Back Tuck"
-  ],
-  "nextTricks": [],
-  "description": "A Back Tuck followed by a Rocketboi (two flips)."
- },
- {
-  "id": "cork",
-  "name": "Corkscrew",
-  "aliases": [
-   "Cork"
-  ],
-  "categories": [
-   "TWIST",
-   "SINGLE"
-  ],
-  "prereqs": [
-   "Gainer flash"
-  ],
-  "nextTricks": [
-   "Corkscrew Doubleleg",
-   "Corkscrew Feilong",
-   "Corkscrew Hawkeye",
-   "Corkscrew Hyper",
-   "Corkscrew Hyperhook",
-   "Corkscrew Round",
-   "Corkscrew Shuriken",
-   "Corkscrew Swipe",
-   "Corkscrew Wackknife",
-   "Dragonfly Cork",
-   "Double Corkscrew"
-  ],
-  "description": "A Gainer Flash with an extra rotation before landing - or a Back Full off of one leg."
- },
- {
-  "id": "touchdownWrapFull",
-  "name": "Touchdown Wrap Full",
-  "aliases": [],
-  "categories": [
-   "TWIST",
-   "GROUNDWORK"
-  ],
-  "prereqs": [
-   "Wrap Full",
-   "Touchdown Raiz"
-  ],
-  "nextTricks": [],
-  "description": "A Wrap Full that finishes in a Touchdown Raiz."
- },
- {
-  "id": "parafusoHawkeye",
-  "name": "Parafuso Hawkeye",
-  "aliases": [],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Parafuso"
-  ],
-  "nextTricks": [],
-  "description": "A Parafuso with a hawkeye executed after the doubleleg portion of the move. A hawkeye occurs when the inside (round-kicking) leg executes a hawkeye (hook kick going against the DOM)."
- },
- {
-  "id": "wackknifeTurbo",
-  "name": "Wackknife Turbo",
-  "aliases": [
-   "Wackknife \"Hyper\""
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Wackknife"
-  ],
-  "nextTricks": [],
-  "description": "A Wackknife that lands in frontside on both legs (turbo)."
- },
- {
-  "id": "pop900Hyper",
-  "name": "Pop 900 Hyper",
-  "aliases": [
-   "Pop 720 Katana (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop 900"
-  ],
-  "nextTricks": [],
-  "description": "The Pop 900 Hyper starts in Frontside stance, leaves the ground off of both feet, rotates 720° in the air, then lands and finishes with a hyper’d round kick towards the target and lands on that kicking foot."
- },
- {
-  "id": "butterflyTwistKnife",
-  "name": "Butterfly Twist Knife",
-  "aliases": [
-   "Butterfly Twist Jackknife",
-   " Butterfly Twist Swipeknife"
-  ],
-  "categories": [
-   "SINGLE",
-   "TWIST",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Butterfly Twist Round",
-   "Butterfly Twist Hyperhook"
-  ],
-  "nextTricks": [],
-  "description": "A Butterfly Twist that finishes with a knife (round kick + hook kick)"
- },
- {
-  "id": "backside900Feilong",
-  "name": "Backside 900 Feilong",
-  "aliases": [
-   "Pop 540 Feilong (TKT)",
-   " Backside 720 Feilong"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 900",
-   "Pop Feilong"
-  ],
-  "nextTricks": [
-   "Backside 1260 Feilong"
-  ],
-  "description": "A Backside 900 that finishes with a Feilong."
- },
- {
-  "id": "jackknife",
-  "name": "Jackknife",
-  "aliases": [],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "540",
-   "Cheat 720"
-  ],
-  "nextTricks": [
-   "Swing 900 Knife",
-   "Jackknife Turbo",
-   "Jackknife Shuriken",
-   "Crowd Awakener Knife",
-   "Paraknife",
-   "Jackknife 1080",
-   "Backside 900 Knife",
-   "Twist Knife"
-  ],
-  "description": "A Cheat 720 with a round kick executed before the hook kick or a 540 that finishes with a hook kick. Could be thought of as a Narabong all executed in the air."
- },
- {
-  "id": "cheat900Knife",
-  "name": "Cheat 900 Knife",
-  "aliases": [
-   "Cheat 720 Knife (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 1080",
-   "Cheat 900 Hyper"
-  ],
-  "nextTricks": [
-   "Cheat 900 Double Knife"
-  ],
-  "description": "A Cheat 900 Crowd Awakener that lands in a hyperhook."
- },
- {
-  "id": "backside1080Shuriken",
-  "name": "Backside 1080 Shuriken",
-  "aliases": [
-   "Pop 720 Shuriken (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 1080",
-   "Pop 360"
-  ],
-  "nextTricks": [],
-  "description": "A Backside 1080 with an outside crescent kick that lands on the kicking foot, landing in complete stance."
- },
- {
-  "id": "fullDoubleleg",
-  "name": "Full Doubleleg",
-  "aliases": [],
-  "categories": [
-   "TWIST",
-   "SINGLE",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Full Twist"
-  ],
-  "nextTricks": [],
-  "description": "A Full Twist with a Doubleleg executed before landing."
- },
- {
-  "id": "popFeilong",
-  "name": "Pop Feilong",
-  "aliases": [
-   "Pop 180 Feilong"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop 360 Shuriken",
-   "Pop Tornado"
-  ],
-  "nextTricks": [
-   "Corkscrew Feilong",
-   "Pop Feilong Knife",
-   "Backside 900 Feilong"
-  ],
-  "description": "The Pop Feilong starts off like a Pop 360 and finishes with an inside kick."
- },
- {
-  "id": "tornadoSidekick",
-  "name": "Tornado Sidekick",
-  "aliases": [
-   "Cheat 360 Sidekick (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Tornado"
-  ],
-  "nextTricks": [],
-  "description": "A Tornado with a sidekick instead of a round kick."
- },
- {
-  "id": "swing900Sidekick",
-  "name": "Swing 900 Sidekick",
-  "aliases": [
-   "Swing 720 Sidekick"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Swing 900 Sidekick"
-  ],
-  "nextTricks": [
-   "Swing 900 Sidekick"
-  ],
-  "description": "A Swing 900 with a sidekick executed instead of a round kick."
- },
- {
-  "id": "gainerFigure4Sidekick",
-  "name": "Gainer Figure 4 Sidekick",
-  "aliases": [],
-  "categories": [
-   "FLIP",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Gainer Figure 4"
-  ],
-  "nextTricks": [],
-  "description": "A Gainer Figure-4 with a sidekick. Not totally flipped, but more on the Flick Flack axis."
- },
- {
-  "id": "fullInBackOutHyper",
-  "name": "Full-In Back-Out Hyper",
-  "aliases": [],
-  "categories": [
-   "FLIP",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Full-In Back-Out"
-  ],
-  "nextTricks": [],
-  "description": "A Full-In Back-Out that lands in hyper. Could be thought of as an \"on-axis\" Frappe."
- },
- {
-  "id": "tripleFullHyper",
-  "name": "Triple Full Hyper",
-  "aliases": [],
-  "categories": [
-   "TWIST",
-   "TRIPLE",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Triple Full"
-  ],
-  "nextTricks": [],
-  "description": "A Triple Full that lands in hyper stance."
- },
- {
-  "id": "cheat900Feilong",
-  "name": "Cheat 900 Feilong",
-  "aliases": [
-   "Cheat 720 Feilong (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 900"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 900 with a Feilong executed before landing."
- },
- {
-  "id": "jackknifeShuriken",
-  "name": "Jackknife Shuriken",
-  "aliases": [
-   "\"Hyper\" Jackknife"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Jackknife"
-  ],
-  "nextTricks": [],
-  "description": "A Jackknife that lands on the outside leg with a shuriken-style kick."
- },
- {
-  "id": "backside1440",
-  "name": "Backside 1440",
-  "aliases": [
-   "Pop 1080 Hook (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 1260"
-  ],
-  "nextTricks": [
-   "Backside 1620",
-   "Backside 1260 Knife",
-   "Backside 1260 Feilong Knife",
-   "Pop 1440"
-  ],
-  "description": "The Backside 1440 starts in Backside stance, leaves the ground off of both feet, rotates 1080° in the air, then lands and finishes with a hook kick towards the target. Could be thought of as a vertical double full hyperhook."
- },
- {
-  "id": "backside900",
-  "name": "Backside 900",
-  "aliases": [
-   "Pop 540 Round (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop Tornado"
-  ],
-  "nextTricks": [
-   "Cheat 900",
-   "Backside 900 Feilong",
-   "Pop 900",
-   "Backside 900 Hyper",
-   "Swing 900",
-   "Backside 1080",
-   "Backside 900 Sidekick"
-  ],
-  "description": "The Backside 900 starts in Backside stance, leaves the ground off of both feet, rotates 540° in the air, then lands and finishes with a round kick towards the target. The Backside 900 is very important for learning similar tricks like the Cheat 900 and the Swing 900, as they have the same amount of rotation, but different take off."
- },
- {
-  "id": "wackknifeDoubleleg",
-  "name": "Wackknife Doubleleg",
-  "aliases": [
-   "Wackknife Parafuso"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Wackknife"
-  ],
-  "nextTricks": [],
-  "description": "A Wackknife that finishes with a Doubleleg."
- },
- {
-  "id": "pop900",
-  "name": "Pop 900",
-  "aliases": [
-   "Pop 720 Round (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop 720",
-   "Backside 900"
-  ],
-  "nextTricks": [
-   "Pop 900 Hyper",
-   "Pop 1080"
-  ],
-  "description": "The Pop 900 starts in Frontside stance, leaves the ground off of both feet, rotates 720° in the air, then lands and finishes with a round kick towards the target."
- },
- {
-  "id": "cheat900CrowdAwakenerKnife",
-  "name": "Cheat 900 Crowd Awakener Knife",
-  "aliases": [
-   "Cheat 720 Crowd Awakener Knife (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 900 Crowd Awakener"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 900 Crowd Awakener that lands in a hyperhook."
- },
- {
-  "id": "backside1260Knife",
-  "name": "Backside 1260 Knife",
-  "aliases": [
-   "Pop 900 Knife (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 1260",
-   "Backside 1440"
-  ],
-  "nextTricks": [],
-  "description": "A Backside 1260 that finishes with a jackknife."
- },
- {
-  "id": "crowdAwakenerKnife",
-  "name": "Crowd Awakener Knife",
-  "aliases": [
-   "Crowd Awakener Level 3",
-   " Cheat 360 Crowd Awakener Knife (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Crowd Awakener",
-   "Jackknife"
-  ],
-  "nextTricks": [],
-  "description": "A Crowd Awakener that finishes with a hyperhook."
- },
- {
-  "id": "aerialTwistDoubleleg",
-  "name": "Aerial Twist Doubleleg",
-  "aliases": [],
-  "categories": [
-   "SINGLE",
-   "TWIST"
-  ],
-  "prereqs": [
-   "Aerial Twist"
-  ],
-  "nextTricks": [],
-  "description": "An Aerial Twist that finishes with a Doubleleg."
- },
- {
-  "id": "doubleNike",
-  "name": "Double Nike",
-  "aliases": [],
-  "categories": [
-   "PSEUDO_DOUBLE_FLIP"
-  ],
-  "prereqs": [
-   "Double Back Tuck"
-  ],
-  "nextTricks": [],
-  "description": "An off-axis double backflip with body in a position resembling the Nike logo."
- },
- {
-  "id": "pop360GyroDoubleleg",
-  "name": "Pop 360 Gyro Doubleleg",
-  "aliases": [
-   "Pop 180 Shuriken Gyro Doubleleg (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop 360 Gyro"
-  ],
-  "nextTricks": [],
-  "description": "A Pop 360 Gyro where a Doubleleg is executed before landing, thus adding an extra 180° to the original move."
- },
- {
-  "id": "cheat900Doubleleg",
-  "name": "Cheat 900 Doubleleg",
-  "aliases": [
-   "Cheat 720 Doubleleg (TKT)",
-   "Cheat 900 Parafuso"
-  ],
-  "categories": [
-   "VERT_KICK",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Cheat 900",
-   "Parafuso"
-  ],
-  "nextTricks": [
-   "Cheat 1260 Doubleleg",
-   "Cheat 900 Doubleleg Twist",
-   "Cheat 900 Paraknife"
-  ],
-  "description": "A Cheat 900 that finishes with a parafuso/doubleleg instead of a round kick."
- },
- {
-  "id": "paraknife",
-  "name": "Paraknife",
-  "aliases": [
-   "Switchblade"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Parafuso",
-   "Jackknife"
-  ],
-  "nextTricks": [],
-  "description": "A Parafuso that finishes with a hyperhook."
- },
- {
-  "id": "backside900Hyper",
-  "name": "Backside 900 Hyper",
-  "aliases": [
-   "Pop 540 Katana (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 900",
-   "540"
-  ],
-  "nextTricks": [],
-  "description": "The Backside 900 Hyper starts in Backside stance, leaves the ground off of both feet, rotates 540° in the air, then lands and finishes round kick and lands on that kicking foot in hyper stance."
- },
- {
-  "id": "backside1260Wackknife",
-  "name": "Backside 1260 Wackknife",
-  "aliases": [
-   "Pop 900 Wackknife (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Backside 1260",
-   "Wackknife"
-  ],
-  "nextTricks": [],
-  "description": "A Backside 1260 that finishes with a wackknife."
- },
- {
-  "id": "backInSquirrelOut",
-  "name": "Back-In Squirrel-Out",
-  "aliases": [],
-  "categories": [
-   "FLIP",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Double Back Tuck"
-  ],
-  "nextTricks": [],
-  "description": "A Back Tuck followed by a Squirrel Backflip (two flips)."
- },
- {
-  "id": "wackestKnife",
-  "name": "Wackest Knife",
-  "aliases": [
-   "Wackknife Hyperhook"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Wackknife"
-  ],
-  "nextTricks": [],
-  "description": "A Wackknife with an extra hyperhook."
- },
- {
-  "id": "pop1260",
-  "name": "Pop 1260",
-  "aliases": [
-   "Pop 900 Round (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop 1080"
-  ],
-  "nextTricks": [
-   "Pop 1440"
-  ],
-  "description": "The Pop 1260 starts in Frontside stance, leaves the ground off of both feet, rotates 1080° in the air, then lands and finishes with a round kick towards the target."
- },
- {
-  "id": "aerial",
-  "name": "Aerial",
-  "aliases": [],
-  "categories": [
-   "FLIP"
-  ],
-  "prereqs": [
-   "Cartwheel",
-   "One-Handed Cartwheel"
-  ],
-  "nextTricks": [],
-  "description": "A Cartwheel with no-hands. Unlike the gymnast version of the Aerial, the Tricker/Butterfly Aerial goes side to side."
- },
- {
-  "id": "arabianScissorRound",
-  "name": "Arabian Scissor Round",
-  "aliases": [],
-  "categories": [
-   "FLIP",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Full Scissor"
-  ],
-  "nextTricks": [],
-  "description": "A Full Round with a scissor grab in the middle."
- },
- {
-  "id": "corkscrewDoublelegLateRound",
-  "name": "Corkscrew Doubleleg Late Round",
-  "aliases": [
-   "Corkscrew Doubleleg Late9",
-   "Corkscrew Doubleleg Mega Round"
-  ],
-  "categories": [
-   "SINGLE",
-   "TWIST",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Corkscrew Doubleleg",
-   "Corkscrew Late Round"
-  ],
-  "nextTricks": [],
-  "description": "A Corkscrew Doubleleg that at finishes with a late round."
- },
- {
-  "id": "pop360Gyro",
-  "name": "Pop 360 Gyro",
-  "aliases": [
-   "Pop 180 Shuriken Gyro (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Pop 360"
-  ],
-  "nextTricks": [
-   "Pop 360 Gyro Doubleleg",
-   "Pop 360 Gyro Round"
-  ],
-  "description": "A Pop 360 with an extra 360° spin (aka gyro/kyro)before landing, landing back in Frontside."
- },
- {
-  "id": "cheat900Double",
-  "name": "Cheat 900 Double",
-  "aliases": [
-   "Cheat 720 Typhoon (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 900"
-  ],
-  "nextTricks": [
-   "Cheat 900 Double Hyper",
-   "Cheat 900 Double Knife"
-  ],
-  "description": "A Cheat 900 with two inside kicks. Like a 540 late Round."
- },
- {
-  "id": "cheat1080",
-  "name": "Cheat 1080",
-  "aliases": [
-   "Cheat 900 Hook (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 900",
-   "Backside 1080"
-  ],
-  "nextTricks": [
-   "Cheat 900 Knife",
-   "Cheat 1080 Double",
-   "Jackknife 1080",
-   "Cheat 1260",
-   "Hurricane Kick"
-  ],
-  "description": "A cheat kick which leaves the ground in (approximately) backside stance, completes (roughly) 720° in-air rotation, and finishes with an outside kick (hook or crescent) at the target."
- },
- {
-  "id": "cheat1080Double",
-  "name": "Cheat 1080 Double",
-  "aliases": [
-   "Cheat 900 Cyclone (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 1080"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 900 that lands in hyper and executes a jackknife before landing."
- },
- {
-  "id": "corkscrewSwipeknife",
-  "name": "Corkscrew Swipeknife",
-  "aliases": [
-   "Cork Knife"
-  ],
-  "categories": [
-   "SINGLE",
-   "TWIST",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Corkscrew Swipe",
-   "Boxcutter"
-  ],
-  "nextTricks": [],
-  "description": "A Corkscrew that finishes with a Swipeknife."
- },
- {
-  "id": "tripleFull",
-  "name": "Triple Full",
-  "aliases": [],
-  "categories": [
-   "TRIPLE",
-   "TWIST"
-  ],
-  "prereqs": [
-   "Double Full"
-  ],
-  "nextTricks": [
-   "Tak Triple Full",
-   "Full Doubleleg Double Twist",
-   "Triple Full Hyper"
-  ],
-  "description": "A Full Twist with an extra two rotations."
- },
- {
-  "id": "cartwheel",
-  "name": "Cartwheel",
-  "aliases": [],
-  "categories": [
-   "GROUNDWORK"
-  ],
-  "prereqs": [],
-  "nextTricks": [
-   "Aerial",
-   "Butterfly Kick",
-   "Cartwheel Twist",
-   "Cartwheel Late Swipe",
-   "Helicoptero",
-   "Masterswipe",
-   "One-Handed Cartwheel",
-   "Palmkick",
-   "Roundoff"
-  ],
-  "description": "While the “gymnastics cartwheel” has a 180° stance change from start to finish, the “tricker cartwheel” goes completely side-to-side. Trickers tend to use the side-to-side cartwheel because of how the cartwheel sets for side-fulls, wraps, and masterswings."
- },
- {
-  "id": "rocketboiScissorSwitch",
-  "name": "Rocketboi Scissor Switch",
-  "aliases": [],
-  "categories": [
-   "FLIP",
-   "VARIATION"
-  ],
-  "prereqs": [
-   "Rocketboi"
-  ],
-  "nextTricks": [],
-  "description": "A Rocketboi with a scissor and another switch."
- },
- {
-  "id": "envergadoTwist",
-  "name": "Envergado Twist",
-  "aliases": [],
-  "categories": [
-   "TWIST"
-  ],
-  "prereqs": [
-   "Envergado"
-  ],
-  "nextTricks": [],
-  "description": "An Envergado with an extra twist executed before landing. Can be thought of as an inverted Parafuso Gyro."
- },
- {
-  "id": "cheatFeilong",
-  "name": "Cheat Feilong",
-  "aliases": [
-   "Cheat 360 Feilong (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Tornado"
-  ],
-  "nextTricks": [],
-  "description": "A Tornado where the outside (pumped, non-kicking) leg kicks like a crescent, resulting in 2 kicks."
- },
- {
-  "id": "cheat900DoublelegTwist",
-  "name": "Cheat 900 Doubleleg Twist",
-  "aliases": [
-   "Cheat 720 Doubleleg Twist (TKT)"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Cheat 900 Doubleleg"
-  ],
-  "nextTricks": [],
-  "description": "A Cheat 900 Doubleleg with an extra twist, landing back in complete stance."
- },
- {
-  "id": "swing1260",
-  "name": "Swing 1260",
-  "aliases": [
-   "Swing 1080 Round"
-  ],
-  "categories": [
-   "VERT_KICK"
-  ],
-  "prereqs": [
-   "Swing 1080"
-  ],
-  "nextTricks": [],
-  "description": "A vert kick that swings and leaves the ground in (roughly) backside, spins (roughly) 900° and executes an inside kick. Could be thought of as a vertical Double Corkscrew Round."
- }
-]
+  {
+   "id": "snapuHyperhook",
+   "name": "Snapu Hyperhook",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Snapu"
+   ],
+   "nextTricks": [],
+   "description": "A Snapu that lands in a hyperhook. Can be thought of as a laid back / inverted 540 Gyroknife."
+  },
+  {
+   "id": "backside900Gyro",
+   "name": "Backside 900 Gyro",
+   "aliases": [
+    "Pop 540 Round Gyro (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backisde 900 Hyper",
+    "540 Gyro"
+   ],
+   "nextTricks": [],
+   "description": "A Backside 900 Gyro is a Backside 900 with a an extra 360° executed before landing. Can be thought of as a vertical Full Snapu."
+  },
+  {
+   "id": "wackknife",
+   "name": "Wackknife",
+   "aliases": [],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Tornado"
+   ],
+   "nextTricks": [
+    "Wackknife Round",
+    "Wackknife Turbo",
+    "Wackknife Doubleleg",
+    "Backside 1260 Wackknife",
+    "Wackest Knife",
+    "Butterfly Twist Wackknife",
+    "Crackknife",
+    "Sailor Moon Wackknife"
+   ],
+   "description": "The Wackknife a cheat kick that has roughly 180° of in-air rotation, with 2-3 kicks (depending on how you count it). Basically a jackknife with no rotation."
+  },
+  {
+   "id": "skipHook",
+   "name": "Skip Hook",
+   "aliases": [
+    "Tsunami (TKT)",
+    " Stepover Hook"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Spin Hook"
+   ],
+   "nextTricks": [
+    "Backside 720",
+    "Cheat Double Hook",
+    "Cheat 720"
+   ],
+   "description": "The skip hook is an important, fundamental move to master. All vert kicks of higher rotation that end in hook or any hyperhook variations all have the same muscle-memory as a skip hook. How your skip hook looks will determine how all your other hook kicks will look like, so master it until it looks exactly how you want it to look."
+  },
+  {
+   "id": "spyderTwist",
+   "name": "Spyder Twist",
+   "aliases": [
+    "Snowbubble"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Spyder",
+    "Butterfly Twist"
+   ],
+   "nextTricks": [
+    "Spyder Twist Round"
+   ],
+   "description": "A Spyder with an extra in-air spin executed before landing."
+  },
+  {
+   "id": "parafusoTwistKick",
+   "name": "Parafuso Twist-Kick",
+   "aliases": [],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Parafuso"
+   ],
+   "nextTricks": [],
+   "description": "A Parafuso with a Twist-Kick (round kicking going against DOM)."
+  },
+  {
+   "id": "cheat900Knife",
+   "name": "Cheat 900 Knife",
+   "aliases": [
+    "Cheat 720 Knife (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 1080",
+    "Cheat 900 Hyper"
+   ],
+   "nextTricks": [
+    "Cheat 900 Double Knife"
+   ],
+   "description": "A Cheat 900 Crowd Awakener that lands in a hyperhook."
+  },
+  {
+   "id": "sailorMoonLateRound",
+   "name": "Sailor Moon Late Round",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sailor Moon"
+   ],
+   "nextTricks": [],
+   "description": "A Sailormoon that lands in a late/mega round."
+  },
+  {
+   "id": "cheatFeilong",
+   "name": "Cheat Feilong",
+   "aliases": [
+    "Cheat 360 Feilong (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Tornado"
+   ],
+   "nextTricks": [],
+   "description": "A Tornado where the outside (pumped, non-kicking) leg kicks like a crescent, resulting in 2 kicks."
+  },
+  {
+   "id": "feilongSnapu",
+   "name": "Feilong Snapu",
+   "aliases": [
+    "McDirty"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Snapu"
+   ],
+   "nextTricks": [],
+   "description": "An inverted Cheat Feilong with an extra 360° twist before landing."
+  },
+  {
+   "id": "cheat1620",
+   "name": "Cheat 1620",
+   "aliases": [
+    "Cheat 1440 Round (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 1440"
+   ],
+   "nextTricks": [],
+   "description": "The Cheat 1620 is a Cheat vert kick that leaves the ground in (approximately) Backside stance, completes (roughly) 1260° in-air rotation, finishing with an inside kick towards the target."
+  },
+  {
+   "id": "cheat900Gyro",
+   "name": "Cheat 900 Gyro",
+   "aliases": [
+    "Cheat 720 Katana Gyro(TKT)",
+    " Cheat 900 Snapu"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 900 Hyper",
+    "540 Gyro"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 900 with an extra rotation, landing back in complete stance."
+  },
+  {
+   "id": "wackknifeRound",
+   "name": "Wackknife Round",
+   "aliases": [],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Wackknife"
+   ],
+   "nextTricks": [],
+   "description": "A Wackknife with a round kick executed before landing."
+  },
+  {
+   "id": "cheat1080",
+   "name": "Cheat 1080",
+   "aliases": [
+    "Cheat 900 Hook (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 900",
+    "Backside 1080"
+   ],
+   "nextTricks": [
+    "Cheat 900 Knife",
+    "Cheat 1080 Double",
+    "Jackknife 1080",
+    "Cheat 1260",
+    "Hurricane Kick",
+    "Cheat 720 Twist Hyperhook"
+   ],
+   "description": "A cheat kick which leaves the ground in (approximately) backside stance, completes (roughly) 720° in-air rotation, and finishes with an outside kick (hook or crescent) at the target."
+  },
+  {
+   "id": "popTornado",
+   "name": "Pop Tornado",
+   "aliases": [
+    "Pop 180 Round (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Tornado"
+   ],
+   "nextTricks": [
+    "Pop Tai Fighter",
+    "Pop Feilong",
+    "Backside 900",
+    "Pop 540"
+   ],
+   "description": "The most basic of pop kicks. The Pop Tornado starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with a round kick towards the target."
+  },
+  {
+   "id": "sailorMoonRound",
+   "name": "Sailor Moon Round",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sailor Moon"
+   ],
+   "nextTricks": [],
+   "description": "A Sailor Moon with a round kick executed before landing."
+  },
+  {
+   "id": "raizReversao",
+   "name": "Raiz Reversao",
+   "aliases": [
+    "Raiz Scissor"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Raiz",
+    "Reversao"
+   ],
+   "nextTricks": [],
+   "description": "A Raiz with a reversao (or scissor) executed at the peak."
+  },
+  {
+   "id": "doublelegDoubleTwist",
+   "name": "Doubleleg Double Twist",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Doubleleg Twist"
+   ],
+   "nextTricks": [],
+   "description": "A Doubleleg with two extra spins executed before landing."
+  },
+  {
+   "id": "reversao",
+   "name": "Reversao",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Compasso"
+   ],
+   "nextTricks": [
+    "Raiz Reversao"
+   ],
+   "description": "The Reversao is similar to a front walkover, but on the raiz axis. Originates from Capoeira."
+  },
+  {
+   "id": "jackknife1080",
+   "name": "Jackknife 1080",
+   "aliases": [
+    "Jack10",
+    " Cheat 1080 Triple"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Jackknife",
+    "Cheat 1080"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 1080 that starts with a Jackknife."
+  },
+  {
+   "id": "backtuck",
+   "name": "Back Tuck",
+   "aliases": [
+    "Back Flip"
+   ],
+   "categories": [
+    "FLIP"
+   ],
+   "prereqs": [
+    "Backwards Roll"
+   ],
+   "nextTricks": [
+    "Arabian",
+    "Back Pike",
+    "Double Back Tuck",
+    "Flash Kick",
+    "Gainer Tuck",
+    "Gainer Flash",
+    "X Out",
+    "Rodeo Backflip"
+   ],
+   "description": "The Back Tuck (DOUBLEbed “back flip” by most) is the most fundamental and crucial move that a tricker can learn. Mastery of the backflip is an important fundamental building block – it teach air awareness and builds comfort-ability with flipping upside down."
+  },
+  {
+   "id": "butterflyTwistWackknife",
+   "name": "Butterfly Twist Wackknife",
+   "aliases": [],
+   "categories": [
+    "SINGLE",
+    "TWIST",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Butterfly Twist Doubleleg",
+    "Wackknife"
+   ],
+   "nextTricks": [],
+   "description": "A Butterfly Twist with a Wackknife executed before landing."
+  },
+  {
+   "id": "tornado",
+   "name": "Tornado",
+   "aliases": [
+    "Cheat 360 Round (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    ""
+   ],
+   "nextTricks": [
+    "Pop Tornado",
+    "Tornado Double",
+    "Tornado Sidekick",
+    "Cheat Feilong",
+    "Crowd Awakener",
+    "540",
+    "Wackknife",
+    "Parafuso",
+    "Tornado Hawkeye",
+    "Raiz"
+   ],
+   "description": "The Tornado is the most basic cheat kick and one of the first moves a tricker will learn. It forms the basis of all cheat kicks after."
+  },
+  {
+   "id": "540",
+   "name": "540",
+   "aliases": [
+    "Cheat 360 Katana (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Tornado"
+   ],
+   "nextTricks": [
+    "Jackknife",
+    "Backside 900 Hyper",
+    "540 Gyro",
+    "Sideswipe"
+   ],
+   "description": "A Tornado that lands in hyper (extra 180°) on the inside kicking leg."
+  },
+  {
+   "id": "raizHyperhook",
+   "name": "Raiz Hyperhook",
+   "aliases": [
+    "Windex"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Raiz",
+    "Cheat 720"
+   ],
+   "nextTricks": [
+    "Raiz Hyperhook Turbo"
+   ],
+   "description": "A Raiz that finishes with a hyperhook. Could be thought of as an inverted Cheat 720."
+  },
+  {
+   "id": "sideswipeLateRound",
+   "name": "Sideswipe Late Round",
+   "aliases": [
+    "Shadowswipe",
+    " Sideswipe Late9",
+    " Sideswipe Mega Round"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sideswipe"
+   ],
+   "nextTricks": [
+    "Sideswipe Late Swipe"
+   ],
+   "description": "A Sideswipe that lands in mega and executes another round before landing."
+  },
+  {
+   "id": "tripleFullHyper",
+   "name": "Triple Full Hyper",
+   "aliases": [],
+   "categories": [
+    "TWIST",
+    "TRIPLE",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Triple Full"
+   ],
+   "nextTricks": [],
+   "description": "A Triple Full that lands in hyper stance."
+  },
+  {
+   "id": "lonestarHyperhook",
+   "name": "Lonestar Hyperhook",
+   "aliases": [],
+   "categories": [
+    "FLIP",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Lonestar"
+   ],
+   "nextTricks": [],
+   "description": "A Lonestar that finishes with a hyperhook."
+  },
+  {
+   "id": "pop720Double",
+   "name": "Pop 720 Double",
+   "aliases": [
+    "Pop 540 Cyclone (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop 720"
+   ],
+   "nextTricks": [],
+   "description": "A Pop 720 with two outside kicks. Can be thought of as a Pop 360 that rotates extra and finishes in a hyperhook."
+  },
+  {
+   "id": "popTaiFighter",
+   "name": "Pop Tai Fighter",
+   "aliases": [],
+   "categories": [
+    "VERT_KICK",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Pop Tornado"
+   ],
+   "nextTricks": [],
+   "description": "A Tai-Fighter is a Feilong with the round foot grabbed before the kick is released and is executed on the Doubleleg axis."
+  },
+  {
+   "id": "fullInBackOutHyper",
+   "name": "Full-In Back-Out Hyper",
+   "aliases": [],
+   "categories": [
+    "FLIP",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Full-In Back-Out"
+   ],
+   "nextTricks": [],
+   "description": "A Full-In Back-Out that lands in hyper. Could be thought of as an \"on-axis\" Frappe."
+  },
+  {
+   "id": "cheat900CrowdAwakenerKnife",
+   "name": "Cheat 900 Crowd Awakener Knife",
+   "aliases": [
+    "Cheat 720 Crowd Awakener Knife (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 900 Crowd Awakener"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 900 Crowd Awakener that lands in a hyperhook."
+  },
+  {
+   "id": "cartwheel",
+   "name": "Cartwheel",
+   "aliases": [],
+   "categories": [
+    "GROUNDWORK"
+   ],
+   "prereqs": [],
+   "nextTricks": [
+    "Aerial",
+    "Butterfly Kick",
+    "Cartwheel Twist",
+    "Cartwheel Late Swipe",
+    "Helicoptero",
+    "Masterswipe",
+    "One-Handed Cartwheel",
+    "Palmkick",
+    "Roundoff",
+    "Gumbi"
+   ],
+   "description": "While the “gymnastics cartwheel” has a 180° stance change from start to finish, the “tricker cartwheel” goes completely side-to-side. Trickers tend to use the side-to-side cartwheel because of how the cartwheel sets for side-fulls, wraps, and masterswings."
+  },
+  {
+   "id": "touchdownSwipe",
+   "name": "Touchdown Swipe",
+   "aliases": [
+    "Touchdown Sideswipe"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Touchdown Raiz",
+    "Sideswipe"
+   ],
+   "nextTricks": [],
+   "description": "A Touchdown Raiz that swipes and lands on the opposite leg."
+  },
+  {
+   "id": "lotusLateRound",
+   "name": "Lotus Late Round",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Lotus Doubleleg"
+   ],
+   "nextTricks": [],
+   "description": "A Lotus Doubleleg that lands in mega and executes round kick."
+  },
+  {
+   "id": "sideswipeLateSwipe",
+   "name": "Sideswipe Late Swipe",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sideswipe Late Round"
+   ],
+   "nextTricks": [],
+   "description": "A Sideswipe that finishes with a late swipe on the pseudo axis."
+  },
+  {
+   "id": "cheat720Double",
+   "name": "Cheat 720 Double",
+   "aliases": [
+    "Cheat 540 Cyclone (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 720"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 720 with two “kicks”, where the first kick is just a straightened chamber."
+  },
+  {
+   "id": "540Gyro",
+   "name": "540 Gyro",
+   "aliases": [
+    "Cheat 360 Katana Gyro (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "540"
+   ],
+   "nextTricks": [
+    "Backside 900 Gyro",
+    "540 Gyroknife",
+    "Cheat 900 Gyro"
+   ],
+   "description": "A 540 with an extra twist, landing back in Complete stance."
+  },
+  {
+   "id": "cheat900DoubleHyper",
+   "name": "Cheat 900 Double Hyper",
+   "aliases": [
+    "H-Bomb",
+    " Cheat 720 Typhoon Katana (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 900 Double"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 900 Double that lands on the inside leg in hyper."
+  },
+  {
+   "id": "tornadoSidekick",
+   "name": "Tornado Sidekick",
+   "aliases": [
+    "Cheat 360 Sidekick (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Tornado"
+   ],
+   "nextTricks": [],
+   "description": "A Tornado with a sidekick instead of a round kick."
+  },
+  {
+   "id": "cheat720TwistBroken",
+   "name": "Cheat 720 Twist Broken",
+   "aliases": [
+    "Graham Cracker Broken"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Cheat 720 Twist"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 720 Twist that finishes with a broken. Usually lands in hyper or semi stance."
+  },
+  {
+   "id": "butterflyTwistAxe",
+   "name": "Butterfly Twist Axe",
+   "aliases": [],
+   "categories": [
+    "SINGLE",
+    "TWIST",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Butterfly Twist"
+   ],
+   "nextTricks": [],
+   "description": "A Butterfly Twist with an axe kick executed before landing."
+  },
+  {
+   "id": "cheat720",
+   "name": "Cheat 720",
+   "aliases": [
+    "Cheat 540 Hook (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Skip Hook"
+   ],
+   "nextTricks": [
+    "Cheat 720 Turbo",
+    "Cheat 900",
+    "Jackknife",
+    "Cheat 720 Double",
+    "Raiz Hyperhook"
+   ],
+   "description": "A cheat vert kick that takes off in (roughly) backside stance, spins 360° and finishes with an outside (hook or crescent) at the target."
+  },
+  {
+   "id": "gumbi",
+   "name": "Gumbi",
+   "aliases": [
+    "Meia Lua De Compasso (Capoeira)"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Cartwheel"
+   ],
+   "nextTricks": [
+    "Raiz",
+    "Sailor Gumbi"
+   ],
+   "description": "The base for all Raiz-type of tricks. Can be thought of as an arched, opposite-side cartwheel."
+  },
+  {
+   "id": "doubleDoubleleg",
+   "name": "Double Doubleleg",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Doubleleg"
+   ],
+   "nextTricks": [],
+   "description": "A Doubleleg with two flips. First landed by Zen Kajihara on June 5, 2020."
+  },
+  {
+   "id": "butterflyTwistKnife",
+   "name": "Butterfly Twist Knife",
+   "aliases": [
+    "Butterfly Twist Jackknife",
+    " Butterfly Twist Swipeknife"
+   ],
+   "categories": [
+    "SINGLE",
+    "TWIST",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Butterfly Twist Round",
+    "Butterfly Twist Hyperhook"
+   ],
+   "nextTricks": [],
+   "description": "A Butterfly Twist that finishes with a knife (round kick + hook kick)"
+  },
+  {
+   "id": "sailorMoonReversao",
+   "name": "Sailor Moon Reversao",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sailor Moon"
+   ],
+   "nextTricks": [],
+   "description": "A Sailor Moon with a Reversao."
+  },
+  {
+   "id": "doubleleg",
+   "name": "Doubleleg",
+   "aliases": [
+    "Armada Dupla (Capoeira)"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Pop 360"
+   ],
+   "nextTricks": [
+    "Double Doubleleg",
+    "Doubleleg X-Out",
+    "Doubleleg Sidekick",
+    "Doubleleg Twist",
+    "Doubleleg Twist Round",
+    "Lotus Doubleleg",
+    "Doubleleg Rodeo"
+   ],
+   "description": "An outside flip that takes off of two feet and with piked legs and has varying degrees of rotation. Not to be confused with a piked sideflip – the hips never rise over the chest in a doubleleg."
+  },
+  {
+   "id": "fullLateRound",
+   "name": "Full Late Round",
+   "aliases": [
+    "Full Late9",
+    "Full Mega Round"
+   ],
+   "categories": [
+    "FLIP",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Full Round"
+   ],
+   "nextTricks": [],
+   "description": "A Full that finishes with a mega round / late round."
+  },
+  {
+   "id": "cheat900Feilong",
+   "name": "Cheat 900 Feilong",
+   "aliases": [
+    "Cheat 720 Feilong (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 900"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 900 with a Feilong executed before landing."
+  },
+  {
+   "id": "cheat720Twist",
+   "name": "Cheat 720 Twist",
+   "aliases": [
+    "Raiz Twist"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Raiz",
+    "Butterfly Twist",
+    "Cheat 900"
+   ],
+   "nextTricks": [
+    "Cheat 720 Twist Broken",
+    "Cheat 720 Twist Hyperhook",
+    "Sailor Moon Twist",
+    "Cali Roll",
+    "Cheat 720 Twist Round"
+   ],
+   "description": "A Raiz with an extra twist. There is some debate whether “raiz twist” and “cheat 7 twist” are the same thing, but if they differ, they differ in shape and timing, but the axis is relatively the same. Originally created by “cheating” a Double Butterly Twist. Despite its name, this move has no relation to the Cheat 720 kick."
+  },
+  {
+   "id": "swing900Knife",
+   "name": "Swing 900 Knife",
+   "aliases": [
+    "Swing 720 Knife (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Swing 900",
+    "Jackknife"
+   ],
+   "nextTricks": [],
+   "description": "A vert kick that swings and leaves the ground in (roughly) backside, spins (roughly) 540° and executes a knife."
+  },
+  {
+   "id": "swing1260",
+   "name": "Swing 1260",
+   "aliases": [
+    "Swing 1080 Round"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Swing 1080"
+   ],
+   "nextTricks": [],
+   "description": "A vert kick that swings and leaves the ground in (roughly) backside, spins (roughly) 900° and executes an inside kick. Could be thought of as a vertical Double Corkscrew Round."
+  },
+  {
+   "id": "cheat1080Double",
+   "name": "Cheat 1080 Double",
+   "aliases": [
+    "Cheat 900 Cyclone (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 1080"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 900 that lands in hyper and executes a jackknife before landing."
+  },
+  {
+   "id": "swing900",
+   "name": "Swing 900",
+   "aliases": [
+    "Swing 720 Round (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 900"
+   ],
+   "nextTricks": [
+    "Swing 900 Knife",
+    "Swing 1080"
+   ],
+   "description": "A vert kick that swings and leaves the ground in (roughly) backside, spins (roughly) 540° and executes an inside kick. Could be thought of as a vertical Corkscrew Round."
+  },
+  {
+   "id": "dragonflyShurikenCutter",
+   "name": "Dragonfly Shuriken Cutter",
+   "aliases": [
+    "Dragonfly Corkscrew Shuriken Hyperhook"
+   ],
+   "categories": [
+    "TWIST",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Dragonfly Corkscrew",
+    "Shuriken Cutter"
+   ],
+   "nextTricks": [],
+   "description": "A Dragonfly Corkscrew that finishes with a Shuriken Hyperhook."
+  },
+  {
+   "id": "backside1080Shuriken",
+   "name": "Backside 1080 Shuriken",
+   "aliases": [
+    "Pop 720 Shuriken (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 1080",
+    "Pop 360"
+   ],
+   "nextTricks": [],
+   "description": "A Backside 1080 with an outside crescent kick that lands on the kicking foot, landing in complete stance."
+  },
+  {
+   "id": "wackknifeDoubleleg",
+   "name": "Wackknife Doubleleg",
+   "aliases": [
+    "Wackknife Parafuso"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Wackknife"
+   ],
+   "nextTricks": [],
+   "description": "A Wackknife that finishes with a Doubleleg."
+  },
+  {
+   "id": "snapu",
+   "name": "Snapu",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sideswipe"
+   ],
+   "nextTricks": [
+    "Touchdown Raiz Twist",
+    "Snapu Doubleleg",
+    "Rodeo Snapu",
+    "Snapu Round",
+    "Snapu Twist",
+    "Sailor Moon Snapu",
+    "Snapu Hyperhook",
+    "Feilong Snapu"
+   ],
+   "description": "A sideswipe with an extra twist before landing. Invented by Steve Terada."
+  },
+  {
+   "id": "crowdAwakener",
+   "name": "Crowd Awakener",
+   "aliases": [
+    "Cheat 360 Crowd Awakener (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Tornado"
+   ],
+   "nextTricks": [
+    "Crowd Awakener Knife",
+    "Cheat 900 Crowd Awakener"
+   ],
+   "description": "A Tornado with a split kick / straddle."
+  },
+  {
+   "id": "backside720",
+   "name": "Backside 720",
+   "aliases": [
+    "Pop 360 Hook (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Skip Hook"
+   ],
+   "nextTricks": [],
+   "description": "The Backside 720 starts in Backside stance, rotates 180° in the air, then finishes with a hook kick. Could be thought of as a Skip Hook off of two feet."
+  },
+  {
+   "id": "doubleFull",
+   "name": "Double Full",
+   "aliases": [],
+   "categories": [
+    "DOUBLE",
+    "TWIST"
+   ],
+   "prereqs": [
+    "Full Hyper"
+   ],
+   "nextTricks": [
+    "Triple Full",
+    "Full Snapu"
+   ],
+   "description": "A Full Twist with an extra rotation before landing."
+  },
+  {
+   "id": "lotusRodeo",
+   "name": "Lotus Rodeo",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Lotus Doubleleg"
+   ],
+   "nextTricks": [],
+   "description": "A Lotus flip with a grab."
+  },
+  {
+   "id": "touchdownWrapFull",
+   "name": "Touchdown Wrap Full",
+   "aliases": [],
+   "categories": [
+    "TWIST",
+    "GROUNDWORK"
+   ],
+   "prereqs": [
+    "Wrap Full",
+    "Touchdown Raiz"
+   ],
+   "nextTricks": [],
+   "description": "A Wrap Full that finishes in a Touchdown Raiz."
+  },
+  {
+   "id": "rodeoFull",
+   "name": "Rodeo Full",
+   "aliases": [
+    "Squirrel Full"
+   ],
+   "categories": [
+    "TWIST",
+    "SINGLE",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Full Twist"
+   ],
+   "nextTricks": [],
+   "description": "A Full Twist with a leg grab"
+  },
+  {
+   "id": "hurricaneKick",
+   "name": "Hurricane Kick",
+   "aliases": [
+    "Cheat 1080 Triple"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 1080"
+   ],
+   "nextTricks": [
+    "Raiz Shurikane"
+   ],
+   "description": "A Cheat 1080 with 3 outside kicks."
+  },
+  {
+   "id": "backInXOut",
+   "name": "Back-In X-Out",
+   "aliases": [],
+   "categories": [
+    "FLIP",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Double Back Tuck"
+   ],
+   "nextTricks": [],
+   "description": "A Back Tuck followed by a Rocketboi (two flips)."
+  },
+  {
+   "id": "raizShurikane",
+   "name": "Raiz Shurikane",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Hurricane Kick"
+   ],
+   "nextTricks": [],
+   "description": "A laid back Hurricane kick."
+  },
+  {
+   "id": "cheat900DoubleTaiFighter",
+   "name": "Cheat 900 Double Tai Fighter",
+   "aliases": [
+    "Cheat 720 Tai-Fighter (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Cheat 900"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 900 with a leg grab in between both kicks."
+  },
+  {
+   "id": "backside1620",
+   "name": "Backside 1620",
+   "aliases": [
+    "Pop 1260 Round (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 1440"
+   ],
+   "nextTricks": [],
+   "description": "A vertical kick which initiates from backside stance, pops up, spins 3.5 times in the air, and round kicks at the end. Jordan Okubo first landed this trick on May 11, 2015."
+  },
+  {
+   "id": "fullDoublelegDoubleTwist",
+   "name": "Full Doubleleg Double Twist",
+   "aliases": [],
+   "categories": [
+    "TRIPLE",
+    "TWIST",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Full Doubleleg Twist",
+    "Triple Full"
+   ],
+   "nextTricks": [],
+   "description": "A Double Full Doubleleg with an extra rotation."
+  },
+  {
+   "id": "lotusShuriken",
+   "name": "Lotus Shuriken",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Lotus Doubleleg"
+   ],
+   "nextTricks": [],
+   "description": "A Lotus Doubleleg that executes a shuriken (outside kick)."
+  },
+  {
+   "id": "jackknife",
+   "name": "Jackknife",
+   "aliases": [],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "540",
+    "Cheat 720"
+   ],
+   "nextTricks": [
+    "Swing 900 Knife",
+    "Jackknife Turbo",
+    "Jackknife Shuriken",
+    "Crowd Awakener Knife",
+    "Paraknife",
+    "Jackknife 1080",
+    "Backside 900 Knife",
+    "Twist Knife",
+    "Swipeknife"
+   ],
+   "description": "A Cheat 720 with a round kick executed before the hook kick or a 540 that finishes with a hook kick. Could be thought of as a Narabong all executed in the air."
+  },
+  {
+   "id": "crowdAwakenerKnife",
+   "name": "Crowd Awakener Knife",
+   "aliases": [
+    "Crowd Awakener Level 3",
+    " Cheat 360 Crowd Awakener Knife (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Crowd Awakener",
+    "Jackknife"
+   ],
+   "nextTricks": [],
+   "description": "A Crowd Awakener that finishes with a hyperhook."
+  },
+  {
+   "id": "wackestKnife",
+   "name": "Wackest Knife",
+   "aliases": [
+    "Wackknife Hyperhook"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Wackknife"
+   ],
+   "nextTricks": [],
+   "description": "A Wackknife with an extra hyperhook."
+  },
+  {
+   "id": "flashKick",
+   "name": "Flash Kick",
+   "aliases": [],
+   "categories": [
+    "FLIP"
+   ],
+   "prereqs": [
+    "Back Tuck"
+   ],
+   "nextTricks": [
+    "Terada Grab"
+   ],
+   "description": "The Flashkick is a backflip executed with a kick at the peak of the flip."
+  },
+  {
+   "id": "pop720",
+   "name": "Pop 720",
+   "aliases": [
+    "Pop 540 Hook (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop 540"
+   ],
+   "nextTricks": [
+    "Pop 900",
+    "Pop 720 Double"
+   ],
+   "description": "The Pop 720 starts in Frontside stance, leaves the ground off of both feet, rotates 540° in the air, then lands and finishes with a hook kick towards the target."
+  },
+  {
+   "id": "pop360Shuriken",
+   "name": "Pop 360 Shuriken",
+   "aliases": [],
+   "categories": [
+    "VERT_KICK",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Pop 360"
+   ],
+   "nextTricks": [
+    "Pop 720",
+    "Pop 720 Double",
+    "Swing 360 Shuriken",
+    "Cheat 720 Shuriken",
+    "Pop Feilong"
+   ],
+   "description": "The Pop 360 Hyper starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with an outside cresecent kick towards the target and lands in complete stance. This move is often the first Shuriken that trickers learn, and is vitally important for future shuriken variations."
+  },
+  {
+   "id": "cheat900Sidekick",
+   "name": "Cheat 900 Sidekick",
+   "aliases": [
+    "Cheat 720 Sidekick (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 900"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 900 with a sidekick rather than a round kick."
+  },
+  {
+   "id": "swing1080",
+   "name": "Swing 1080",
+   "aliases": [
+    "Swing 900 Hook"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Swing 900"
+   ],
+   "nextTricks": [
+    "Swing 1260"
+   ],
+   "description": "A vert kick that swings and leaves the ground in (roughly) backside, spins (roughly) 720° and executes an outside kick. Could be thought of as a vertical Boxcutter."
+  },
+  {
+   "id": "pop1080",
+   "name": "Pop 1080",
+   "aliases": [
+    "Pop 900 Hook (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop 900"
+   ],
+   "nextTricks": [
+    "Pop 1260"
+   ],
+   "description": "The Pop 1080 starts in Frontside stance, leaves the ground off of both feet, rotates 900° in the air, then lands and finishes with a hook towards the target."
+  },
+  {
+   "id": "swing900Sidekick",
+   "name": "Swing 900 Sidekick",
+   "aliases": [
+    "Swing 720 Sidekick"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Swing 900 Sidekick"
+   ],
+   "nextTricks": [
+    "Swing 900 Sidekick"
+   ],
+   "description": "A Swing 900 with a sidekick executed instead of a round kick."
+  },
+  {
+   "id": "backInSquirrelOut",
+   "name": "Back-In Squirrel-Out",
+   "aliases": [],
+   "categories": [
+    "FLIP",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Double Back Tuck"
+   ],
+   "nextTricks": [],
+   "description": "A Back Tuck followed by a Squirrel Backflip (two flips)."
+  },
+  {
+   "id": "doubleSideflip",
+   "name": "Double Sideflip",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sideflip"
+   ],
+   "nextTricks": [],
+   "description": "A sideflip with two flips."
+  },
+  {
+   "id": "gainerFigure4",
+   "name": "Gainer Figure 4",
+   "aliases": [],
+   "categories": [
+    "FLIP",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Gainer Flash",
+    "Arabian"
+   ],
+   "nextTricks": [
+    "Gainer Figure 4 Sidekick"
+   ],
+   "description": "A Gainer with a “figure-4” position."
+  },
+  {
+   "id": "touchdownRaiz",
+   "name": "Touchdown Raiz",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Raiz"
+   ],
+   "nextTricks": [
+    "Touchdown Swipe",
+    "Touchdown Wrap Full",
+    "Touchdown Raiz Twist",
+    "Scrubba",
+    "Touchdown Raiz Roll"
+   ],
+   "description": "The Touchdown Raiz is part of the Raiz family of tricks. It utilizes the opposite hand that touches the ground as the Sailor Moon. It is also one of the most popular of set-ups for trickers."
+  },
+  {
+   "id": "lotusDoublelegHyperhook",
+   "name": "Lotus Doubleleg Hyperhook",
+   "aliases": [
+    "Lotus Switchblade"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Lotus Doubleleg"
+   ],
+   "nextTricks": [],
+   "description": "A Lotus Doubleleg that lands in a hyperhook."
+  },
+  {
+   "id": "popSnapu",
+   "name": "Pop Snapu",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Pop Swipe"
+   ],
+   "nextTricks": [],
+   "description": "A Pop Swipe with an extra twist. Or a Snapu that initiates from a frontside pop rather than a cheat setup."
+  },
+  {
+   "id": "doubleCorkscrewShuriken",
+   "name": "Double Corkscrew Shuriken",
+   "aliases": [],
+   "categories": [
+    "DOUBLE",
+    "TWIST",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Double Corkscrew",
+    "Corkscrew Shuriken"
+   ],
+   "nextTricks": [],
+   "description": "A Double Corkscrew that finishes with a shuriken (outside crescent) in complete stance."
+  },
+  {
+   "id": "sailorMoonHawkeye",
+   "name": "Sailor Moon Hawkeye",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sailor Moon"
+   ],
+   "nextTricks": [],
+   "description": "A Sailor Moon that finishes with a hawkeye (hook kick executed with the round leg)."
+  },
+  {
+   "id": "touchdownRaizTwist",
+   "name": "Touchdown Raiz Twist",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Touchdown Raiz",
+    "Snapu"
+   ],
+   "nextTricks": [],
+   "description": "A Touchdown Raiz with an extra twist, landing in complete."
+  },
+  {
+   "id": "wackknifeTurbo",
+   "name": "Wackknife Turbo",
+   "aliases": [
+    "Wackknife \"Hyper\""
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Wackknife"
+   ],
+   "nextTricks": [],
+   "description": "A Wackknife that lands in frontside on both legs (turbo)."
+  },
+  {
+   "id": "popFeilong",
+   "name": "Pop Feilong",
+   "aliases": [
+    "Pop 180 Feilong"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop 360 Shuriken",
+    "Pop Tornado"
+   ],
+   "nextTricks": [
+    "Corkscrew Feilong",
+    "Pop Feilong Knife",
+    "Backside 900 Feilong"
+   ],
+   "description": "The Pop Feilong starts off like a Pop 360 and finishes with an inside kick."
+  },
+  {
+   "id": "cheat1260",
+   "name": "Cheat 1260",
+   "aliases": [
+    "Cheat 1080 Round"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 1080",
+    "Backside 1260"
+   ],
+   "nextTricks": [
+    "Cheat 1260 Doubleleg",
+    "Cheat 1260 Double",
+    "Cheat 1260 Hyper",
+    "Cheat 1080 Shuriken",
+    "Cheat 1440"
+   ],
+   "description": "The Cheat 1260 is a Cheat vert kick that leaves the ground in (approximately) Backside stance, completes (roughly) 1080° in-air rotation, finishing with a round kick towards the target."
+  },
+  {
+   "id": "cheat1260Double",
+   "name": "Cheat 1260 Double",
+   "aliases": [
+    "Cheat 1080 Typhoon (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 1260"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 1260 with 2 inside kicks."
+  },
+  {
+   "id": "backside900Feilong",
+   "name": "Backside 900 Feilong",
+   "aliases": [
+    "Pop 540 Feilong (TKT)",
+    " Backside 720 Feilong"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 900",
+    "Pop Feilong"
+   ],
+   "nextTricks": [
+    "Backside 1260 Feilong"
+   ],
+   "description": "A Backside 900 that finishes with a Feilong."
+  },
+  {
+   "id": "backPike",
+   "name": "Back Pike",
+   "aliases": [],
+   "categories": [
+    "FLIP"
+   ],
+   "prereqs": [
+    "Back Tuck"
+   ],
+   "nextTricks": [],
+   "description": "A Backflip with the “pike” position."
+  },
+  {
+   "id": "raizIn",
+   "name": "Raiz-In",
+   "aliases": [
+    "Raisin"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Raiz"
+   ],
+   "nextTricks": [],
+   "description": "A Raiz with an extra “backflip” executed before landing. Note: The execution of this move is more like a raiz-in-shant-out."
+  },
+  {
+   "id": "pop360GyroDoubleleg",
+   "name": "Pop 360 Gyro Doubleleg",
+   "aliases": [
+    "Pop 180 Shuriken Gyro Doubleleg (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop 360 Gyro"
+   ],
+   "nextTricks": [],
+   "description": "A Pop 360 Gyro where a Doubleleg is executed before landing, thus adding an extra 180° to the original move."
+  },
+  {
+   "id": "sideflip",
+   "name": "Sideflip",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    ""
+   ],
+   "nextTricks": [
+    "Double Sideflip",
+    "Sideflip Round"
+   ],
+   "description": "A tucked flip that goes side to side."
+  },
+  {
+   "id": "brokenScrubba",
+   "name": "Broken Scrubba",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Scrubba",
+    "Broken Touchdown Raiz"
+   ],
+   "nextTricks": [],
+   "description": "A Scrubba with another hand-plant switch that lands in hyper, creating the “broken” visual."
+  },
+  {
+   "id": "arabianScissorRound",
+   "name": "Arabian Scissor Round",
+   "aliases": [],
+   "categories": [
+    "FLIP",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Full Scissor"
+   ],
+   "nextTricks": [],
+   "description": "A Full Round with a scissor grab in the middle."
+  },
+  {
+   "id": "doublelegXOut",
+   "name": "Doubleleg X-Out",
+   "aliases": [
+    "Kim Do Kick"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Doubleleg"
+   ],
+   "nextTricks": [
+    "Doubleleg X-Out Hyperhook"
+   ],
+   "description": "A Doubleleg that executed an X-Out at the peak of the jump. Created by Kim Do Nguyen."
+  },
+  {
+   "id": "raizHyperhookTurbo",
+   "name": "Raiz Hyperhook Turbo",
+   "aliases": [
+    "Windex Turbo",
+    " Cheat 720 Illusion"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Raiz Hyperhook"
+   ],
+   "nextTricks": [],
+   "description": "A laid back Cheat 720 that finishes with an outside crescent kick and lands in the \"turbo\"/frontside stance."
+  },
+  {
+   "id": "pop540",
+   "name": "Pop 540",
+   "aliases": [
+    "Pop 180 Katana (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop Tornado"
+   ],
+   "nextTricks": [
+    "Pop 720"
+   ],
+   "description": "A Pop Tornado that lands in hyper stance and on the kicking leg."
+  },
+  {
+   "id": "takTripleFull",
+   "name": "Tak Triple Full",
+   "aliases": [],
+   "categories": [
+    "TWIST",
+    "TRIPLE"
+   ],
+   "prereqs": [
+    "Tak Double Full",
+    "Triple Full"
+   ],
+   "nextTricks": [],
+   "description": "A Tak Full with an extra two rotations."
+  },
+  {
+   "id": "backside1080",
+   "name": "Backside 1080",
+   "aliases": [
+    "Pop 720 Hook (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 900"
+   ],
+   "nextTricks": [
+    "Backside 1080 Shuriken",
+    "Cheat 1080",
+    "Backside 1260",
+    "Backside 900 Knife"
+   ],
+   "description": "The Backside 1080 starts in Backside stance, leaves the ground off of both feet, rotates 720° in the air, then lands and finishes with a hook kick towards the target."
+  },
+  {
+   "id": "cheat720Shuriken",
+   "name": "Cheat 720 Shuriken",
+   "aliases": [
+    "Cheat 540 Shuriken (TKT)",
+    " Cheat 720 \"Hyper\""
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop 360 Shuriken"
+   ],
+   "nextTricks": [
+    "Cheat 1080 Shuriken"
+   ],
+   "description": "A Cheat 720 that lands on the kicking leg in true hyper (TKT) / mega stance."
+  },
+  {
+   "id": "cheat1080Shuriken",
+   "name": "Cheat 1080 Shuriken",
+   "aliases": [
+    "Cheat 900 Shuriken (TKT)",
+    " Cheat 1080 \"Hyper\""
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 1260",
+    "Cheat 720 Shuriken"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 1080 that finishes with a shuriken instead of a hook. This has the same rotational value as a Cheat 1260."
+  },
+  {
+   "id": "doublelegXOutHyperhook",
+   "name": "Doubleleg X-Out Hyperhook",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Doubleleg X-Out"
+   ],
+   "nextTricks": [],
+   "description": "A Doubleleg X-Out that finishes with a hyperhook."
+  },
+  {
+   "id": "snapuDoubleleg",
+   "name": "Snapu Doubleleg",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Snapu"
+   ],
+   "nextTricks": [],
+   "description": "A Snapu with a doubleleg executed at the end."
+  },
+  {
+   "id": "doublelegSidekick",
+   "name": "Doubleleg Sidekick",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Doubleleg"
+   ],
+   "nextTricks": [],
+   "description": "A Doubleleg that finishes with a sidekick."
+  },
+  {
+   "id": "sailorMoonDoublelegTwist",
+   "name": "Sailor Moon Doubleleg Twist",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sailor Moon Doubleleg"
+   ],
+   "nextTricks": [],
+   "description": "A Sailor Moon Doubleleg with an extra twist executed before landing."
+  },
+  {
+   "id": "backside1260FeilongKnife",
+   "name": "Backside 1260 Feilong Knife",
+   "aliases": [
+    "Pop 900 Feilong Knife"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 1260 Feilong",
+    "Backside 1440"
+   ],
+   "nextTricks": [],
+   "description": "A Backside 1260 Feilong that finishes with a hyperhook."
+  },
+  {
+   "id": "corkscrewFeilong",
+   "name": "Corkscrew Feilong",
+   "aliases": [],
+   "categories": [
+    "TWIST",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Corkscrew Shuriken",
+    "Corkscrew Round",
+    "Pop Feilong"
+   ],
+   "nextTricks": [],
+   "description": "A Corkscrew that finishes with a Feilong (outside kick followed by an inside kick)."
+  },
+  {
+   "id": "aerialTwistDoubleleg",
+   "name": "Aerial Twist Doubleleg",
+   "aliases": [],
+   "categories": [
+    "SINGLE",
+    "TWIST"
+   ],
+   "prereqs": [
+    "Aerial Twist"
+   ],
+   "nextTricks": [],
+   "description": "An Aerial Twist that finishes with a Doubleleg."
+  },
+  {
+   "id": "paraknife",
+   "name": "Paraknife",
+   "aliases": [
+    "Switchblade"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Parafuso",
+    "Jackknife"
+   ],
+   "nextTricks": [],
+   "description": "A Parafuso that finishes with a hyperhook."
+  },
+  {
+   "id": "pop1440",
+   "name": "Pop 1440",
+   "aliases": [
+    "Pop 1260 Hook (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 1440",
+    "Pop 1260"
+   ],
+   "nextTricks": [],
+   "description": "The Pop 1440 starts in Frontside stance, leaves the ground off of both feet, rotates 1080° in the air, then lands and finishes with a round kick towards the target."
+  },
+  {
+   "id": "corkscrewDoublelegLateRound",
+   "name": "Corkscrew Doubleleg Late Round",
+   "aliases": [
+    "Corkscrew Doubleleg Late9",
+    "Corkscrew Doubleleg Mega Round"
+   ],
+   "categories": [
+    "SINGLE",
+    "TWIST",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Corkscrew Doubleleg",
+    "Corkscrew Late Round"
+   ],
+   "nextTricks": [],
+   "description": "A Corkscrew Doubleleg that at finishes with a late round."
+  },
+  {
+   "id": "eKick",
+   "name": "E-Kick",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Palmkick"
+   ],
+   "nextTricks": [],
+   "description": "A Compasso (touchdown hook) with a switch executed before the hook."
+  },
+  {
+   "id": "parafusoHawkeye",
+   "name": "Parafuso Hawkeye",
+   "aliases": [],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Parafuso"
+   ],
+   "nextTricks": [],
+   "description": "A Parafuso with a hawkeye executed after the doubleleg portion of the move. A hawkeye occurs when the inside (round-kicking) leg executes a hawkeye (hook kick going against the DOM)."
+  },
+  {
+   "id": "crackknife",
+   "name": "Crackknife",
+   "aliases": [
+    "Sideswipe Wackknife"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Wackknife",
+    "Sideswipe"
+   ],
+   "nextTricks": [],
+   "description": "A Wackknife on the Raiz axis."
+  },
+  {
+   "id": "lotusCrowdAwakener",
+   "name": "Lotus Crowd Awakener",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Lotus Doubleleg"
+   ],
+   "nextTricks": [],
+   "description": "A Lotus Flip with a split kick."
+  },
+  {
+   "id": "rocketboiScissorSnapu",
+   "name": "Rocketboi Scissor Snapu",
+   "aliases": [],
+   "categories": [
+    "FLIP",
+    "TWIST",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Rocketboi",
+    "Full Snapu"
+   ],
+   "nextTricks": [],
+   "description": "A rocketboi scissor with a snapu executed before landing, making this a double full variation."
+  },
+  {
+   "id": "cheat900Doubleleg",
+   "name": "Cheat 900 Doubleleg",
+   "aliases": [
+    "Cheat 720 Doubleleg (TKT)",
+    "Cheat 900 Parafuso"
+   ],
+   "categories": [
+    "VERT_KICK",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Cheat 900",
+    "Parafuso"
+   ],
+   "nextTricks": [
+    "Cheat 1260 Doubleleg",
+    "Cheat 900 Doubleleg Twist",
+    "Cheat 900 Paraknife"
+   ],
+   "description": "A Cheat 900 that finishes with a parafuso/doubleleg instead of a round kick."
+  },
+  {
+   "id": "machine",
+   "name": "Machine",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    ""
+   ],
+   "nextTricks": [],
+   "description": "A Spyder with hands."
+  },
+  {
+   "id": "swipeknife",
+   "name": "Swipeknife",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sideswipe",
+    "Jackknife"
+   ],
+   "nextTricks": [
+    "Swipeknife Turbo"
+   ],
+   "description": "An inverted Jackknife, or a Sideswipe that finishes with a hyperhook."
+  },
+  {
+   "id": "cork",
+   "name": "Corkscrew",
+   "aliases": [
+    "Cork"
+   ],
+   "categories": [
+    "TWIST",
+    "SINGLE"
+   ],
+   "prereqs": [
+    "Gainer flash"
+   ],
+   "nextTricks": [
+    "Corkscrew Doubleleg",
+    "Corkscrew Feilong",
+    "Corkscrew Hawkeye",
+    "Corkscrew Hyper",
+    "Corkscrew Hyperhook",
+    "Corkscrew Round",
+    "Corkscrew Shuriken",
+    "Corkscrew Swipe",
+    "Corkscrew Wackknife",
+    "Dragonfly Cork",
+    "Double Corkscrew"
+   ],
+   "description": "A Gainer Flash with an extra rotation before landing - or a Back Full off of one leg."
+  },
+  {
+   "id": "corkscrewSwipeknife",
+   "name": "Corkscrew Swipeknife",
+   "aliases": [
+    "Cork Knife"
+   ],
+   "categories": [
+    "SINGLE",
+    "TWIST",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Corkscrew Swipe",
+    "Boxcutter"
+   ],
+   "nextTricks": [],
+   "description": "A Corkscrew that finishes with a Swipeknife."
+  },
+  {
+   "id": "raiz",
+   "name": "Raiz",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Gumbi",
+    "Tornado"
+   ],
+   "nextTricks": [
+    "Cheat 720 Twist",
+    "Touchdown Raiz",
+    "Raiz-In",
+    "Sideswipe",
+    "Sailor Moon",
+    "Raiz Reversao",
+    "Raiz Hyperhook"
+   ],
+   "description": "The Raiz can be thought of as a “no-handed” Gumbi or a laid-back / arched Tornado.  Can be pronounced “rise” or “raise” or “high-eeze” (Portuguese)"
+  },
+  {
+   "id": "jackknifeShuriken",
+   "name": "Jackknife Shuriken",
+   "aliases": [
+    "\"Hyper\" Jackknife"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Jackknife"
+   ],
+   "nextTricks": [],
+   "description": "A Jackknife that lands on the outside leg with a shuriken-style kick."
+  },
+  {
+   "id": "envergado",
+   "name": "Envergado",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sideswipe"
+   ],
+   "nextTricks": [
+    "Envergado Twist"
+   ],
+   "description": "A Raiz that executes a Doubleleg at the peak of the jump and lands on both feet."
+  },
+  {
+   "id": "doublelegTwist",
+   "name": "Doubleleg Twist",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Doubleleg"
+   ],
+   "nextTricks": [
+    "Doubleleg Double Twist"
+   ],
+   "description": "A Doubleleg with an extra twist executed, landing the trick in complete."
+  },
+  {
+   "id": "doublelegTwistRound",
+   "name": "Doubleleg Twist Round",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Doubleleg"
+   ],
+   "nextTricks": [],
+   "description": "A Doubleleg Twist that executes a round kick before landing."
+  },
+  {
+   "id": "cheat900DoubleKnife",
+   "name": "Cheat 900 Double Knife",
+   "aliases": [
+    "Cheat 720 Typhoon Knife (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Cheat 900 Knife",
+    "Cheat 900 Double"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 900 Double that finishes with a hyperhook."
+  },
+  {
+   "id": "fullSnapu",
+   "name": "Full Snapu",
+   "aliases": [],
+   "categories": [
+    "DOUBLE",
+    "TWIST",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Full Swipe",
+    "Double Full"
+   ],
+   "nextTricks": [
+    "Full Snapu Hyper",
+    "Rocketboi Scissor Snapu"
+   ],
+   "description": "A Full with a snapu executed before landing – making this a double full variation."
+  },
+  {
+   "id": "rocketboiScissorSwitch",
+   "name": "Rocketboi Scissor Switch",
+   "aliases": [],
+   "categories": [
+    "FLIP",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Rocketboi"
+   ],
+   "nextTricks": [],
+   "description": "A Rocketboi with a scissor and another switch."
+  },
+  {
+   "id": "parafuso",
+   "name": "Parafuso",
+   "aliases": [],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Tornado"
+   ],
+   "nextTricks": [
+    "Parafuso Twist-Kick",
+    "Parafuso Hawkeye",
+    "Cheat 900 Doubleleg",
+    "Paraknife",
+    "Parafuso Gyro"
+   ],
+   "description": "A cheat set-up into a vertical Doubleleg. The earlier the legs get together for the doubleleg, the better the aesthetic."
+  },
+  {
+   "id": "cheat900DoublelegTwist",
+   "name": "Cheat 900 Doubleleg Twist",
+   "aliases": [
+    "Cheat 720 Doubleleg Twist (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 900 Doubleleg"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 900 Doubleleg with an extra twist, landing back in complete stance."
+  },
+  {
+   "id": "rodeoSnapu",
+   "name": "Rodeo Snapu",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Snapu"
+   ],
+   "nextTricks": [],
+   "description": "A Snapu with a leg grab."
+  },
+  {
+   "id": "cheat720TwistHyperhook",
+   "name": "Cheat 720 Twist Hyperhook",
+   "aliases": [
+    "Graham Cracker",
+    " Raiz Twist Hyperhook"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Cheat 720 Twist",
+    "Cheat 1080"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 720 Twist landed in hyper with a hook executed at the end. Can be thought of as a “laid back” Cheat 1080."
+  },
+  {
+   "id": "cheat900Rodeo",
+   "name": "Cheat 900 Rodeo",
+   "aliases": [
+    "Cheat 720 Rodeo (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 900"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 900 with a leg grab."
+  },
+  {
+   "id": "backside1260Knife",
+   "name": "Backside 1260 Knife",
+   "aliases": [
+    "Pop 900 Knife (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 1260",
+    "Backside 1440"
+   ],
+   "nextTricks": [],
+   "description": "A Backside 1260 that finishes with a jackknife."
+  },
+  {
+   "id": "backside1260Wackknife",
+   "name": "Backside 1260 Wackknife",
+   "aliases": [
+    "Pop 900 Wackknife (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 1260",
+    "Wackknife"
+   ],
+   "nextTricks": [],
+   "description": "A Backside 1260 that finishes with a wackknife."
+  },
+  {
+   "id": "scrubba",
+   "name": "Scrubba",
+   "aliases": [
+    "Cactus"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sailor Moon",
+    "Touchdown Raiz"
+   ],
+   "nextTricks": [
+    "Broken Scrubba"
+   ],
+   "description": "A Gumbi where the hands are placed down at separate times."
+  },
+  {
+   "id": "swipeknifeTurbo",
+   "name": "Swipeknife Turbo",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Swipeknife"
+   ],
+   "nextTricks": [],
+   "description": "A Swipeknife that lands in hyper/turbo (frontside on both feet)"
+  },
+  {
+   "id": "backside1260Feilong",
+   "name": "Backside 1260 Feilong",
+   "aliases": [
+    "Pop 900 Feilong"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 1260",
+    "Backside 900 Feilong"
+   ],
+   "nextTricks": [
+    "Backside 1260 Feilong Knife"
+   ],
+   "description": "The Backside 1260 starts in Backside stance, leaves the ground off of both feet, rotates 900° in the air, then lands and finishes with an outside kick and an inside kick at its target."
+  },
+  {
+   "id": "cheat900CrowdAwakener",
+   "name": "Cheat 900 Crowd Awakener",
+   "aliases": [
+    "Cheat 720 Crowd Awakener (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 900",
+    "Crowd Awakener"
+   ],
+   "nextTricks": [
+    "Cheat 900 Crowd Awakener Knife"
+   ],
+   "description": "A Cheat 900 with a Crowd Awakener / straddle / split kick executed before landing."
+  },
+  {
+   "id": "pop1260",
+   "name": "Pop 1260",
+   "aliases": [
+    "Pop 900 Round (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop 1080"
+   ],
+   "nextTricks": [
+    "Pop 1440"
+   ],
+   "description": "The Pop 1260 starts in Frontside stance, leaves the ground off of both feet, rotates 1080° in the air, then lands and finishes with a round kick towards the target."
+  },
+  {
+   "id": "sideflipRound",
+   "name": "Sideflip Round",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sideflip"
+   ],
+   "nextTricks": [],
+   "description": "A sideflip with a round kick executed before landing."
+  },
+  {
+   "id": "pop900Hyper",
+   "name": "Pop 900 Hyper",
+   "aliases": [
+    "Pop 720 Katana (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop 900"
+   ],
+   "nextTricks": [],
+   "description": "The Pop 900 Hyper starts in Frontside stance, leaves the ground off of both feet, rotates 720° in the air, then lands and finishes with a hyper’d round kick towards the target and lands on that kicking foot."
+  },
+  {
+   "id": "touchdownRaizRoll",
+   "name": "Touchdown Raiz Roll",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Touchdown Raiz"
+   ],
+   "nextTricks": [],
+   "description": "A shoulder roll that initiates from a Touchdown Raiz."
+  },
+  {
+   "id": "cheat900Double",
+   "name": "Cheat 900 Double",
+   "aliases": [
+    "Cheat 720 Typhoon (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 900"
+   ],
+   "nextTricks": [
+    "Cheat 900 Double Hyper",
+    "Cheat 900 Double Knife"
+   ],
+   "description": "A Cheat 900 with two inside kicks. Like a 540 late Round."
+  },
+  {
+   "id": "lotusDoubleleg",
+   "name": "Lotus Doubleleg",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Doubleleg"
+   ],
+   "nextTricks": [
+    "Lotus Late Round",
+    "Lotus Rodeo",
+    "Lotus Shuriken",
+    "Lotus Doubleleg Hyperhook",
+    "Lotus Crowd Awakener"
+   ],
+   "description": "The Lotus is a swingthrough that doesn’t quite swing backwards, but is similar to to masterswing, but with the inside kicking leg and flips on the Raiz/Vert axis. The lotus swing/axis is very similar a tunnel flip."
+  },
+  {
+   "id": "envergadoDoubleTwist",
+   "name": "Envergado Double Twist",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Envergado Twist"
+   ],
+   "nextTricks": [],
+   "description": "An Envergado with an extra two spins before landing."
+  },
+  {
+   "id": "gainerArabian",
+   "name": "Gainer Arabian",
+   "aliases": [],
+   "categories": [
+    "FLIP"
+   ],
+   "prereqs": [
+    "Gainer Flash",
+    "Arabian"
+   ],
+   "nextTricks": [],
+   "description": "An Arabian from a swing/gainer takeoff."
+  },
+  {
+   "id": "backside900",
+   "name": "Backside 900",
+   "aliases": [
+    "Pop 540 Round (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop Tornado"
+   ],
+   "nextTricks": [
+    "Cheat 900",
+    "Backside 900 Feilong",
+    "Pop 900",
+    "Backside 900 Hyper",
+    "Swing 900",
+    "Backside 1080",
+    "Backside 900 Sidekick"
+   ],
+   "description": "The Backside 900 starts in Backside stance, leaves the ground off of both feet, rotates 540° in the air, then lands and finishes with a round kick towards the target. The Backside 900 is very important for learning similar tricks like the Cheat 900 and the Swing 900, as they have the same amount of rotation, but different take off."
+  },
+  {
+   "id": "spyder",
+   "name": "Spyder",
+   "aliases": [
+    "Snowbubble"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    ""
+   ],
+   "nextTricks": [
+    "Spyder Twist"
+   ],
+   "description": "The Spyder initiates very similar to how a Raiz would, but instead of flipping over the top, the Spyder flatspins around very similar to a Butterfly Kick."
+  },
+  {
+   "id": "sideswipe",
+   "name": "Sideswipe",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Raiz",
+    "540"
+   ],
+   "nextTricks": [
+    "Touchdown Swipe",
+    "Snapu",
+    "Crackknife",
+    "Swipeknife",
+    "Envergado",
+    "Sideswipe Late Round"
+   ],
+   "description": "An inverted 540 kick, or a Raiz with a swipe."
+  },
+  {
+   "id": "parafusoGyro",
+   "name": "Parafuso Gyro",
+   "aliases": [
+    "Para Gyro"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Parafuso"
+   ],
+   "nextTricks": [],
+   "description": "A Parafuso with an extra twist, landing back in Complete. Could be thought of as a vertical Envergado Twist."
+  },
+  {
+   "id": "sailorMoonDoubleleg",
+   "name": "Sailor Moon Doubleleg",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sailor Moon"
+   ],
+   "nextTricks": [
+    "Sailor Moon Doubleleg Twist"
+   ],
+   "description": "A Sailor Moon that finishes with a Doubleleg."
+  },
+  {
+   "id": "cheat1440",
+   "name": "Cheat 1440",
+   "aliases": [
+    "Cheat 1260 Hook (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 1260"
+   ],
+   "nextTricks": [
+    "Cheat 1620"
+   ],
+   "description": "The Cheat 1440 is a Cheat vert kick that leaves the ground in (approximately) Backside stance, completes (roughly) 1080° in-air rotation, finishing with an outside kick towards the target."
+  },
+  {
+   "id": "popFeilongKnife",
+   "name": "Pop Feilong Knife",
+   "aliases": [],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop Feilong"
+   ],
+   "nextTricks": [],
+   "description": "A Pop Feilong that finishes with a knife."
+  },
+  {
+   "id": "cheat900",
+   "name": "Cheat 900",
+   "aliases": [
+    "Cheat 720 Round (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 720",
+    "Backside 900"
+   ],
+   "nextTricks": [
+    "Cheat 900 Double Tai Fighter",
+    "Cheat 900 Sidekick",
+    "Cheat 900 Feilong",
+    "Cheat 900 Doubleleg",
+    "Cheat 900 Double",
+    "Cheat 1080",
+    "Cheat 900 Crowd Awakener",
+    "Cheat 900 Rodeo",
+    "Cheat 900 Hyper",
+    "Cheat 720 Twist",
+    "Cheat 720 Twist Round"
+   ],
+   "description": "The Cheat 900 is a Cheat vert kick that leaves the ground in Backside stance, completes (approximately) 540° in-air rotation, finishing with a round kick towards the target."
+  },
+  {
+   "id": "doubleNike",
+   "name": "Double Nike",
+   "aliases": [],
+   "categories": [
+    "PSEUDO_DOUBLE_FLIP"
+   ],
+   "prereqs": [
+    "Double Back Tuck"
+   ],
+   "nextTricks": [],
+   "description": "An off-axis double backflip with body in a position resembling the Nike logo."
+  },
+  {
+   "id": "sailorMoonHyperhook",
+   "name": "Sailor Moon Hyperhook",
+   "aliases": [
+    "Sailor 7"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sailor Moon"
+   ],
+   "nextTricks": [],
+   "description": "A Sailor Moon that finishes with a hyperhook."
+  },
+  {
+   "id": "sailorMoonTwist",
+   "name": "Sailor Moon Twist",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sailor Moon",
+    "Cheat 720 Twist"
+   ],
+   "nextTricks": [],
+   "description": "Sailor Moon with an extra twist executed before landing."
+  },
+  {
+   "id": "cheatDoubleHook",
+   "name": "Cheat Double Hook",
+   "aliases": [
+    "Spyder Hook"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Skip Hook"
+   ],
+   "nextTricks": [],
+   "description": "An upright Spyder with an extra hook. Could be thought of as a precursor to the Wackknife."
+  },
+  {
+   "id": "backHandSpring",
+   "name": "Back Handspring",
+   "aliases": [],
+   "categories": [
+    "FLIP"
+   ],
+   "prereqs": [
+    "Backwards Roll"
+   ],
+   "nextTricks": [
+    "Back Tuck",
+    "Valdez"
+   ],
+   "description": "The Back Handspring is a gymnastics, tumbling move that takes off of two feet, jumps backward onto the hands and lands on both feet. Used to gain and build momentum for bigger tricks."
+  },
+  {
+   "id": "tornadoDouble",
+   "name": "Tornado Double",
+   "aliases": [
+    "Cheat 360 Double Round (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Tornado"
+   ],
+   "nextTricks": [],
+   "description": "A Tornado with two round kicks executed before landing."
+  },
+  {
+   "id": "pop360Gyro",
+   "name": "Pop 360 Gyro",
+   "aliases": [
+    "Pop 180 Shuriken Gyro (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop 360"
+   ],
+   "nextTricks": [
+    "Pop 360 Gyro Doubleleg",
+    "Pop 360 Gyro Round"
+   ],
+   "description": "A Pop 360 with an extra 360° spin (aka gyro/kyro)before landing, landing back in Frontside."
+  },
+  {
+   "id": "backside900Sidekick",
+   "name": "Backside 900 Sidekick",
+   "aliases": [
+    "Pop 540 Sidekick (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 900"
+   ],
+   "nextTricks": [],
+   "description": "A Backside 900 that finishes with a sidekick instead of a round kick."
+  },
+  {
+   "id": "aerial",
+   "name": "Aerial",
+   "aliases": [],
+   "categories": [
+    "FLIP"
+   ],
+   "prereqs": [
+    "Cartwheel",
+    "One-Handed Cartwheel"
+   ],
+   "nextTricks": [],
+   "description": "A Cartwheel with no-hands. Unlike the gymnast version of the Aerial, the Tricker/Butterfly Aerial goes side to side."
+  },
+  {
+   "id": "snapuRound",
+   "name": "Snapu Round",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Snapu"
+   ],
+   "nextTricks": [],
+   "description": "A Snapu with a round kick executed at the end."
+  },
+  {
+   "id": "caliRoll",
+   "name": "Cali Roll",
+   "aliases": [
+    "Cheat 1080 Twist"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Cheat 720 Twist"
+   ],
+   "nextTricks": [],
+   "description": "A Raiz with an extra 2 spins rotated before landing. First landed by Dan Pitlock."
+  },
+  {
+   "id": "cheat1260Hyper",
+   "name": "Cheat 1260 Hyper",
+   "aliases": [
+    "Cheat 1080 Katana (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 1260"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 1260 that lands on the kicking leg (inside leg) in Hyper."
+  },
+  {
+   "id": "backside900Hyper",
+   "name": "Backside 900 Hyper",
+   "aliases": [
+    "Pop 540 Katana (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 900",
+    "540"
+   ],
+   "nextTricks": [],
+   "description": "The Backside 900 Hyper starts in Backside stance, leaves the ground off of both feet, rotates 540° in the air, then lands and finishes round kick and lands on that kicking foot in hyper stance."
+  },
+  {
+   "id": "sailorMoon",
+   "name": "Sailor Moon",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Raiz"
+   ],
+   "nextTricks": [
+    "Sailor Moon Reversao",
+    "Sailor Moon Hawkeye",
+    "Scrubba",
+    "Sailor Moon Doubleleg",
+    "Sailor Moon Hyperhook",
+    "Sailor Moon Twist",
+    "Sailor Gumbi",
+    "Sailor Moon Snapu",
+    "Sailor Moon Wackknife",
+    "Sailor Moon Late Round",
+    "Sailor Moon Round"
+   ],
+   "description": "A Raiz where the right hand (assuming left twisting) is planted right before take-off. Like a Touchdown Raiz with the other hand."
+  },
+  {
+   "id": "popSwipeknife",
+   "name": "Pop Swipeknife",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Pop Swipe"
+   ],
+   "nextTricks": [],
+   "description": "A Swipeknife that takes off in frontside pop."
+  },
+  {
+   "id": "jackknifeTurbo",
+   "name": "Jackknife Turbo",
+   "aliases": [],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Jackknife",
+    "Tsunami"
+   ],
+   "nextTricks": [],
+   "description": "A Jackknife that lands back in frontside on both feet like an Illusion Twist. This landing is known as “hyper” in TKT and “turbo” in mainstream."
+  },
+  {
+   "id": "pop900",
+   "name": "Pop 900",
+   "aliases": [
+    "Pop 720 Round (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop 720",
+    "Backside 900"
+   ],
+   "nextTricks": [
+    "Pop 900 Hyper",
+    "Pop 1080"
+   ],
+   "description": "The Pop 900 starts in Frontside stance, leaves the ground off of both feet, rotates 720° in the air, then lands and finishes with a round kick towards the target."
+  },
+  {
+   "id": "snapuTwist",
+   "name": "Snapu Twist",
+   "aliases": [
+    "Snapu Double"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Snapu"
+   ],
+   "nextTricks": [],
+   "description": "A sideswipe with two extra twists before landing. First landed by Michael Guthrie."
+  },
+  {
+   "id": "corkscrewSnapu",
+   "name": "Corkscrew Snapu",
+   "aliases": [],
+   "categories": [
+    "DOUBLE",
+    "TWIST",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Double Corkscrew",
+    "Corkscrew Swipe"
+   ],
+   "nextTricks": [],
+   "description": "A Corkscrew that finishes with a snapu. Making this a double corkscrew variation."
+  },
+  {
+   "id": "backside900Knife",
+   "name": "Backside 900 Knife",
+   "aliases": [
+    "Pop 540 Round Knife (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 1080",
+    "Jackknife"
+   ],
+   "nextTricks": [],
+   "description": "A Backside 900 Knife is a Backside 900 with a Jackknife executed, making it a Backside 1080 variation. Can be thought of as a vertical, non-flipped Full Swipeknife."
+  },
+  {
+   "id": "btwist",
+   "name": "Butterfly Twist",
+   "aliases": [],
+   "categories": [
+    "TWIST",
+    "SINGLE"
+   ],
+   "prereqs": [
+    "Butterfly"
+   ],
+   "nextTricks": [
+    "Butterfly Twist Shuriken",
+    "Butterfly Twist Round",
+    "Butterfly Twist Hawkeye",
+    "Butterfly Twist Doubleleg",
+    "Butterfly Twist Hyper",
+    "Butterfly Twist Hyperhook",
+    "Butterfly Twist Wackknife",
+    "Butterfly Twist Swipe",
+    "Dragonfly Twist"
+   ],
+   "description": "A Butterfly Kick with an extra 360° rotation done in the air before landing on the horizontal axis."
+  },
+  {
+   "id": "cheat720Turbo",
+   "name": "Cheat 720 Turbo",
+   "aliases": [
+    "Cheat 540 Hook True-Hyper (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 720",
+    "Swing 360"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 720 that lands on both legs (turbo) with an outside crescent kick."
+  },
+  {
+   "id": "gainerFigure4Sidekick",
+   "name": "Gainer Figure 4 Sidekick",
+   "aliases": [],
+   "categories": [
+    "FLIP",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Gainer Figure 4"
+   ],
+   "nextTricks": [],
+   "description": "A Gainer Figure-4 with a sidekick. Not totally flipped, but more on the Flick Flack axis."
+  },
+  {
+   "id": "backInRocketboiOut",
+   "name": "Back-In Rocketboi-Out",
+   "aliases": [],
+   "categories": [
+    "FLIP",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Double Back Tuck"
+   ],
+   "nextTricks": [],
+   "description": "A Back Tuck followed by a Rocketboi (two flips)."
+  },
+  {
+   "id": "corkscrewSwipeLateSwipe",
+   "name": "Corkscrew Swipe Late Swipe",
+   "aliases": [
+    "Corkscrew Frappe"
+   ],
+   "categories": [
+    "TWIST",
+    "VARIATION",
+    "PSEUDO_DOUBLE_FLIP"
+   ],
+   "prereqs": [
+    "Corkscrew Late Round"
+   ],
+   "nextTricks": [],
+   "description": "A Corkscrew Swipe that finishes with a late swipe on the pseudo-flip axis."
+  },
+  {
+   "id": "pop360",
+   "name": "Pop 360",
+   "aliases": [],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [],
+   "nextTricks": [
+    "Pop 360 Shuriken",
+    "Pop 720",
+    "Swing 360",
+    "Illusion Twist",
+    "Backside 1080 Shuriken",
+    "Pop 360 Gyro",
+    "Doubleleg"
+   ],
+   "description": "The Pop 360 starts in Frontside stance, leaves the ground off of both feet, rotates 180° in the air, then lands and finishes with an outside crescent kick towards the target and lands in turbo (both feet). This trick is also a hyper, because Pop 180 Hook (TKT) is not often used in tricking. This trick is vitally important for Illusion Twist and other similar tricks that end in turbo."
+  },
+  {
+   "id": "tornadoHawkeye",
+   "name": "Tornado Hawkeye",
+   "aliases": [
+    "Cheat 360 Hawkeye (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Tornado"
+   ],
+   "nextTricks": [],
+   "description": "A Tornado with a hawkeye (inside leg executing a hook kick against the DOM)"
+  },
+  {
+   "id": "supermanFront",
+   "name": "Superman Front",
+   "aliases": [],
+   "categories": [
+    "FLIP",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Front Tuck"
+   ],
+   "nextTricks": [],
+   "description": "A Frontflip that hits a “Superman” pose at the peak of the flip."
+  },
+  {
+   "id": "fullDoubleleg",
+   "name": "Full Doubleleg",
+   "aliases": [],
+   "categories": [
+    "TWIST",
+    "SINGLE",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Full Twist"
+   ],
+   "nextTricks": [],
+   "description": "A Full Twist with a Doubleleg executed before landing."
+  },
+  {
+   "id": "backside1440",
+   "name": "Backside 1440",
+   "aliases": [
+    "Pop 1080 Hook (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 1260"
+   ],
+   "nextTricks": [
+    "Backside 1620",
+    "Backside 1260 Knife",
+    "Backside 1260 Feilong Knife",
+    "Pop 1440"
+   ],
+   "description": "The Backside 1440 starts in Backside stance, leaves the ground off of both feet, rotates 1080° in the air, then lands and finishes with a hook kick towards the target. Could be thought of as a vertical double full hyperhook."
+  },
+  {
+   "id": "tripleFull",
+   "name": "Triple Full",
+   "aliases": [],
+   "categories": [
+    "TRIPLE",
+    "TWIST"
+   ],
+   "prereqs": [
+    "Double Full"
+   ],
+   "nextTricks": [
+    "Tak Triple Full",
+    "Full Doubleleg Double Twist",
+    "Triple Full Hyper"
+   ],
+   "description": "A Full Twist with an extra two rotations."
+  },
+  {
+   "id": "sailorGumbi",
+   "name": "Sailor Gumbi",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Gumbi",
+    "Sailor Moon"
+   ],
+   "nextTricks": [],
+   "description": "A Sailor Moon where the planted hand does not leave the ground. Can be thought of as a Gumbi with the right hand (assuming spinning to the left) instead of both."
+  },
+  {
+   "id": "swing360",
+   "name": "Swing 360",
+   "aliases": [
+    "Tsunami Hyper (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop 360"
+   ],
+   "nextTricks": [
+    "Cheat 720 Turbo"
+   ],
+   "description": "A turbo’d skip hook basically, or a Pop 360 from a swing."
+  },
+  {
+   "id": "540Gyroknife",
+   "name": "540 Gyroknife",
+   "aliases": [
+    "Cheat 360 Katana Gyroknife (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "540 Gyro"
+   ],
+   "nextTricks": [],
+   "description": "A 540 Gyro that finishes with a hyperhook. Could be thought of as a vertical Snapu Hyperhook."
+  },
+  {
+   "id": "envergadoTwist",
+   "name": "Envergado Twist",
+   "aliases": [],
+   "categories": [
+    "TWIST"
+   ],
+   "prereqs": [
+    "Envergado"
+   ],
+   "nextTricks": [
+    "Envergado Double Twist"
+   ],
+   "description": "An Envergado with an extra twist executed before landing. Can be thought of as an inverted Parafuso Gyro."
+  },
+  {
+   "id": "cheat720TwistRound",
+   "name": "Cheat 720 Twist Round",
+   "aliases": [
+    "Raiz Twist Round"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Cheat 720 Twist",
+    "Cheat 900"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 720 Twist with a round kick executed before landing. Can be thought of as a “laid back” Cheat 900."
+  },
+  {
+   "id": "sailorMoonSnapu",
+   "name": "Sailor Moon Snapu",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sailor Moon",
+    "Snapu"
+   ],
+   "nextTricks": [],
+   "description": "A Sailor Moon with a Snapu executed before landing."
+  },
+  {
+   "id": "fullSnapuHyper",
+   "name": "Full Snapu Hyper",
+   "aliases": [],
+   "categories": [
+    "DOUBLE",
+    "TWIST",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Full Snapu"
+   ],
+   "nextTricks": [],
+   "description": "A Full Snapu that lands in hyper."
+  },
+  {
+   "id": "spyderTwistRound",
+   "name": "Spyder Twist Round",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Spyder Twist"
+   ],
+   "nextTricks": [],
+   "description": "A Spyder Twist that executes a round kick before landing."
+  },
+  {
+   "id": "sailorMoonWackknife",
+   "name": "Sailor Moon Wackknife",
+   "aliases": [],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Sailor Moon",
+    "Wackknife"
+   ],
+   "nextTricks": [],
+   "description": "A Sailor Moon that is combined with a Wackknife."
+  },
+  {
+   "id": "teradaGrab",
+   "name": "Terada Grab",
+   "aliases": [],
+   "categories": [
+    "FLIP",
+    "VARIATION"
+   ],
+   "prereqs": [
+    "Flash Kick",
+    "Arabian"
+   ],
+   "nextTricks": [],
+   "description": "The Terada Grab can be done either as an Arabian variation or as a Sideflip variation. At the peak of the flip, the hook kick leg is grabbed with both hands and an axe/hook kick is executed from the peak of the flip to the landing. Created by Steve Terada"
+  },
+  {
+   "id": "cheat900Hyper",
+   "name": "Cheat 900 Hyper",
+   "aliases": [
+    "Cheat 720 Katana (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 900"
+   ],
+   "nextTricks": [
+    "Cheat 900 Knife",
+    "Cheat 900 Gyro"
+   ],
+   "description": "A Cheat 900 that lands on the kicking (inside) leg in hyper."
+  },
+  {
+   "id": "pop360GyroRound",
+   "name": "Pop 360 Gyro Round",
+   "aliases": [
+    "Pop 180 Whirlwind (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Pop 360 Gyro"
+   ],
+   "nextTricks": [],
+   "description": "A Pop 360 Gyro where a round kick is executed before landing, thus adding an extra 180° to the original move. The Pop 360 Gyro Round has the same amount of rotation as a Pop 900."
+  },
+  {
+   "id": "cheat1260Doubleleg",
+   "name": "Cheat 1260 Doubleleg",
+   "aliases": [
+    "Cheat 1080 Parafuso (TKT)",
+    " Cheat 1260 Parafuso"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 1260",
+    "Cheat 900 Doubleleg"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 1260 that finishes with a parafuso/doubleleg."
+  },
+  {
+   "id": "doublelegRodeo",
+   "name": "Doubleleg Rodeo",
+   "aliases": [
+    "Rodeo Kim Do Kick"
+   ],
+   "categories": [
+    "OUTSIDE"
+   ],
+   "prereqs": [
+    "Doubleleg"
+   ],
+   "nextTricks": [],
+   "description": "A Doubleleg variation that initiates exactly like the base move, but then flips backwards with the same aesthetic of a Rodeo Backflip."
+  },
+  {
+   "id": "backside1260",
+   "name": "Backside 1260",
+   "aliases": [
+    "Pop 900 Round (TKT)"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Backside 1080"
+   ],
+   "nextTricks": [
+    "Backside 1440",
+    "Backside 1260 Knife",
+    "Backside 1260 Wackknife",
+    "Backside 1260 Feilong",
+    "Cheat 1260"
+   ],
+   "description": "The Backside 1260 starts in Backside stance, leaves the ground off of both feet, rotates 900° in the air, then lands and finishes with a round kick towards the target."
+  },
+  {
+   "id": "twistKnife",
+   "name": "Twist Knife",
+   "aliases": [
+    "Tornado Twist Kick Knife"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Jackknife"
+   ],
+   "nextTricks": [],
+   "description": "A Jackknife with a Twist-Kick (round kicking going against DOM) instead of a round kick."
+  },
+  {
+   "id": "masterswipe",
+   "name": "Masterswipe",
+   "aliases": [],
+   "categories": [
+    "GROUNDWORK"
+   ],
+   "prereqs": [
+    "Masterscoot",
+    "Cartwheel"
+   ],
+   "nextTricks": [],
+   "description": "A Masterscoot that swipes over and lands in hyper, almost like a Cartwheel that takes off of the other foot."
+  },
+  {
+   "id": "cheat900Paraknife",
+   "name": "Cheat 900 Paraknife",
+   "aliases": [
+    "Cheat 720 Paraknife (TKT)",
+    " Cheat 900 Switchblade"
+   ],
+   "categories": [
+    "VERT_KICK"
+   ],
+   "prereqs": [
+    "Cheat 900 Doubleleg"
+   ],
+   "nextTricks": [],
+   "description": "A Cheat 900 Parafuso that finishes with a knife."
+  }
+ ]
