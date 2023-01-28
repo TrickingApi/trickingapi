@@ -21,3 +21,16 @@ func (tc TrickCategory) String() string {
 }
 
 var Categories = []TrickCategory{FLIP, VERT_KICK, TWIST, PSEUDO_DUB, SING, DUB, TRIP, QUAD, GROUNDWORK, UNKNOWN}
+
+func IsCategory(str string) bool {
+	return GetCategoryFromString(str) != ""
+}
+
+func GetCategoryFromString(str string) TrickCategory {
+	for _, category := range Categories {
+		if str == string(category) {
+			return category
+		}
+	}
+	return ""
+}

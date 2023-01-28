@@ -17,10 +17,36 @@ import (
 var BASE_URL string = "https://www.loopkickstricking.com/"
 var OTHER_NAMES string = "Other Names:"
 var PRE_REQS string = "Prerequisites:"
+var DEFAULT_START_PATH string = "tricktionary/explore"
 
-func Scrape(idToTrickMap map[string]models.Trick) {
+func Scrape(idToTrickMap map[string]models.Trick, startPath string, category string) {
+	trickURLs := extractTrickURLs(startPath)
+
+	// Scrape the trick information from each trick page
+	for _, url := range trickURLs {
+		currentTrick := extractTrickInformation(url, category)
+		if _, ok := idToTrickMap[currentTrick.Id]; !ok {
+			idToTrickMap[currentTrick.Id] = currentTrick
+		}
+	}
+
+	fmt.Println("Filling Prereq Connections: ")
+	for _, currentTrick := range idToTrickMap {
+		updatePrereqNextTrickEdges(currentTrick, idToTrickMap)
+	}
+
+	writeToFile(idToTrickMap)
+}
+
+func extractTrickURLs(startPath string) []string {
+	var start string
+	if start = startPath; len(startPath) > 0 {
+	} else {
+		start = DEFAULT_START_PATH
+	}
+
 	// Make the request
-	resp, err := http.Get(BASE_URL + "tricktionary/explore")
+	resp, err := http.Get(BASE_URL + start)
 	fmt.Println("Scraping")
 	if err != nil {
 		log.Fatal(err)
@@ -53,77 +79,84 @@ func Scrape(idToTrickMap map[string]models.Trick) {
 		}
 	})
 
-	// Scrape the trick information from each trick page
-	for _, url := range trickURLs {
-		// Make the request
-		fmt.Println("Fetching: ", url)
-		resp, err := http.Get(url)
-		if err != nil {
-			log.Fatal(err)
-		}
-		defer resp.Body.Close()
+	return trickURLs
+}
 
-		// Validate the response
-		if resp.StatusCode != http.StatusOK {
-			log.Fatalf("status code error: %d %s", resp.StatusCode, resp.Status)
-		}
+func extractTrickInformation(url string, category string) models.Trick {
+	// Make the request
+	fmt.Println("Fetching: ", url)
+	resp, err := http.Get(url)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer resp.Body.Close()
 
-		// Read the response body
-		body, err := io.ReadAll(resp.Body)
-		if err != nil {
-			log.Fatal(err)
-		}
+	// Validate the response
+	if resp.StatusCode != http.StatusOK {
+		log.Fatalf("status code error: %d %s", resp.StatusCode, resp.Status)
+	}
 
-		// Create a goquery document
-		doc, err := goquery.NewDocumentFromReader(strings.NewReader(string(body)))
-		if err != nil {
-			log.Fatal(err)
-		}
+	// Read the response body
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
 
-		// Extract the trick information
-		name := strings.ReplaceAll(doc.Find(".heading-8").Text(), "\u00a0", " ")
-		otherNamesText := strings.ReplaceAll(doc.Find(".nickname-wrapper > .nickname").Text(), OTHER_NAMES, "")
-		otherNamesText = strings.ReplaceAll(otherNamesText, "\u00a0", "")
-		aliases := strings.Split(strings.Trim(otherNamesText, " "), ",")
-		description := strings.ReplaceAll(doc.Find(".paragraph-5").Text(), "\u00a0", " ")
-		prereqsText := doc.Find(".prereq-wrapper > .nickname.prereq + .nickname").Text()
-		prereqsText = strings.ReplaceAll(prereqsText, "\u00a0", " ")
-		prereqs := strings.Split(strings.ReplaceAll(prereqsText, PRE_REQS, ""), ", ")
+	// Create a goquery document
+	doc, err := goquery.NewDocumentFromReader(strings.NewReader(string(body)))
+	if err != nil {
+		log.Fatal(err)
+	}
 
-		var categories []models.TrickCategory
-		var nextTricks []string
-		currentTrick := &models.Trick{
-			Id:            generateIdFromName(name),
-			Name:          name,
-			Aliases:       aliases,
-			Categories:    categories,
-			Prerequisites: prereqs,
-			NextTricks:    nextTricks,
-			Description:   description,
-		}
-		fmt.Println("Created Trick: ", currentTrick.Name)
+	// Extract the trick information
+	name := strings.ReplaceAll(doc.Find(".heading-8").Text(), "\u00a0", " ")
+	otherNamesText := strings.ReplaceAll(doc.Find(".nickname-wrapper > .nickname").Text(), OTHER_NAMES, "")
+	otherNamesText = strings.ReplaceAll(otherNamesText, "\u00a0", "")
+	aliases := strings.Split(strings.Trim(otherNamesText, " "), ",")
+	description := strings.ReplaceAll(doc.Find(".paragraph-5").Text(), "\u00a0", " ")
+	prereqsText := doc.Find(".prereq-wrapper > .nickname.prereq + .nickname").Text()
+	prereqsText = strings.ReplaceAll(prereqsText, "\u00a0", " ")
+	prereqs := strings.Split(strings.ReplaceAll(prereqsText, PRE_REQS, ""), ", ")
 
-		if _, ok := idToTrickMap[currentTrick.Id]; !ok {
-			idToTrickMap[currentTrick.Id] = *currentTrick
+	var categories []models.TrickCategory
+
+	if len(category) > 0 {
+		if tc := models.GetCategoryFromString(category); tc != "" {
+			categories = append(categories, tc)
 		}
 	}
 
-	fmt.Println("Filling Prereq Connections: ")
-	for _, currentTrick := range idToTrickMap {
-		// searches for all prereqs and adds current trick to their nextTricks links
-		for _, prereq := range currentTrick.Prerequisites {
-			fmt.Println("Checking if prereq exists: ", prereq)
-			prereqId := generateIdFromName(prereq)
-			if prereqTrick, ok := idToTrickMap[prereqId]; ok {
-				if len(prereqTrick.Name) != 0 && !contains(prereqTrick.NextTricks, currentTrick.Name) {
-					fmt.Println("Prereq connection created between: " + prereqTrick.Name + " - " + currentTrick.Name)
-					prereqTrick.NextTricks = append(prereqTrick.NextTricks, currentTrick.Name)
-					idToTrickMap[prereqId] = prereqTrick
-				}
+	var nextTricks []string
+	currentTrick := &models.Trick{
+		Id:            generateIdFromName(name),
+		Name:          name,
+		Aliases:       aliases,
+		Categories:    categories,
+		Prerequisites: prereqs,
+		NextTricks:    nextTricks,
+		Description:   description,
+	}
+	fmt.Println("Created Trick: ", currentTrick.Name)
+
+	return *currentTrick
+}
+
+func updatePrereqNextTrickEdges(currentTrick models.Trick, idToTrickMap map[string]models.Trick) {
+	// searches for all prereqs and adds current trick to their nextTricks links
+	for _, prereq := range currentTrick.Prerequisites {
+		fmt.Println("Checking if prereq exists: ", prereq)
+		prereqId := generateIdFromName(prereq)
+		if prereqTrick, ok := idToTrickMap[prereqId]; ok {
+			if len(prereqTrick.Name) != 0 && !contains(prereqTrick.NextTricks, currentTrick.Name) {
+				fmt.Println("Prereq connection created between: " + prereqTrick.Name + " - " + currentTrick.Name)
+				prereqTrick.NextTricks = append(prereqTrick.NextTricks, currentTrick.Name)
+				idToTrickMap[prereqId] = prereqTrick
 			}
 		}
 	}
+}
 
+func writeToFile(idToTrickMap map[string]models.Trick) {
 	// convert idToTrickMap to array of Tricks, marshal to new json file
 	var newTricksList []models.Trick
 	for _, trick := range idToTrickMap {
