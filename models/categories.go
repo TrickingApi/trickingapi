@@ -3,16 +3,17 @@ package models
 type TrickCategory string
 
 const (
-	FLIP       TrickCategory = "FLIP"
-	VERT_KICK  TrickCategory = "VERT_KICK"
-	TWIST      TrickCategory = "TWIST"
-	PSEUDO_DUB TrickCategory = "PSEUDO_DOUBLE_FLIP"
-	SING       TrickCategory = "SINGLE"
 	DUB        TrickCategory = "DOUBLE"
-	TRIP       TrickCategory = "TRIPLE"
-	QUAD       TrickCategory = "QUAD"
+	FLIP       TrickCategory = "FLIP"
 	GROUNDWORK TrickCategory = "GROUNDWORK"
+	PSEUDO_DUB TrickCategory = "PSEUDO_DOUBLE_FLIP"
+	QUAD       TrickCategory = "QUAD"
+	SING       TrickCategory = "SINGLE"
+	TRIP       TrickCategory = "TRIPLE"
+	TWIST      TrickCategory = "TWIST"
 	UNKNOWN    TrickCategory = "UNKNOWN"
+	VARIATION  TrickCategory = "VARIATION"
+	VERT_KICK  TrickCategory = "VERT_KICK"
 )
 
 func (tc TrickCategory) String() string {

@@ -4,13 +4,11 @@ go 1.19
 
 require (
 	github.com/gin-gonic/gin v1.8.2
+	github.com/iancoleman/strcase v0.2.0
 	github.com/stretchr/testify v1.8.1
 )
 
-require (
-	github.com/andybalholm/cascadia v1.3.1 // indirect
-	github.com/iancoleman/strcase v0.2.0 // indirect
-)
+require github.com/andybalholm/cascadia v1.3.1 // indirect
 
 require (
 	github.com/PuerkitoBio/goquery v1.8.0
