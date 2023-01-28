@@ -3,9 +3,13 @@ package models
 type TrickCategory string
 
 const (
+	BACKWARD   TrickCategory = "BACKWARD"
 	DUB        TrickCategory = "DOUBLE"
 	FLIP       TrickCategory = "FLIP"
+	FORWARD    TrickCategory = "FORWARD"
 	GROUNDWORK TrickCategory = "GROUNDWORK"
+	INSIDE     TrickCategory = "INSIDE"
+	OUTSIDE    TrickCategory = "OUTSIDE"
 	PSEUDO_DUB TrickCategory = "PSEUDO_DOUBLE_FLIP"
 	QUAD       TrickCategory = "QUAD"
 	SING       TrickCategory = "SINGLE"
