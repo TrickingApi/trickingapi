@@ -2,9 +2,7 @@
  {
   "id": "fullDoubleleg",
   "name": "Full Doubleleg",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "TWIST",
     "SINGLE",
@@ -13,7 +11,7 @@
   "prereqs": [
    "Full Twist"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Full Twist with a Doubleleg executed before landing."
  },
  {
@@ -30,7 +28,7 @@
   "prereqs": [
    "Full Twist"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Full Twist with a leg grab"
  },
  {
@@ -60,9 +58,7 @@
  {
   "id": "rocketboiScissorSwitch",
   "name": "Rocketboi Scissor Switch",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP",
     "VARIATION"
@@ -70,7 +66,7 @@
   "prereqs": [
    "Rocketboi"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Rocketboi with a scissor and another switch."
  },
  {
@@ -88,15 +84,13 @@
    "Corkscrew Swipe",
    "Boxcutter"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Corkscrew that finishes with a Swipeknife."
  },
  {
   "id": "tripleFull",
   "name": "Triple Full",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "TRIPLE",
     "TWIST"
@@ -114,9 +108,7 @@
  {
   "id": "fullSnapu",
   "name": "Full Snapu",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "DOUBLE",
     "TWIST",
@@ -151,9 +143,7 @@
  {
   "id": "corkscrewSnapu",
   "name": "Corkscrew Snapu",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "DOUBLE",
     "TWIST",
@@ -163,15 +153,13 @@
    "Double Corkscrew",
    "Corkscrew Swipe"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Corkscrew that finishes with a snapu. Making this a double corkscrew variation."
  },
  {
   "id": "butterflyTwistWackknife",
   "name": "Butterfly Twist Wackknife",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "SINGLE",
     "TWIST",
@@ -181,15 +169,13 @@
    "Butterfly Twist Doubleleg",
    "Wackknife"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Butterfly Twist with a Wackknife executed before landing."
  },
  {
   "id": "masterswipe",
   "name": "Masterswipe",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "GROUNDWORK"
   ],
@@ -197,15 +183,13 @@
    "Masterscoot",
    "Cartwheel"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Masterscoot that swipes over and lands in hyper, almost like a Cartwheel that takes off of the other foot."
  },
  {
   "id": "doubleFull",
   "name": "Double Full",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "DOUBLE",
     "TWIST"
@@ -222,9 +206,7 @@
  {
   "id": "gainerArabian",
   "name": "Gainer Arabian",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP"
   ],
@@ -232,15 +214,13 @@
    "Gainer Flash",
    "Arabian"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "An Arabian from a swing/gainer takeoff."
  },
  {
   "id": "backInRocketboiOut",
   "name": "Back-In Rocketboi-Out",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP",
     "VARIATION"
@@ -248,7 +228,7 @@
   "prereqs": [
    "Double Back Tuck"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Back Tuck followed by a Rocketboi (two flips)."
  },
  {
@@ -324,7 +304,7 @@
    "Butterfly Twist Round",
    "Butterfly Twist Hyperhook"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Butterfly Twist that finishes with a knife (round kick + hook kick)"
  },
  {
@@ -358,9 +338,7 @@
  {
   "id": "popTaiFighter",
   "name": "Pop Tai Fighter",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "VERT_KICK",
     "VARIATION"
@@ -368,15 +346,13 @@
   "prereqs": [
    "Pop Tornado"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Tai-Fighter is a Feilong with the round foot grabbed before the kick is released and is executed on the Doubleleg axis."
  },
  {
   "id": "aerial",
   "name": "Aerial",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP"
   ],
@@ -384,7 +360,7 @@
    "Cartwheel",
    "One-Handed Cartwheel"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Cartwheel with no-hands. Unlike the gymnast version of the Aerial, the Tricker/Butterfly Aerial goes side to side."
  },
  {
@@ -400,15 +376,13 @@
   "prereqs": [
    "Tornado"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Tornado with a split kick / straddle."
  },
  {
   "id": "touchdownWrapFull",
   "name": "Touchdown Wrap Full",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "TWIST",
     "GROUNDWORK"
@@ -417,15 +391,13 @@
    "Wrap Full",
    "Touchdown Raiz"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Wrap Full that finishes in a Touchdown Raiz."
  },
  {
   "id": "gainerFigure4Sidekick",
   "name": "Gainer Figure 4 Sidekick",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP",
     "VARIATION"
@@ -433,15 +405,13 @@
   "prereqs": [
    "Gainer Figure 4"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Gainer Figure-4 with a sidekick. Not totally flipped, but more on the Flick Flack axis."
  },
  {
   "id": "arabianScissorRound",
   "name": "Arabian Scissor Round",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP",
     "VARIATION"
@@ -449,15 +419,13 @@
   "prereqs": [
    "Full Scissor"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Full Round with a scissor grab in the middle."
  },
  {
   "id": "backInXOut",
   "name": "Back-In X-Out",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP",
     "VARIATION"
@@ -465,15 +433,13 @@
   "prereqs": [
    "Double Back Tuck"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Back Tuck followed by a Rocketboi (two flips)."
  },
  {
   "id": "aerialTwistDoubleleg",
   "name": "Aerial Twist Doubleleg",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "SINGLE",
     "TWIST"
@@ -481,7 +447,7 @@
   "prereqs": [
    "Aerial Twist"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "An Aerial Twist that finishes with a Doubleleg."
  },
  {
@@ -498,15 +464,13 @@
   "prereqs": [
    "Corkscrew Late Round"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Corkscrew Swipe that finishes with a late swipe on the pseudo-flip axis."
  },
  {
   "id": "fullSnapuHyper",
   "name": "Full Snapu Hyper",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "DOUBLE",
     "TWIST",
@@ -515,15 +479,13 @@
   "prereqs": [
    "Full Snapu"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Full Snapu that lands in hyper."
  },
  {
   "id": "lonestarHyperhook",
   "name": "Lonestar Hyperhook",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP",
     "VARIATION"
@@ -531,15 +493,13 @@
   "prereqs": [
    "Lonestar"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Lonestar that finishes with a hyperhook."
  },
  {
   "id": "teradaGrab",
   "name": "Terada Grab",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP",
     "VARIATION"
@@ -548,7 +508,7 @@
    "Flash Kick",
    "Arabian"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "The Terada Grab can be done either as an Arabian variation or as a Sideflip variation. At the peak of the flip, the hook kick leg is grabbed with both hands and an axe/hook kick is executed from the peak of the flip to the landing. Created by Steve Terada"
  },
  {
@@ -583,15 +543,13 @@
   "prereqs": [
    "Full Round"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Full that finishes with a mega round / late round."
  },
  {
   "id": "backInSquirrelOut",
   "name": "Back-In Squirrel-Out",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP",
     "VARIATION"
@@ -599,15 +557,13 @@
   "prereqs": [
    "Double Back Tuck"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Back Tuck followed by a Squirrel Backflip (two flips)."
  },
  {
   "id": "supermanFront",
   "name": "Superman Front",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP",
     "VARIATION"
@@ -615,7 +571,7 @@
   "prereqs": [
    "Front Tuck"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Frontflip that hits a “Superman” pose at the peak of the flip."
  },
  {
@@ -642,24 +598,20 @@
  {
   "id": "doubleNike",
   "name": "Double Nike",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "PSEUDO_DOUBLE_FLIP"
   ],
   "prereqs": [
    "Double Back Tuck"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "An off-axis double backflip with body in a position resembling the Nike logo."
  },
  {
   "id": "flashKick",
   "name": "Flash Kick",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP"
   ],
@@ -674,9 +626,7 @@
  {
   "id": "fullInBackOutHyper",
   "name": "Full-In Back-Out Hyper",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP",
     "VARIATION"
@@ -684,7 +634,7 @@
   "prereqs": [
    "Full-In Back-Out"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Full-In Back-Out that lands in hyper. Could be thought of as an \"on-axis\" Frappe."
  },
  {
@@ -700,15 +650,13 @@
   "prereqs": [
    "Cheat 900"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Cheat 900 with a leg grab in between both kicks."
  },
  {
   "id": "gainerFigure4",
   "name": "Gainer Figure 4",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP",
     "VARIATION"
@@ -725,9 +673,7 @@
  {
   "id": "takTripleFull",
   "name": "Tak Triple Full",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "TWIST",
     "TRIPLE"
@@ -736,7 +682,7 @@
    "Tak Double Full",
    "Triple Full"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Tak Full with an extra two rotations."
  },
  {
@@ -753,7 +699,7 @@
    "Cheat 900 Knife",
    "Cheat 900 Double"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Cheat 900 Double that finishes with a hyperhook."
  },
  {
@@ -772,22 +718,20 @@
    "Corkscrew Doubleleg",
    "Corkscrew Late Round"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Corkscrew Doubleleg that at finishes with a late round."
  },
  {
   "id": "backPike",
   "name": "Back Pike",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP"
   ],
   "prereqs": [
    "Back Tuck"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Backflip with the “pike” position."
  },
  {
@@ -805,22 +749,20 @@
    "Cheat 900",
    "Parafuso"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Cheat 900 that finishes with a parafuso/doubleleg instead of a round kick."
  },
  {
   "id": "envergadoTwist",
   "name": "Envergado Twist",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "TWIST"
   ],
   "prereqs": [
    "Envergado"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "An Envergado with an extra twist executed before landing. Can be thought of as an inverted Parafuso Gyro."
  },
  {
@@ -837,15 +779,13 @@
    "Dragonfly Corkscrew",
    "Shuriken Cutter"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Dragonfly Corkscrew that finishes with a Shuriken Hyperhook."
  },
  {
   "id": "corkscrewFeilong",
   "name": "Corkscrew Feilong",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "TWIST",
     "VARIATION"
@@ -855,15 +795,13 @@
    "Corkscrew Round",
    "Pop Feilong"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Corkscrew that finishes with a Feilong (outside kick followed by an inside kick)."
  },
  {
   "id": "fullDoublelegDoubleTwist",
   "name": "Full Doubleleg Double Twist",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "TRIPLE",
     "TWIST",
@@ -873,15 +811,13 @@
    "Full Doubleleg Twist",
    "Triple Full"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Double Full Doubleleg with an extra rotation."
  },
  {
   "id": "tripleFullHyper",
   "name": "Triple Full Hyper",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "TWIST",
     "TRIPLE",
@@ -890,15 +826,13 @@
   "prereqs": [
    "Triple Full"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Triple Full that lands in hyper stance."
  },
  {
   "id": "butterflyTwistAxe",
   "name": "Butterfly Twist Axe",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "SINGLE",
     "TWIST",
@@ -907,15 +841,13 @@
   "prereqs": [
    "Butterfly Twist"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Butterfly Twist with an axe kick executed before landing."
  },
  {
   "id": "doubleCorkscrewShuriken",
   "name": "Double Corkscrew Shuriken",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "DOUBLE",
     "TWIST",
@@ -925,15 +857,13 @@
    "Double Corkscrew",
    "Corkscrew Shuriken"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A Double Corkscrew that finishes with a shuriken (outside crescent) in complete stance."
  },
  {
   "id": "rocketboiScissorSnapu",
   "name": "Rocketboi Scissor Snapu",
-  "aliases": [
-   ""
-  ],
+  "aliases": [],
   "categories": [
     "FLIP",
     "TWIST",
@@ -943,7 +873,7 @@
    "Rocketboi",
    "Full Snapu"
   ],
-  "nextTricks": null,
+  "nextTricks": [],
   "description": "A rocketboi scissor with a snapu executed before landing, making this a double full variation."
  }
 ]

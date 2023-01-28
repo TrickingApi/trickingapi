@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"os"
 
@@ -68,9 +67,18 @@ func init() {
 // @BasePath /api
 // @schemes https
 func main() {
-	fmt.Print(os.Args)
-	if os.Args[1] == "-scrape" {
-		utils.Scrape(idToTrickMap)
+	if len(os.Args) > 1 && os.Args[1] == "-scrape" {
+		var startPath = ""
+		var category = ""
+		if len(os.Args) > 2 {
+			startPath = os.Args[2]
+		}
+
+		if len(os.Args) > 3 {
+			category = os.Args[3]
+		}
+
+		utils.Scrape(idToTrickMap, startPath, category)
 		return
 	}
 
