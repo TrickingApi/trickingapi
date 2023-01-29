@@ -1685,7 +1685,8 @@
    ],
    "prereqs": [
     "Double Butterfly Twist",
-    "Butterfly Twist Snapu"
+    "Butterfly Twist Snapu",
+    "Triple Butterfly Twist"
    ],
    "nextTricks": [],
    "description": "A Double Butterfly Twist that finishes with a Snapu, making this a Triple Butterfly Twist variation."
@@ -4641,7 +4642,10 @@
    "prereqs": [
     "Double Butterfly Twist"
    ],
-   "nextTricks": [],
+   "nextTricks": [
+    "Double Butterfly Twist Snapu",
+    "Touchup Triple Butterfly Twist"
+   ],
    "description": "A Butterfly Twist with three twists.  First landed by John Vanek in July, 2013."
   },
   {
@@ -4706,7 +4710,9 @@
    "name": "Touchup Double Butterfly Twist",
    "aliases": [],
    "categories": [
-    "INSIDE"
+    "INSIDE",
+    "DOUBLE",
+    "TWIST"
    ],
    "prereqs": [
     "Double Butterfly Twist"
@@ -4714,6 +4720,21 @@
    "nextTricks": [],
    "description": "A Double Butterfly Twist where the inside hand touches the ground on takeoff."
   },
+  {
+    "id": "touchupTripleButterflyTwist",
+    "name": "Touchup Triple Butterfly Twist",
+    "aliases": [],
+    "categories": [
+     "INSIDE",
+     "TRIPLE",
+     "TWIST"
+    ],
+    "prereqs": [
+     "Triple Butterfly Twist"
+    ],
+    "nextTricks": [],
+    "description": "A Triple Butterfly Twist where the inside hand touches the ground on takeoff."
+   },
   {
    "id": "backtuck",
    "name": "Back Tuck",
