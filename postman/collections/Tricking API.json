@@ -64,7 +64,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"aliases\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"categories\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"prerequisites\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"nextTricks\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"description\": \"<string>\"\n}"
+							"body": "{\n  \"id\": \"butterflytwist\",\n  \"name\": \"Butterfly Twist\",\n  \"aliases\": [\n    \"B-Twist\",\n    \"Barrel Roll\"\n  ],\n  \"categories\": [\n    \"TWIST\",\n    \"SINGLE\",\n    \"INSIDE\"\n  ],\n  \"prerequisites\": [\n    \"Butterfly Kick\"\n   ],\n  \"nextTricks\": [\n    \"Aerial Twist\",\n    \"Butterfly Twist Round\"\n  ],\n  \"description\": \"A Butterfly Kick with an extra 360° rotation done in the air before landing on the horizontal axis.\"\n}"
 						},
 						{
 							"id": "1526dfd2-2999-49e8-9fd9-a7e53f1737b4",

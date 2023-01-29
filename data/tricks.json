@@ -1238,7 +1238,10 @@
    "name": "Double Full Doubleleg Double Twist",
   "aliases": [],
    "categories": [
-    "BACKWARD"
+    "BACKWARD",
+    "QUAD",
+    "TWIST",
+    "VARIATION"
    ],
    "prereqs": [
     "Quad Full",
@@ -5684,30 +5687,6 @@
    "description": "A Dragonfly Corkscrew / Gainer Sidewinder that finishes with a late round."
   },
   {
-   "id": "btwist",
-   "name": "Butterfly Twist",
-   "aliases": [],
-   "categories": [
-    "TWIST",
-    "SINGLE"
-   ],
-   "prereqs": [
-    "Butterfly"
-   ],
-   "nextTricks": [
-    "Butterfly Twist Shuriken",
-    "Butterfly Twist Round",
-    "Butterfly Twist Hawkeye",
-    "Butterfly Twist Doubleleg",
-    "Butterfly Twist Hyper",
-    "Butterfly Twist Hyperhook",
-    "Butterfly Twist Wackknife",
-    "Butterfly Twist Swipe",
-    "Dragonfly Twist"
-   ],
-   "description": "A Butterfly Kick with an extra 360° rotation done in the air before landing on the horizontal axis."
-  },
-  {
    "id": "boxcutterTurbo",
    "name": "Boxcutter Turbo",
   "aliases": [],
@@ -5782,14 +5761,17 @@
   {
    "id": "backHandspring",
    "name": "Back Handspring",
-  "aliases": [],
+   "aliases": [],
    "categories": [
     "BACKWARD"
    ],
    "prereqs": [
     "Backwards Roll"
    ],
-   "nextTricks": [],
+   "nextTricks": [
+    "Back Tuck",
+    "Valdez"
+   ],
    "description": "The Back Handspring is a gymnastics, tumbling move that takes off of two feet, jumps backward onto the hands and lands on both feet. Used to gain and build momentum for bigger tricks."
   },
   {
@@ -6296,7 +6278,10 @@
    "name": "Double Full Snapu Twist",
   "aliases": [],
    "categories": [
-    "BACKWARD"
+    "BACKWARD",
+    "QUAD",
+    "TWIST",
+    "VARIATION"
    ],
    "prereqs": [
     "Double Full Snapu",
@@ -6916,7 +6901,9 @@
    "name": "Quad Corkscrew",
   "aliases": [],
    "categories": [
-    "BACKWARD"
+    "BACKWARD",
+    "QUAD",
+    "TWIST"
    ],
    "prereqs": [
     "Quad Full",
@@ -7124,8 +7111,13 @@
   {
    "id": "butterflyTwist",
    "name": "Butterfly Twist",
-   "aliases": [],
+   "aliases": [
+    "B-Twist",
+    "Barrel Roll"
+   ],
    "categories": [
+    "TWIST",
+    "SINGLE",
     "INSIDE"
    ],
    "prereqs": [
@@ -7133,7 +7125,6 @@
    ],
    "nextTricks": [
     "Aerial Twist",
-    "Double Butterfly Twist Hyper",
     "Butterfly Twist Round",
     "Butterfly Twist Doubleleg",
     "Sidewinder",
@@ -7656,7 +7647,9 @@
    "name": "Quad Full",
   "aliases": [],
    "categories": [
-    "BACKWARD"
+    "BACKWARD",
+    "QUAD",
+    "TWIST"
    ],
    "prereqs": [
     "Triple Full"
@@ -8504,22 +8497,6 @@
    "description": "A Double Full Shuriken Hyperhook that lands in turbo (frontside that lands on both feet)."
   },
   {
-   "id": "backHandSpring",
-   "name": "Back Handspring",
-   "aliases": [],
-   "categories": [
-    "FLIP"
-   ],
-   "prereqs": [
-    "Backwards Roll"
-   ],
-   "nextTricks": [
-    "Back Tuck",
-    "Valdez"
-   ],
-   "description": "The Back Handspring is a gymnastics, tumbling move that takes off of two feet, jumps backward onto the hands and lands on both feet. Used to gain and build momentum for bigger tricks."
-  },
-  {
    "id": "feilongSnapu",
    "name": "Feilong Snapu",
    "aliases": [
@@ -8904,7 +8881,7 @@
     "INSIDE"
    ],
    "prereqs": [
-    "Butterfly Twist"
+    "Double Butterfly Twist"
    ],
    "nextTricks": [],
    "description": "A Double Butterfly Twist that lands in hyper."
