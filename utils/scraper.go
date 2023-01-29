@@ -7,6 +7,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"reflect"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
@@ -23,6 +24,7 @@ var DEFAULT_START_PATH string = "tricktionary/explore"
 // https://www.loopkickstricking.com/tricktionary/explore
 // https://www.loopkickstricking.com/tricktionary/vertical-kicks
 // https://www.loopkickstricking.com/tricktionary/outside-tricks
+// https://www.loopkickstricking.com/tricktionary/inside-tricks
 
 func Scrape(idToTrickMap map[string]models.Trick, startPath string, category string) {
 	trickURLs := extractTrickURLs(startPath)
@@ -32,6 +34,11 @@ func Scrape(idToTrickMap map[string]models.Trick, startPath string, category str
 		currentTrick := extractTrickInformation(url, category)
 		if _, ok := idToTrickMap[currentTrick.Id]; !ok {
 			idToTrickMap[currentTrick.Id] = currentTrick
+		} else {
+			fmt.Println("Merging existing data with new data for: ", currentTrick.Name)
+			prevTrick := idToTrickMap[currentTrick.Id]
+			mergedTrick := mergeTricks(prevTrick, currentTrick)
+			idToTrickMap[mergedTrick.Id] = mergedTrick
 		}
 	}
 
@@ -199,4 +206,55 @@ func contains(slice []string, element string) bool {
 		}
 	}
 	return false
+}
+
+func mergeTricks(trickA models.Trick, trickB models.Trick) models.Trick {
+	if trickA.Id != trickB.Id || trickA.Name != trickB.Name {
+		panic("Merge tricks is meant for merging two trick objects with the same trickIds")
+	}
+
+	var mergedCategories []models.TrickCategory
+	var mergedPrereqs, mergedNextTricks []string
+	mergedCategories, okCategories := mergeUniqueElements(trickA.Categories, trickB.Categories).([]models.TrickCategory)
+	mergedPrereqs, okPrereqs := mergeUniqueElements(trickA.Prerequisites, trickB.Prerequisites).([]string)
+	mergedNextTricks, okNextTricks := mergeUniqueElements(trickA.NextTricks, trickB.NextTricks).([]string)
+
+	if okCategories && okPrereqs && okNextTricks {
+		trickA.Categories = mergedCategories
+		trickA.Prerequisites = mergedPrereqs
+		trickA.NextTricks = mergedNextTricks
+	}
+	return trickA
+}
+
+func mergeUniqueElements(s1, s2 interface{}) interface{} {
+	aValue := reflect.ValueOf(s1)
+	bValue := reflect.ValueOf(s2)
+
+	if aValue.Kind() != reflect.Slice || bValue.Kind() != reflect.Slice {
+		panic("Inputs must be slices")
+	}
+
+	aType := reflect.TypeOf(s1).Elem()
+
+	// Create a map to store unique elements
+	uniqueElements := make(map[interface{}]bool)
+
+	// Add elements from s1 to the map
+	for i := 0; i < aValue.Len(); i++ {
+		uniqueElements[aValue.Index(i).Interface()] = true
+	}
+	// Add elements from s2 to the map
+	for i := 0; i < bValue.Len(); i++ {
+		uniqueElements[bValue.Index(i).Interface()] = true
+	}
+
+	// Create a slice to store the unique elements
+	resultSlice := reflect.MakeSlice(reflect.SliceOf(aType), 0, len(uniqueElements))
+
+	for key := range uniqueElements {
+		resultSlice = reflect.Append(resultSlice, reflect.ValueOf(key))
+	}
+
+	return resultSlice.Interface()
 }
