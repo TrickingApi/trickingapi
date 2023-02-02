@@ -22,9 +22,28 @@
 
 <br/>
 
-A RESTful API for Tricking - [trickingapi.dev](https://trickingapi.dev)
+## A RESTful API for Tricking - [trickingapi.dev](https://trickingapi.dev)
 
-Direct API access - [api.trickingapi.dev](https://api.trickingapi.dev)
+### A lightweight consumption-only REST API for the Tricking vocabulary.
+
+## Prerequisites
+Before you begin, make sure you have the following:
+- A basic understanding of REST APIs and how to make API calls.
+- A basic understanding of Tricking terminology, [Loopkicks Tricking is a great resource](https://www.loopkickstricking.com/tricktionary) as well as [The Trickedex](https://trickedex.app/)
+
+## Usage
+
+TrickingAPI is a REST API, which means that you can make API calls to retrieve data. To make an API call, you will need to specify the endpoint and any required parameters. For example, to retrieve data about a trick, you would make a GET request to the /tricks/{id} endpoint, where {id} is the ID of the trick you want to retrieve.
+
+Here is an example of making a GET request using curl:
+```
+curl -X GET "https://api.trickingapi.dev/tricks/{id}" -H "accept: application/json"
+```
+
+You can access the API directly, here: - [api.trickingapi.dev](https://api.trickingapi.dev)
+
+### Check out the documentation (or scroll down more) for more info about the various endpoints/data available to you!
+[docs.trickingapi.dev](https://docs.trickingapi.dev)
 
 ## Setup &nbsp; [![goVersion19](https://img.shields.io/github/go-mod/go-version/TrickingApi/trickingapi)](https://go.dev/doc/tutorial/web-service-gin)
 - Download this source code into a working directory
@@ -196,11 +215,11 @@ To contribute to this repository:
 
 - New Feature/Bugfix?
   - Write some code, fix something, and add a test to prove that it works. *No pull request will be accepted without tests passing, or without new tests if new features are added.*
-  - For new API endpoints make sure to do the following
+  - For new API endpoints make sure to do the following:
     - [ ] Add declarative comments above request handlers following https://swaggo.github.io/swaggo.io/declarative_comments_format/api_operation.html
     - [ ] Add unit tests for the respective route
-    - [ ] Run swag init for updating documentation
-    - PRs will not be approved for new endpoints without completing the three tasks above ^^^
+    - PRs will not be approved for new endpoints without completing the two tasks above ^^^ 
+    - Even though official documentation is maintained through postman, we will still be using swaggo declarative comments for best coding practices :D
 
 
 Data Update?
