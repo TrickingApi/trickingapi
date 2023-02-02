@@ -84,12 +84,15 @@ func main() {
 	}
 
 	router := gin.Default()
-	router.Use(cors.New(cors.Config{
+	router.SetTrustedProxies(nil)
+	config := cors.Config{
 		AllowAllOrigins: true,
 		AllowMethods:    []string{"GET"},
-		AllowHeaders:    []string{"Origin"},
-		ExposeHeaders:   []string{"Content-Length"},
-	}))
+		AllowHeaders:    []string{"*"}, // allow all headers
+		ExposeHeaders:   []string{"Content-Length", "Content-Type"},
+	}
+	//config.AddHeaders(")
+	router.Use(cors.New(config))
 	router.GET("/tricks", routes.GetAllTricksHandler(idToTrickMap))
 	router.GET("/tricks/names", routes.GetAllTrickNamesHandler(idToTrickMap))
 	router.GET("/tricks/:name", routes.GetTrickHandler(idToTrickMap))
