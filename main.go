@@ -8,6 +8,7 @@ import (
 	"github.com/TrickingApi/trickingapi/models"
 	"github.com/TrickingApi/trickingapi/routes"
 	"github.com/TrickingApi/trickingapi/utils"
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
 
@@ -83,6 +84,12 @@ func main() {
 	}
 
 	router := gin.Default()
+	router.Use(cors.New(cors.Config{
+		AllowAllOrigins: true,
+		AllowMethods:    []string{"GET"},
+		AllowHeaders:    []string{"Origin"},
+		ExposeHeaders:   []string{"Content-Length"},
+	}))
 	router.GET("/tricks", routes.GetAllTricksHandler(idToTrickMap))
 	router.GET("/tricks/names", routes.GetAllTrickNamesHandler(idToTrickMap))
 	router.GET("/tricks/:name", routes.GetTrickHandler(idToTrickMap))
@@ -90,6 +97,5 @@ func main() {
 	router.GET("/categories/tricks", routes.GetAllTricksByCategoriesHandler(categoriesToTrickSliceMap))
 	router.GET("/categories/:name", routes.GetTricksForCategoryHandler(categoriesToTrickSliceMap))
 
-	router.StaticFile("swagger", "./docs/swagger.json")
 	router.Run()
 }
