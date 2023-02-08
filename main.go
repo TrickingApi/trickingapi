@@ -15,6 +15,7 @@ import (
 var allTricks []models.Trick
 var idToTrickMap map[string]models.Trick
 var categoriesToTrickSliceMap map[models.TrickCategory][]models.Trick
+var aliasesToTrickIds map[string]string
 
 // organizes tricks by id and category upon server init
 func init() {
@@ -27,17 +28,22 @@ func init() {
 		panic(err)
 	}
 
+	// initialize maps
 	idToTrickMap = make(map[string]models.Trick)
-
 	categoriesToTrickSliceMap = make(map[models.TrickCategory][]models.Trick)
+	aliasesToTrickIds = make(map[string]string)
 
+	// initialize empty slices for each category
 	for _, category := range models.Categories {
 		emptySlice := []models.Trick{}
 		categoriesToTrickSliceMap[category] = emptySlice
 	}
 
+	// organize tricks by id, category, and alias
 	for _, trick := range allTricks {
 		idToTrickMap[trick.Id] = trick
+		aliasesToTrickIds[utils.FormatAlias(trick.Name)] = trick.Id
+		aliasesToTrickIds[utils.FormatAlias(trick.Id)] = trick.Id
 
 		var categories = trick.Categories
 
@@ -48,6 +54,11 @@ func init() {
 				tricks = append(tricks, trick)
 				categoriesToTrickSliceMap[tc] = tricks
 			}
+		}
+
+		for _, alias := range trick.Aliases {
+			formattedAlias := utils.FormatAlias(alias)
+			aliasesToTrickIds[formattedAlias] = trick.Id
 		}
 	}
 }
@@ -95,7 +106,7 @@ func main() {
 	router.Use(cors.New(config))
 	router.GET("/tricks", routes.GetAllTricksHandler(idToTrickMap))
 	router.GET("/tricks/names", routes.GetAllTrickNamesHandler(idToTrickMap))
-	router.GET("/tricks/:name", routes.GetTrickHandler(idToTrickMap))
+	router.GET("/tricks/:name", routes.GetTrickHandler(idToTrickMap, aliasesToTrickIds))
 	router.GET("/categories", routes.GetAllCategoriesHandler(categoriesToTrickSliceMap))
 	router.GET("/categories/tricks", routes.GetAllTricksByCategoriesHandler(categoriesToTrickSliceMap))
 	router.GET("/categories/:name", routes.GetTricksForCategoryHandler(categoriesToTrickSliceMap))

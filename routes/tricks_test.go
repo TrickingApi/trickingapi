@@ -58,7 +58,8 @@ func TestGetTrickHandlerValid(t *testing.T) {
 	}
 
 	idToTrickMap := map[string]models.Trick{"quadFullInFrappeOut": dummyTrick}
-	var handler = GetTrickHandler(idToTrickMap)
+	aliasesToTrickIds := map[string]string{"quadFullInFrappeOut": "quadFullInFrappeOut"}
+	var handler = GetTrickHandler(idToTrickMap, aliasesToTrickIds)
 	handler(c)
 
 	assert.Equal(t, 200, w.Code)
@@ -81,7 +82,8 @@ func TestGetTrickHandlerUnknown(t *testing.T) {
 	}
 
 	idToTrickMap := map[string]models.Trick{"quadFullInFrappeOut": dummyTrick}
-	var handler = GetTrickHandler(idToTrickMap)
+	aliasesToTrickIds := map[string]string{"quadFullInFrappeOut": "quadFullInFrappeOut"}
+	var handler = GetTrickHandler(idToTrickMap, aliasesToTrickIds)
 	handler(c)
 
 	assert.Equal(t, 404, w.Code)

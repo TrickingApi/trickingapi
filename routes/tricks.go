@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/TrickingApi/trickingapi/models"
+	"github.com/TrickingApi/trickingapi/utils"
 	"github.com/gin-gonic/gin"
 )
 
@@ -51,10 +52,16 @@ func GetAllTrickNamesHandler(idToTrickMap map[string]models.Trick) gin.HandlerFu
 // @Success 200 {object} models.Trick
 // @Failure 404 {object} models.TrickError
 // @Router /tricks/:name [get]
-func GetTrickHandler(idToTrickMap map[string]models.Trick) gin.HandlerFunc {
+func GetTrickHandler(idToTrickMap map[string]models.Trick, aliasesToTrickIds map[string]string) gin.HandlerFunc {
 	fn := func(c *gin.Context) {
 		name := c.Param("name")
+		// if the name is an alias, use the id of the alias to get the trick
+		if id, ok := aliasesToTrickIds[utils.FormatAlias(name)]; ok {
+			c.IndentedJSON(http.StatusOK, idToTrickMap[id])
+			return
+		}
 
+		// otherwise, use the name to get the trick
 		if trick, ok := idToTrickMap[name]; ok {
 			c.IndentedJSON(http.StatusOK, trick)
 		} else {

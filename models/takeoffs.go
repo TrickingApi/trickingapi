@@ -12,4 +12,4 @@ func (to TakeOff) String() string {
 	return string(to)
 }
 
-var TakeOffs = []TakeOff{BACKSIDE, FRONTSIDE}
+var TakeOffs = []TakeOff{BACKSIDE, FRONTSIDE, NEUTRAL}
