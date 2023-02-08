@@ -110,6 +110,6 @@ func main() {
 	router.GET("/categories", routes.GetAllCategoriesHandler(categoriesToTrickSliceMap))
 	router.GET("/categories/tricks", routes.GetAllTricksByCategoriesHandler(categoriesToTrickSliceMap))
 	router.GET("/categories/:name", routes.GetTricksForCategoryHandler(categoriesToTrickSliceMap))
-
+	router.GET("/transitions", routes.GetAllTransitionsHandler())
 	router.Run()
 }
