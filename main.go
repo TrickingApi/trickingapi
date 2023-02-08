@@ -16,9 +16,15 @@ var allTricks []models.Trick
 var idToTrickMap map[string]models.Trick
 var categoriesToTrickSliceMap map[models.TrickCategory][]models.Trick
 var aliasesToTrickIds map[string]string
+var transitions map[string]models.Transition
 
 // organizes tricks by id and category upon server init
 func init() {
+	loadTricksData()
+	loadTransitionData()
+}
+
+func loadTricksData() {
 	content, err := os.ReadFile("data/tricks.json")
 	if err != nil {
 		log.Fatal("Error when opening file: ", err)
@@ -60,6 +66,17 @@ func init() {
 			formattedAlias := utils.FormatAlias(alias)
 			aliasesToTrickIds[formattedAlias] = trick.Id
 		}
+	}
+}
+
+func loadTransitionData() {
+	content, err := os.ReadFile("data/transitions.json")
+	if err != nil {
+		log.Fatal("Error when opening file: ", err)
+	}
+
+	if err := json.Unmarshal(content, &transitions); err != nil {
+		panic(err)
 	}
 }
 
@@ -110,6 +127,8 @@ func main() {
 	router.GET("/categories", routes.GetAllCategoriesHandler(categoriesToTrickSliceMap))
 	router.GET("/categories/tricks", routes.GetAllTricksByCategoriesHandler(categoriesToTrickSliceMap))
 	router.GET("/categories/:name", routes.GetTricksForCategoryHandler(categoriesToTrickSliceMap))
-	router.GET("/transitions", routes.GetAllTransitionsHandler())
+	router.GET("/transitions/ids", routes.GetAllTransitionIdsHandler())
+	router.GET("/transitions", routes.GetAllTransitionsHandler(transitions))
+	router.GET("/transitions/:id", routes.GetTransitionHandler(transitions))
 	router.Run()
 }

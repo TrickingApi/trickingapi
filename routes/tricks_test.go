@@ -10,7 +10,8 @@ import (
 )
 
 func TestGetAllTricksHandler(t *testing.T) {
-	c, w, dummyTrick := SetUpTests()
+	c, w := SetUpTests()
+	dummyTrick := CreateMockTrick()
 
 	var idToTrickMap = make(map[string]models.Trick)
 	idToTrickMap[dummyTrick.Id] = dummyTrick
@@ -29,7 +30,8 @@ func TestGetAllTricksHandler(t *testing.T) {
 }
 
 func TestGetAllTrickNamesHandler(t *testing.T) {
-	c, w, dummyTrick := SetUpTests()
+	c, w := SetUpTests()
+	dummyTrick := CreateMockTrick()
 
 	var idToTrickMap = make(map[string]models.Trick)
 	idToTrickMap[dummyTrick.Id] = dummyTrick
@@ -49,7 +51,9 @@ func TestGetAllTrickNamesHandler(t *testing.T) {
 }
 
 func TestGetTrickHandlerValid(t *testing.T) {
-	c, w, dummyTrick := SetUpTests()
+	c, w := SetUpTests()
+	dummyTrick := CreateMockTrick()
+
 	c.Params = []gin.Param{
 		{
 			Key:   "name",
@@ -73,7 +77,9 @@ func TestGetTrickHandlerValid(t *testing.T) {
 }
 
 func TestGetTrickHandlerUnknown(t *testing.T) {
-	c, w, dummyTrick := SetUpTests()
+	c, w := SetUpTests()
+	dummyTrick := CreateMockTrick()
+
 	c.Params = []gin.Param{
 		{
 			Key:   "name",

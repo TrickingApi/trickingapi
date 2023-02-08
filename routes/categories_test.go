@@ -10,7 +10,9 @@ import (
 )
 
 func TestGetAllTricksByCategoriesHandler(t *testing.T) {
-	c, w, dummyTrick := SetUpTests()
+	c, w := SetUpTests()
+	dummyTrick := CreateMockTrick()
+
 	categoriesToTrickSliceMap := createMockCategoriesMap(dummyTrick)
 
 	var handler = GetAllTricksByCategoriesHandler(categoriesToTrickSliceMap)
@@ -27,7 +29,9 @@ func TestGetAllTricksByCategoriesHandler(t *testing.T) {
 }
 
 func TestGetTricksForCategoryHandlerQuad(t *testing.T) {
-	c, w, dummyTrick := SetUpTests()
+	c, w := SetUpTests()
+	dummyTrick := CreateMockTrick()
+
 	c.Params = []gin.Param{
 		{
 			Key:   "name",
@@ -51,7 +55,9 @@ func TestGetTricksForCategoryHandlerQuad(t *testing.T) {
 }
 
 func TestGetTricksForCategoryHandlerPsuedoDub(t *testing.T) {
-	c, w, dummyTrick := SetUpTests()
+	c, w := SetUpTests()
+	dummyTrick := CreateMockTrick()
+
 	c.Params = []gin.Param{
 		{
 			Key:   "name",
@@ -75,7 +81,9 @@ func TestGetTricksForCategoryHandlerPsuedoDub(t *testing.T) {
 }
 
 func TestGetTricksForCategoryHandlerUnknown(t *testing.T) {
-	c, w, dummyTrick := SetUpTests()
+	c, w := SetUpTests()
+	dummyTrick := CreateMockTrick()
+
 	c.Params = []gin.Param{
 		{
 			Key:   "name",
@@ -105,7 +113,9 @@ func TestGetTricksForCategoryHandlerUnknown(t *testing.T) {
 }
 
 func TestGetAllCategoriesHandler(t *testing.T) {
-	c, w, dummyTrick := SetUpTests()
+	c, w := SetUpTests()
+	dummyTrick := CreateMockTrick()
+
 	categoriesToTrickSliceMap := createMockCategoriesMap(dummyTrick)
 	var handler = GetAllCategoriesHandler(categoriesToTrickSliceMap)
 	handler(c)

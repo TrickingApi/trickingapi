@@ -7,15 +7,14 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func SetUpTests() (*gin.Context, *httptest.ResponseRecorder, models.Trick) {
+func SetUpTests() (*gin.Context, *httptest.ResponseRecorder) {
 	w := httptest.NewRecorder()
 	c, _ := gin.CreateTestContext(w)
-	dummyTrick := createMockData()
 
-	return c, w, dummyTrick
+	return c, w
 }
 
-func createMockData() models.Trick {
+func CreateMockTrick() models.Trick {
 	categories := []models.TrickCategory{"QUAD", "PSEUDO_DOUBLE_FLIP", "FLIP", "TWIST"}
 	prereqs := []string{"Quad Full", "Frappe", "Triple Full In Frappe"}
 	nextTricks := []string{"Quad Full In Frappe Kyro"}
@@ -31,4 +30,17 @@ func createMockData() models.Trick {
 		Description:   "Impossible trick but ya never really know lmao",
 	}
 	return dummyTrick
+}
+
+func CreateMockTransition() models.Transition {
+	aliases := []string{}
+	examples := []string{"Triple buterflytwist (vanish) cheat 1620"}
+	dummyTransition := models.Transition{
+		Id:          "vanish",
+		Name:        "Vanish",
+		Description: "Vanishing vanish vanishes",
+		Aliases:     aliases,
+		Examples:    examples,
+	}
+	return dummyTransition
 }
