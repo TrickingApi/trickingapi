@@ -24,21 +24,43 @@ func GetAllTricksHandler(idToTrickMap map[string]models.Trick) gin.HandlerFunc {
 	return gin.HandlerFunc(fn)
 }
 
-// GetAllTrickNames godoc
-// @Description Returns the names of all tricks from the static trickNames.json file at https://github.com/TrickingApi/trickingapi
-// @Summary Get All Trick Names and their ids from TrickingApi/data/tricks
+// GetAllTricksByIds godoc
+// @Description Reads and returns a map of trick ids and their names from the static tricks.json file
+// @Summary Get All Trick Ids from TrickingApi/data/tricks
 // @Tags tricks
 // @Accept */*
 // @Produce json
 // @Success 200 {object} map[string]string
-// @Router /tricks/names [get]
-func GetAllTrickNamesHandler(idToTrickMap map[string]models.Trick) gin.HandlerFunc {
+// @Router /tricks/ids [get]
+func GetAllTricksByIdsHandler(idToTrickMap map[string]models.Trick) gin.HandlerFunc {
 	fn := func(c *gin.Context) {
 		var idToTrickNames = make(map[string]string)
 		for id, trick := range idToTrickMap {
 			idToTrickNames[id] = trick.Name
 		}
 		c.IndentedJSON(http.StatusOK, idToTrickNames)
+
+	}
+	return gin.HandlerFunc(fn)
+}
+
+// GetAllTrickNames godoc
+// @Description Returns the names of all tricks from the static trickNames.json file at https://github.com/TrickingApi/trickingapi
+// @Summary Get All Trick Names and their Aliases from TrickingApi/data/tricks
+// @Tags tricks
+// @Accept */*
+// @Produce json
+// @Success 200 {object} []string
+// @Router /tricks/names [get]
+func GetAllTrickNamesHandler(idToTrickMap map[string]models.Trick) gin.HandlerFunc {
+	fn := func(c *gin.Context) {
+		var names []string
+		for id := range idToTrickMap {
+			trick := idToTrickMap[id]
+			names = append(names, trick.Name)
+			names = append(names, trick.Aliases...)
+		}
+		c.IndentedJSON(http.StatusOK, names)
 	}
 	return gin.HandlerFunc(fn)
 }

@@ -29,6 +29,27 @@ func TestGetAllTricksHandler(t *testing.T) {
 	assert.Equal(t, got, idToTrickMap)
 }
 
+func TestGetAllTrickByIdsHandler(t *testing.T) {
+	c, w := SetUpTests()
+	dummyTrick := CreateMockTrick()
+
+	var idToTrickMap = make(map[string]models.Trick)
+	idToTrickMap[dummyTrick.Id] = dummyTrick
+
+	var handler = GetAllTricksByIdsHandler(idToTrickMap)
+	handler(c)
+
+	trickNames := map[string]string{"quadFullInFrappeOut": "Quad Full In Frappe"}
+	assert.Equal(t, 200, w.Code)
+
+	var got map[string]string
+	err := json.Unmarshal(w.Body.Bytes(), &got)
+	if err != nil {
+		t.Fatal(err)
+	}
+	assert.Equal(t, got, trickNames)
+}
+
 func TestGetAllTrickNamesHandler(t *testing.T) {
 	c, w := SetUpTests()
 	dummyTrick := CreateMockTrick()
@@ -39,10 +60,10 @@ func TestGetAllTrickNamesHandler(t *testing.T) {
 	var handler = GetAllTrickNamesHandler(idToTrickMap)
 	handler(c)
 
-	trickNames := map[string]string{"quadFullInFrappeOut": "Quad Full In Frappe"}
+	trickNames := []string{"Quad Full In Frappe", "Quad Full In Frappe Out", "Venti Frappe"}
 	assert.Equal(t, 200, w.Code)
 
-	var got map[string]string
+	var got []string
 	err := json.Unmarshal(w.Body.Bytes(), &got)
 	if err != nil {
 		t.Fatal(err)

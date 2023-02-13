@@ -18,7 +18,7 @@ func CreateMockTrick() models.Trick {
 	categories := []models.TrickCategory{"QUAD", "PSEUDO_DOUBLE_FLIP", "FLIP", "TWIST"}
 	prereqs := []string{"Quad Full", "Frappe", "Triple Full In Frappe"}
 	nextTricks := []string{"Quad Full In Frappe Kyro"}
-	aliases := []string{}
+	aliases := []string{"Quad Full In Frappe Out", "Venti Frappe"}
 
 	dummyTrick := models.Trick{
 		Id:            "quadFullInFrappeOut",
