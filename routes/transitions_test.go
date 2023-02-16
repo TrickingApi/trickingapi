@@ -26,7 +26,6 @@ func TestGetAllTransitionIdsHandler(t *testing.T) {
 	}
 
 	assert.ElementsMatch(t, got, expectedResult)
-
 }
 
 func TestGetAllTransitionsHandler(t *testing.T) {

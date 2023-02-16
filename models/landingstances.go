@@ -1,16 +1,23 @@
 package models
 
-type LandingStance string
+type LandingStanceId string
 
 const (
-	COMPLETE LandingStance = "Complete"
-	HYPER    LandingStance = "Hyper"
-	MEGA     LandingStance = "Mega"
-	SEMI     LandingStance = "Semi"
+	COMPLETE LandingStanceId = "Complete"
+	HYPER    LandingStanceId = "Hyper"
+	MEGA     LandingStanceId = "Mega"
+	SEMI     LandingStanceId = "Semi"
 )
 
-func (ls LandingStance) String() string {
+func (ls LandingStanceId) String() string {
 	return string(ls)
 }
 
-var LandingStances = []LandingStance{COMPLETE, HYPER, MEGA, SEMI}
+var LandingStances = []LandingStanceId{COMPLETE, HYPER, MEGA, SEMI}
+
+type LandingStance struct {
+	Id          LandingStanceId `json:"id"`
+	Name        string          `json:"name"`
+	Description string          `json:"description"`
+	Examples    []string        `json:"examples"`
+}
