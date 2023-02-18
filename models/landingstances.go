@@ -16,8 +16,9 @@ func (ls LandingStanceId) String() string {
 var LandingStances = []LandingStanceId{COMPLETE, HYPER, MEGA, SEMI}
 
 type LandingStance struct {
-	Id          LandingStanceId `json:"id"`
-	Name        string          `json:"name"`
-	Description string          `json:"description"`
-	Examples    []string        `json:"examples"`
+	Id                LandingStanceId `json:"id"`
+	Name              string          `json:"name"`
+	Description       string          `json:"description"`
+	ExampleVariations []string        `json:"examplesVariations"`
+	Transitions       []TransitionId  `json:"transitions"`
 }

@@ -1,0 +1,69 @@
+{
+  "COMPLETE": {
+    "id": "COMPLETE",
+    "name": "Complete",
+    "description": "The \"default\" landing for many of the base tricks (eg. Full Twist, Corkscrew, Butterfly Twist all land in complete by default). This landing marks the single, double, triple etc. rotations in tricking. Defined by landing on the outside kicking leg (left leg if you spin left, right leg if you spin right) in approximately Backside Stance.",
+    "exampleVariations": [
+      "Round",
+      "Shuriken"
+    ],
+    "transitions": [
+      "BACKSWING",
+      "SWINGTHROUGH",
+      "VANISH",
+      "MISSLEG",
+      "REVERSAL",
+      "POP",
+      "PUNCH",
+      "REDIRECT"
+    ]
+  },
+  "HYPER": {
+    "id": "HYPER",
+    "name": "Hyper",
+    "description": "The secondary \"default\" landing for many base tricks (eg. Aerial, Butterfly Kick, Gainer Flash). Defined by landing on the inside kicking leg (right leg if you spin left, left leg if you spin right) anywhere from Backside to Inside Stance.",
+    "exampleVariations": [
+      "SWIPE",
+      "HYPERHOOK"
+    ],
+    "transitions": [
+      "WRAPTHROUGH",
+      "CARRYTHROUGH",
+      "VANISH",
+      "REVERSAL",
+      "REVERSEPOP",
+      "POP",
+      "PUNCH",
+      "RAPID",
+      "REDIRECT"
+    ]
+  },
+  "MEGA": {
+    "id": "MEGA",
+    "name": "Mega",
+    "description": "Defined by landing on the outside kicking leg (left leg if you spin left, right leg if you spin right) in approximately Frontside Stance. If you landed in Mega Stance and wanted to swing, you would frontswing (eg. Aerial or Butterfly Kick).",
+    "exampleVariations": [
+      "Scissor",
+      "Late Round"
+    ],
+    "transitions": [
+      "MISSLEG",
+      "RAPID",
+      "VANISH",
+      "REVERSEPOP"
+    ]
+  },
+  "SEMI": {
+    "id": "SEMI",
+    "name": "Semi",
+    "description": "Defined by landing on the inside kicking leg (right leg if you spin left, left leg if you spin right) in approximately Frontside Stance. If you landed in Semi Stance and wanted to swing, you would frontswing (eg. Raiz, Sideswipe).",
+    "exampleVariations": [
+      "Wackknife"
+    ],
+    "transitions": [
+      "FRONTSWING",
+      "CARRYTHROUGH",
+      "REVERSAL"
+    ]
+  }
+}

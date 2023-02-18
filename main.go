@@ -17,11 +17,13 @@ var idToTrickMap map[string]models.Trick
 var categoriesToTrickSliceMap map[models.TrickCategory][]models.Trick
 var aliasesToTrickIds map[string]string
 var transitions map[string]models.Transition
+var landingStances map[string]models.LandingStance
 
 // organizes tricks by id and category upon server init
 func init() {
 	loadTricksData()
 	loadTransitionData()
+	loadLandingStances()
 }
 
 func loadTricksData() {
@@ -80,6 +82,17 @@ func loadTransitionData() {
 	}
 }
 
+func loadLandingStances() {
+	content, err := os.ReadFile("data/landingstances.json")
+	if err != nil {
+		log.Fatal("Error when opening file: ", err)
+	}
+
+	if err := json.Unmarshal(content, &landingStances); err != nil {
+		panic(err)
+	}
+}
+
 // @title Tricking Api
 // @version 0.1
 // @description Consumption-only API for barebones Tricking Terminology Data
@@ -132,5 +145,6 @@ func main() {
 	router.GET("/transitions", routes.GetAllTransitionsHandler(transitions))
 	router.GET("/transitions/:id", routes.GetTransitionHandler(transitions))
 	router.GET("/landingstances/ids", routes.GetAllLandingStanceIdsHandler())
+	router.GET("/landingstances/:id", routes.GetLandingStanceByIdHandler(landingStances))
 	router.Run()
 }
