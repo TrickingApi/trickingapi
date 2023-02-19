@@ -144,6 +144,7 @@ func main() {
 	router.GET("/transitions/ids", routes.GetAllTransitionIdsHandler())
 	router.GET("/transitions", routes.GetAllTransitionsHandler(transitions))
 	router.GET("/transitions/:id", routes.GetTransitionHandler(transitions))
+	router.GET("/landingstances", routes.GetAllLandingStancesHandler(landingStances))
 	router.GET("/landingstances/ids", routes.GetAllLandingStanceIdsHandler())
 	router.GET("/landingstances/:id", routes.GetLandingStanceByIdHandler(landingStances))
 	router.Run()

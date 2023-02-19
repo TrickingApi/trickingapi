@@ -7,6 +7,26 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// GetAllLandingStances godoc
+// @Description returns an object with all landing stances
+// @Summary Get All Landing Stances
+// @Tags landingstances
+// @Accept */*
+// @Produce json
+// @Success 200 {object} map[string]models.LandingStance
+// @Router /landingstances [get]
+func GetAllLandingStancesHandler(landingstances map[string]models.LandingStance) gin.HandlerFunc {
+	fn := func(c *gin.Context) {
+		result := make([]models.LandingStance, 0, len(landingstances))
+
+		for _, value := range landingstances {
+			result = append(result, value)
+		}
+		c.IndentedJSON(http.StatusOK, result)
+	}
+	return gin.HandlerFunc(fn)
+}
+
 // GetAllLandingStanceIds godoc
 // @Description returns a list of all landing stances ids
 // @Summary Get All Landing Stances ids
