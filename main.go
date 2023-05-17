@@ -134,6 +134,7 @@ func main() {
 	}
 	//config.AddHeaders(")
 	router.Use(cors.New(config))
+	router.GET("/", routes.GetRootHandler())
 	router.GET("/tricks", routes.GetAllTricksHandler(idToTrickMap))
 	router.GET("/tricks/ids", routes.GetAllTricksByIdsHandler(idToTrickMap))
 	router.GET("/tricks/names", routes.GetAllTrickNamesHandler(idToTrickMap))

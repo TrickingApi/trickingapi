@@ -10,7 +10,7 @@ import (
 )
 
 // GetAllTransitionIds godoc
-// @Description Reads and returns list of transitions from the transitions enum
+// @Description Returns list of transition Ids from the transitions enum
 // @Summary Get all transition ids
 // @Tags transitions
 // @Accept */*
@@ -45,7 +45,7 @@ func GetAllTransitionsHandler(transitions map[string]models.Transition) gin.Hand
 }
 
 // GetTransition godoc
-// @Description reads list of known Transition objects and returns transition matching the id param in the request
+// @Description reads list of known Transition objects and returns a function that returns transition matching the id param in the request
 // @Summary Get transition by id from TrickingApi/data/transitions
 // @Tags transitions
 // @Accept */*
