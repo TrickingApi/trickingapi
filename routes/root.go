@@ -12,11 +12,11 @@ var RouteMap = `
 		<title>Tricking API Routes</title>
 	</head>
 	<body>
-		<h1>Tricking API Routes</h1>
+		<h1>Welcome to api.trickingapi.dev</h1>
 		<p>These are the routes available in the Tricking API</p>
 		<ul>
 			<li><a href="/tricks">/tricks</a></li>
-			<li><a href="/tricks/:id">/tricks/:id</a></li>
+			<li><a href="/tricks/ids">/tricks/:id</a></li>
 			<li><a href="/tricks/names">/tricks/names</a></li>
 			<li><a href="/tricks/:name">/tricks/:name</a></li>
 			<li><a href="/categories">/categories</a></li>
