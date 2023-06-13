@@ -7835,35 +7835,6 @@
    "description": "A Boxcutter with outstretched arms."
   },
   {
-   "id": "corkscrew",
-   "name": "Corkscrew",
-  "aliases": [],
-   "categories": [
-    "BACKWARD"
-   ],
-   "prereqs": [
-    "Gainer Flash"
-   ],
-   "nextTricks": [
-    "Outstretched Corkscrew",
-    "Corkscrew Doubleleg",
-    "Straddle Corkscrew",
-    "Touchdown Corkscrew",
-    "Corkscrew Round",
-    "Dragonfly Corkscrew",
-    "Handcuff Corkscrew",
-    "Corkscrew Shuriken",
-    "Corkscrew Crowd Awakener",
-    "Peter Pan Double Corkscrew",
-    "Snatch Cannon",
-    "Grand Master Twist",
-    "Boxcutter",
-    "Corkscrew Wackknife",
-    "Rodeo Corkscrew"
-   ],
-   "description": "A Gainer Flash with an extra rotation before landing – or a Back Full off of one leg."
-  },
-  {
    "id": "corkscrewCrowdAwakenerKnife",
    "name": "Corkscrew Crowd Awakener Knife",
   "aliases": [],
@@ -8546,14 +8517,15 @@
    "description": "A Double Full Shuriken that finishes with a hyperhook."
   },
   {
-   "id": "cork",
+   "id": "corkscrew",
    "name": "Corkscrew",
    "aliases": [
     "Cork"
    ],
    "categories": [
     "TWIST",
-    "SINGLE"
+    "SINGLE",
+    "BACKWARD"
    ],
    "prereqs": [
     "Gainer flash"
@@ -8568,8 +8540,18 @@
     "Corkscrew Shuriken",
     "Corkscrew Swipe",
     "Corkscrew Wackknife",
-    "Dragonfly Cork",
-    "Double Corkscrew"
+    "Dragonfly Corkscrew",
+    "Double Corkscrew",
+    "Outstretched Corkscrew",
+    "Straddle Corkscrew",
+    "Touchdown Corkscrew",
+    "Handcuff Corkscrew",
+    "Corkscrew Crowd Awakener",
+    "Snatch Cannon",
+    "Grand Master Twist",
+    "Boxcutter",
+    "Corkscrew Wackknife",
+    "Rodeo Corkscrew"
    ],
    "description": "A Gainer Flash with an extra rotation before landing - or a Back Full off of one leg."
   },
